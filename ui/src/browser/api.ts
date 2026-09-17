@@ -1,4 +1,5 @@
 import { z } from 'zod';
+import { BrowserAudio } from './audio';
 import { localId } from '../ids';
 import { activeLocation, configSchema, defaultConfig, PRAYERS, type Config } from '../../../src/config-model.js';
 import { calculateDay, nextPrayer } from '../../../src/prayers.js';
@@ -60,12 +61,17 @@ export async function createBrowserAPI(host: BrowserHost = {}): Promise<DesktopA
   await writeSetting('preferences', preferences);
   await pruneHistory();
   let running = false, releaseLock: (() => void) | null = null, error: string | null = null;
-  let playing: string | null = null, stopAudio: (() => void) | null = null, audioGeneration = 0;
   let activeEvent: Snapshot['history'][number] | null = null, dismissed = new Set<string>();
   const alerts = new Map<string, { id: string; title: string }>();
   const notifications = new Map<string, Notification>();
   const listeners = new Set<() => void>();
   const publish = () => { for (const listener of listeners) listener(); };
+  const audio = new BrowserAudio(publish, async path => {
+    let record = await readAudio(path);
+    if (!record && path.startsWith('default/')) { await cacheDefaultRecordings(); record = await readAudio(path); }
+    if (!record) throw new Error('This recording is not saved on this device. Choose it again in Athan & sounds.');
+    return record.blob;
+  });
   // A failed recording download must not stop local prayer calculations.
   let recordingDownload = cacheDefaultRecordings().catch(() => {}).finally(publish);
   window.addEventListener('online', () => { recordingDownload = cacheDefaultRecordings().catch(() => {}).finally(publish); });
@@ -77,7 +83,7 @@ export async function createBrowserAPI(host: BrowserHost = {}): Promise<DesktopA
   }, (url, options) => fetch(url, options), publish, async (id,signal) => {
     const pack=HADITH_COLLECTIONS.find(c=>c.id===id)!;
     const response=await fetch(new URL(`hadith/${pack.file}`,document.baseURI),{signal});
-    if(!response.ok)throw new Error('The collection is not available. Start the local server and try again.');
+    if(!response.ok)throw new Error('This collection could not be loaded. Reconnect and try again, or save everything for offline access while online.');
     const bytes=await response.arrayBuffer();if(bytes.byteLength!==pack.bytes)throw new Error('The collection download is incomplete.');
     if(crypto.subtle) {
       const digest=Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',bytes)),b=>b.toString(16).padStart(2,'0')).join('');
@@ -131,7 +137,7 @@ export async function createBrowserAPI(host: BrowserHost = {}): Promise<DesktopA
   const reload = async () => { config = configSchema.parse(await readSetting('config')); preferences = prefsSchema.parse(await readSetting('preferences')); publish(); };
   channel.onmessage = () => { void reload().catch(e => { error = String(e); publish(); }); };
   const changed = () => { channel.postMessage('changed'); publish(); };
-  const stop = () => { audioGeneration++; stopAudio?.(); stopAudio = null; playing = null; };
+  const stop = () => audio.stop();
   const removeAlert = (id: string) => { alerts.delete(id); notifications.get(id)?.close(); notifications.delete(id); };
   const dismiss = async () => {
     stop();
@@ -143,30 +149,7 @@ export async function createBrowserAPI(host: BrowserHost = {}): Promise<DesktopA
     }
     changed();
   };
-  async function play(files: string[], repeat: number, maxSeconds = config.audio.maxPlaybackSeconds) {
-    stop(); const generation = audioGeneration;
-    for (let n = 0; n < repeat; n++) for (const path of files) {
-      if (generation !== audioGeneration) return;
-      const record = await readAudio(path);
-      if (generation !== audioGeneration) return;
-      if (!record) throw new Error('A recording is no longer stored in this browser. Import it again in Athan & sounds.');
-      const url = URL.createObjectURL(record.blob), audio = new Audio(url);
-      audio.volume = config.audio.volume / 100; playing = path; publish();
-      try {
-        await new Promise<void>((resolve, reject) => {
-          let settled = false;
-          const finish = (failure?: Error) => {
-            if (settled) return; settled = true; clearTimeout(timer); audio.pause();
-            if (failure) reject(failure); else resolve();
-          };
-          const timer = setTimeout(() => finish(), maxSeconds * 1000);
-          stopAudio = () => finish(); audio.onended = () => finish();
-          audio.onerror = () => finish(new Error('This browser cannot play the recording. Import an MP3, WAV, M4A or OGG file.'));
-          void audio.play().catch(() => finish(new Error('Playback was blocked. Preview a recording to allow sound, then keep Athan open and awake.')));
-        });
-      } finally { URL.revokeObjectURL(url); if (generation === audioGeneration) { playing = null; stopAudio = null; publish(); } }
-    }
-  }
+  const play = (files: string[], repeat: number, maxSeconds = config.audio.maxPlaybackSeconds) => audio.play(files, repeat, config.audio.volume, maxSeconds);
   async function notify(event: ScheduledEvent, title: string) {
     if (host.native || !preferences.notifications || !('Notification' in window) || Notification.permission !== 'granted') return;
     const registration = await navigator.serviceWorker.getRegistration();
@@ -190,7 +173,8 @@ export async function createBrowserAPI(host: BrowserHost = {}): Promise<DesktopA
         const title = `${event.prayer[0]!.toUpperCase()}${event.prayer.slice(1)}${event.kind === 'reminder' ? ' reminder' : ' prayer'}`;
         alerts.set(event.id, { id: event.id, title }); publish();
         try {
-          await notify(event, title);
+          try { await notify(event, title); }
+          catch { error = 'The notification could not be shown. Prayer audio is still available.'; publish(); }
           if (!dismissed.has(event.id) && config.audio.enabled && event.files.length) await play(event.files, event.repeat);
           await finishEvent({ ...row, status: dismissed.has(event.id) ? 'dismissed' : 'delivered' });
         } catch (e) { error = String(e); await finishEvent({ ...row, status: dismissed.has(event.id) ? 'dismissed' : 'failed', detail: error }); }
@@ -207,6 +191,7 @@ export async function createBrowserAPI(host: BrowserHost = {}): Promise<DesktopA
   const api: DesktopAPI = {
     hadithStatus: () => hadith.status(), hadithConnect: key => hadith.connect(key),
     hadithDownload: id => hadith.download(id), async hadithCancel() { hadith.cancel(); },
+    hadithSaveAll: () => hadith.saveAll(),
     hadithRead: id => hadith.read(id), hadithRemove: id => hadith.remove(id),
     async hadithSource(id, number) {
       if (id.startsWith('source:') && HADITH_SOURCES[id.slice(7)]) { await openUrl(HADITH_SOURCES[id.slice(7)]!); return; }
@@ -219,7 +204,7 @@ export async function createBrowserAPI(host: BrowserHost = {}): Promise<DesktopA
     async snapshot(date) {
       const now = new Date(), today = dateAt(now, activeLocation(config).timeZone), day = calculateDay(config, date ?? today);
       return serialize<Snapshot>({ config, preferences, day, today, now, deviceLanguages: navigator.languages, next: nextPrayer(config, now), startupEnabled: false,
-        runtime: { status: running ? 'running' : 'paused', error, playing, alerts: [...alerts.values()] }, history: (await history()).slice(0, 30),
+        runtime: { status: running ? 'running' : 'paused', error, playing: audio.playing, audioPaused: audio.paused, audioLoading: audio.loading, alerts: [...alerts.values()] }, history: (await history()).slice(0, 30),
         readingAlerts: [...readingAlerts.values()], readingError,
         observances: [day.hijri.year, day.hijri.year + 1].flatMap(year => islamicDays(year, config.hijriAdjustment)).filter(e => e.date >= today).slice(0, 4) });
     },
@@ -242,6 +227,7 @@ export async function createBrowserAPI(host: BrowserHost = {}): Promise<DesktopA
     },
     async running(enabled) {
       if (!enabled) { running = false; await dismiss(); releaseLock?.(); releaseLock = null; publish(); return; }
+      if (config.audio.enabled) await audio.unlock();
       if (running) return;
       if (host.native) { foregroundSince = Date.now(); running = true; error = null; publish(); void tick(); return; }
       if (!navigator.locks) throw new Error('This browser needs HTTPS or localhost and Web Locks to safely run prayers.');
@@ -256,6 +242,7 @@ export async function createBrowserAPI(host: BrowserHost = {}): Promise<DesktopA
       void tick();
     },
     dismissAlerts: dismiss,
+    pauseAudio: paused => audio.pause(paused),
     async chooseAudio() {
       return new Promise((resolve, reject) => {
         const input = document.createElement('input'); input.type = 'file'; input.accept = 'audio/*,.mp3,.wav,.m4a,.ogg';
@@ -273,7 +260,8 @@ export async function createBrowserAPI(host: BrowserHost = {}): Promise<DesktopA
     async preview(path) {
       if (activeEvent) throw new Error('Dismiss the current prayer alert before previewing a recording.');
       if (!path) { stop(); publish(); return; }
-      error = null; void play([path], 1, 20).catch(e => { error = String(e); publish(); });
+      await audio.unlock();
+      error = null; void play([path], 1, config.audio.maxPlaybackSeconds).catch(e => { error = String(e); publish(); });
     },
     async exportCalendar(month, format) {
       const { start, end, title } = calendarPeriod(month, config.hijriAdjustment);

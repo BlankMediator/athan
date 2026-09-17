@@ -58,10 +58,10 @@ test('calendar modes, file actions, startup settings, complete Hisn and six lang
     await expect(page.locator('.hadith-collection')).toHaveCount(17);
     // Real optional pack through desktop IPC: no credentials and no external network.
     await app.evaluate(({net})=>{const original=net.fetch.bind(net);net.fetch=async(input,options)=>{if(new URL(String(input)).protocol==='file:')return original(input,options);throw new Error('Offline');};});
-    await page.locator('.hadith-collection').first().getByRole('button',{name:'Download',exact:true}).click();
+    await page.locator('.hadith-collection').first().getByRole('button',{name:'Read collection',exact:true}).click();
     await expect(page.locator('.hadith-reader')).toContainText('intentions');
-    await expect(page.locator('.hadith-collection').first()).toContainText('7278 saved on this device');
-    expect(JSON.parse(readFileSync(join(profile,'hadith/bukhari.json'),'utf8')).entries).toHaveLength(7278);
+    await expect(page.locator('.hadith-collection').first()).toContainText('Available offline');
+    expect((await page.evaluate(()=>window.athan.hadithRead('bukhari')))?.entries).toHaveLength(7278);
     await page.getByLabel('Hadith book',{exact:true}).selectOption('1');
     expect(await page.getByLabel('Hadith chapter',{exact:true}).locator('option').count()).toBeGreaterThan(2);
     await page.locator('.hadith-reader').getByRole('button',{name:'Read on Sunnah.com',exact:true}).click();

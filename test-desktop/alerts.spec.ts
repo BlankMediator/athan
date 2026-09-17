@@ -64,6 +64,12 @@ test('desktop dismissal stops native audio, preserves later alerts and works fro
     await page.getByRole('button', { name: 'Enable Athan', exact: true }).click();
     await expect(page.locator('.active-alert')).toContainText('Time for Fajr');
     await expect.poll(async () => (await players())[0]?.decoded, { timeout: 15000 }).toBe(true);
+    await page.getByRole('button', { name: 'Pause audio', exact: true }).click();
+    await expect(page.getByRole('button', { name: 'Resume audio', exact: true })).toBeVisible();
+    expect((await page.evaluate(() => window.athan.snapshot())).runtime.audioPaused).toBe(true);
+    expect((await players())[0]?.closed).toBe(false);
+    await page.getByRole('button', { name: 'Resume audio', exact: true }).click();
+    expect((await page.evaluate(() => window.athan.snapshot())).runtime.audioPaused).toBe(false);
     expect(await app.evaluate(() => (globalThis as any).alertTest.tooltip)).toMatch(/Current: Fajr\nNext: Dhuhr · .+\nRemaining: /);
     await app.evaluate(() => (globalThis as any).alertTest.notifications[0].emit('close', { reason: 'timedOut' }));
     await expect(page.locator('.active-alert')).toBeVisible();
@@ -96,7 +102,7 @@ test('desktop dismissal stops native audio, preserves later alerts and works fro
     expect(saved.runtime.error).toBeNull(); expect(saved.preferences.resumeAlerts).toBe(true);
     expect(saved.config.audio.prayers.fajr.enabled).toBe(true); expect((await players())).toHaveLength(4);
     await page.evaluate(file => window.athan.preview(file), wav);
-    await expect(page.locator('.active-alert')).toContainText('Sound preview');
+    await expect(page.locator('.active-alert')).toContainText('Now playing');
     await expect.poll(async () => (await players())[4]?.decoded, { timeout: 15000 }).toBe(true);
     await page.getByRole('button', { name: 'Dismiss / stop sound', exact: true }).click();
     await stopped(4);

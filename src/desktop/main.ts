@@ -41,6 +41,13 @@ let window: BrowserWindow | null = null, tray: Tray | null = null, quitting = fa
 let preferences: Preferences = prefsSchema.parse(existsSync(prefsFile) ? JSON.parse(readFileSync(prefsFile, 'utf8')) : {});
 let runner: Promise<void> | null = null, runnerAbort: AbortController | null = null, running = false;
 let lastError: string | null = null, previewAbort: AbortController | null = null, playing: string | null = null;
+let audioPaused = false, pauseCurrentAudio: ((paused: boolean) => void) | null = null;
+let playbackToken: symbol | null = null;
+const desktopPlayer: typeof playFile = async (path, options) => {
+  const token = Symbol(); playbackToken = token; playing = path; audioPaused = false; pauseCurrentAudio = null; publish();
+  try { return await playFile(path, { ...options, onControl: pause => { if (playbackToken === token) pauseCurrentAudio = pause; } }); }
+  finally { if (playbackToken === token) { playing = null; audioPaused = false; pauseCurrentAudio = null; playbackToken = null; publish(); } }
+};
 let operation = Promise.resolve();
 let trayTimer: NodeJS.Timeout | undefined, lastToolTip = '';
 let serviceControls: ServiceControls | null = null;
@@ -74,7 +81,7 @@ function dismissAlerts(ids?: readonly string[]) {
   const targets = ids ?? [...activeAlerts.keys()];
   serviceControls?.dismissAlerts(targets);
   for (const id of targets) clearAlert(id);
-  if (!ids) { previewAbort?.abort(); previewAbort = null; playing = null; }
+  if (!ids) { previewAbort?.abort(); previewAbort = null; playing = null; audioPaused = false; pauseCurrentAudio = null; }
   publish();
 }
 function finishAlert(id: string) {
@@ -135,7 +142,7 @@ function snapshot(date?: string): Snapshot {
   const observances = [day.hijri.year, day.hijri.year + 1].flatMap(year => islamicDays(year, config.hijriAdjustment)).filter(e => e.date >= today).slice(0, 4);
   return JSON.parse(JSON.stringify({ config, day, today, now, deviceLanguages: app.getPreferredSystemLanguages(), next: nextPrayer(config, now), preferences, readingAlerts: [...readingAlerts.values()], readingError,
     startupEnabled: app.getLoginItemSettings(loginOptions()).openAtLogin,
-    runtime: { status: status(), error: lastError, playing, alerts: [...activeAlerts.values()] }, history, observances }));
+    runtime: { status: status(), error: lastError, playing, audioPaused, alerts: [...activeAlerts.values()] }, history, observances }));
 }
 async function stopOwned() { runnerAbort?.abort(); await runner; runner = null; runnerAbort = null; running = false; }
 async function startOwned(playStartup = false) {
@@ -143,7 +150,7 @@ async function startOwned(playStartup = false) {
   if (status() === 'external') throw new Error('The command-line scheduler is already running. Pause it here before starting desktop prayers.');
   previewAbort?.abort(); lastError = null; runnerAbort = new AbortController();
   await new Promise<void>((resolveReady, rejectReady) => {
-    runner = runService(readConfig(configFile), stateDir, { signal: runnerAbort!.signal, quiet: true, playStartup,
+    runner = runService(readConfig(configFile), stateDir, { signal: runnerAbort!.signal, quiet: true, playStartup, player: desktopPlayer,
       onReady: controls => { serviceControls = controls; running = true; resolveReady(); publish(); },
       onEvent: event => {
         if (event.type === 'trigger') {
@@ -169,7 +176,7 @@ function playStartupBismillah() {
   if (!audio.enabled || !audio.startupEnabled || !audio.startupFile || activeAlerts.size) return;
   const controller = new AbortController(); previewAbort = controller; playing = audio.startupFile;
   activeAlerts.set('startup', { id: 'startup', title: 'Bismillah on startup' }); publish();
-  void playFile(audio.startupFile, { volume: audio.volume, maxSeconds: audio.maxPlaybackSeconds, signal: controller.signal })
+  void desktopPlayer(audio.startupFile, { volume: audio.volume, maxSeconds: audio.maxPlaybackSeconds, signal: controller.signal })
     .catch(error => { if (!controller.signal.aborted) lastError = String(error); })
     .finally(() => { if (previewAbort === controller) { playing = null; previewAbort = null; } clearAlert('startup'); publish(); });
 }
@@ -190,6 +197,11 @@ function recordings(): Recording[] {
     }
   };
   const config = readConfig(configFile);
+  const bundled = JSON.parse(readFileSync(join(root, 'assets/audio/defaults.json'), 'utf8')) as { recordings: { path: string; name: string }[] };
+  for (const recording of bundled.recordings) {
+    const path = join(root, 'assets', recording.path); add(path, 'Default recordings');
+    const added = result.find(item => item.path === path); if (added) added.name = recording.name;
+  }
   for (const item of Object.values(config.audio.prayers)) add(item.file, 'Your recordings');
   add(config.audio.duaFile, 'Dua'); add(config.audio.startupFile, 'Bismillah');
   for (const item of config.reminders) add(item.file, 'Recitation');
@@ -247,6 +259,7 @@ else {
       case 'hadithStatus': return hadith.status();
       case 'hadithConnect': return hadith.connect(z.string().parse(args[0]));
       case 'hadithDownload': return hadith.download(collectionId.parse(args[0]));
+      case 'hadithSaveAll': return hadith.saveAll();
       case 'hadithCancel': hadith.cancel(); return;
       case 'hadithRead': return hadith.read(collectionId.parse(args[0]));
       case 'hadithRemove': return hadith.remove(collectionId.parse(args[0]));
@@ -320,6 +333,7 @@ else {
       }
       case 'running': return serialize(() => setRunning(z.boolean().parse(args[0])));
       case 'dismissAlerts': dismissAlerts(); return;
+      case 'pauseAudio': { const paused = z.boolean().parse(args[0]); if (playing && pauseCurrentAudio) { pauseCurrentAudio(paused); audioPaused = paused; publish(); } return; }
       case 'recordings': return recordings();
       case 'chooseAudio': { const selected = z.string().min(1).max(4096).nullable().optional().parse(args[0]); const folder = selected ? dirname(selected) : undefined; const picked = await dialog.showOpenDialog(window!, { title: 'Choose a recording', ...(folder && existsSync(folder) ? { defaultPath: folder } : {}), filters: [{ name: 'Audio', extensions: ['mp3', 'wma', 'wav', 'm4a', 'aac'] }], properties: ['openFile'] });
         const file = picked.canceled ? null : picked.filePaths[0] ?? null; if (file) allowedAudio.add(file); return file; }
@@ -329,7 +343,7 @@ else {
         if (!path) { publish(); return; }
         recordings(); if (!allowedAudio.has(path)) throw new Error('Choose a recording before previewing it.');
         const controller = new AbortController(); previewAbort = controller; playing = path; lastError = null; publish();
-        void playFile(path, { volume: readConfig(configFile).audio.volume, maxSeconds: 20, signal: controller.signal })
+        void desktopPlayer(path, { volume: readConfig(configFile).audio.volume, maxSeconds: readConfig(configFile).audio.maxPlaybackSeconds, signal: controller.signal })
           .catch(error => { if (!controller.signal.aborted) lastError = String(error); })
           .finally(() => { if (previewAbort === controller) { playing = null; previewAbort = null; publish(); } }); return;
       }

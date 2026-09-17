@@ -141,6 +141,6 @@ export async function createMobileAPI(): Promise<DesktopAPI> {
   };
   // Permission failures should never prevent access to prayer times or saved readings.
   await reschedule().catch(report);
-  await base.running(enabled && active);
+  await base.running(enabled && active).catch(report);
   return api;
 }

@@ -16,13 +16,22 @@ export function Landscape() {
     <g stroke="#8daa8b" opacity=".38"><path d="M649 318v-57m0 37 13-19m-13 9-14-17m14 34-12-12m12 0 9-16"/><path d="M376 317v-40m0 20 10-12m-10 6-8-11"/></g>
   </svg>;
 }
-export function Compass({ bearing, mini = false, heading = 0 }: { bearing: number; mini?: boolean; heading?: number | undefined }) {
-  return <svg viewBox="0 0 400 400" className={`compass ${mini ? 'mini' : ''}`} role="img" aria-label={`Qibla ${bearing.toFixed(1)} degrees clockwise from north`}>
-    <g transform={`rotate(${-heading} 200 200)`}><circle cx="200" cy="200" r="178" fill="var(--surface)" stroke="var(--border)"/><circle cx="200" cy="200" r="144" fill="none" stroke="var(--border)"/>
+export function Compass({ bearing, mini = false, heading }: { bearing: number; mini?: boolean; heading?: number | undefined }) {
+  const direction = heading ?? 0;
+  return <svg viewBox="0 0 400 400" className={`compass ${mini ? 'mini' : ''}`} role="img" aria-label={`Qibla ${bearing.toFixed(1)} degrees clockwise from north${heading === undefined ? '' : `, device heading ${heading.toFixed(1)} degrees`}`}>
+    <g className="compass-rose" transform={`rotate(${-direction} 200 200)`}><circle cx="200" cy="200" r="178" fill="var(--surface)" stroke="var(--border)"/><circle cx="200" cy="200" r="144" fill="none" stroke="var(--border)"/>
     {Array.from({ length: 72 }, (_, i) => <line key={i} x1="200" y1={i % 6 === 0 ? 36 : 42} x2="200" y2={i % 6 === 0 ? 49 : 48} transform={`rotate(${i * 5} 200 200)`} stroke={i % 6 === 0 ? 'var(--muted)' : 'var(--border)'} strokeWidth={i % 6 === 0 ? 1.4 : 1} />)}
     {[['N', 200, 84], ['E', 320, 204], ['S', 200, 324], ['W', 80, 204]].map(([label, x, y]) => <text key={label} x={x} y={y} textAnchor="middle" dominantBaseline="middle" fill={label === 'N' ? 'var(--accent)' : 'var(--muted)'} fontSize="13" fontFamily="Manrope Variable">{label}</text>)}
     <circle cx="200" cy="200" r="105" fill="none" stroke="var(--border)" strokeDasharray="2 7"/><path d="M185 200h30M200 185v30" stroke="var(--border)"/>
-    <g transform={`rotate(${bearing} 200 200)`}><path d="M200 69 188 211 200 199 212 211Z" fill="var(--accent)"/><path d="M200 309 190 213 200 202 210 213Z" fill="var(--compass-tail)"/><circle cx="200" cy="69" r="17" fill="var(--accent)"/><path d="m192 64 8-3 8 3v11h-16Z" fill="#eee8d0"/><path d="M192 68h16" stroke="var(--accent)" strokeWidth="2"/></g>
-    <circle cx="200" cy="200" r="9" fill="var(--surface)" stroke="var(--accent)" strokeWidth="3"/></g>
+    <path d="M200 108 189 200 200 190 211 200Z" fill="#b55243"/><path d="M200 292 189 200 200 210 211 200Z" fill="var(--compass-tail)"/>
+    </g>
+    <g className="qibla-marker" data-bearing={bearing.toFixed(2)} data-relative-bearing={((bearing-direction+360)%360).toFixed(2)} transform={`rotate(${bearing-direction} 200 200)`}>
+      <path d="M200 94V170" stroke="var(--accent)" strokeWidth="2" strokeDasharray="4 5"/>
+      <g transform={`rotate(${direction-bearing} 200 61)`}><circle cx="200" cy="61" r="24" fill="var(--surface)" stroke="var(--accent)" strokeWidth="2"/>
+        <path d="m185 53 14-7 16 7v23h-30Z" fill="#252522"/><path d="m185 53 14 5 16-5-16-7Z" fill="#45453c"/><path d="m185 59 14 5 16-5v5l-16 5-14-5Z" fill="#d8b567"/><path d="M199 58v18" stroke="#a3864c" strokeWidth="1"/>
+      </g>
+    </g>
+    <circle cx="200" cy="200" r="9" fill="var(--surface)" stroke="var(--accent)" strokeWidth="3"/>
+    {!mini && <path className="device-heading-marker" d="m200 12-7 12h14Z" fill="var(--accent)"/>}
   </svg>;
 }

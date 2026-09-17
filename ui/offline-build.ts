@@ -23,6 +23,7 @@ export function offlineBuild(native = false): Plugin {
       extra['audio/README.md'] = readFileSync(new URL('../assets/audio/README.md', import.meta.url));
       extra['locations/README.md'] = readFileSync(new URL('../assets/locations/README.md', import.meta.url));
       extra['THIRD_PARTY.md'] = readFileSync(new URL('../THIRD_PARTY.md', import.meta.url));
+      extra['licenses/geomagnetism.txt'] = readFileSync(new URL('../node_modules/geomagnetism/LICENSE', import.meta.url));
       extra['icon.png'] = readFileSync(new URL('../assets/icon.png', import.meta.url));
       extra['manifest.webmanifest'] = JSON.stringify({ id: './', name: 'Athan — Prayer companion', short_name: 'Athan', description: 'Prayer times, calendars and Qibla, available offline.', start_url: './', scope: './', display: 'standalone', background_color: '#f6f7f2', theme_color: '#355e4d', icons: [{ src: 'icon.png', sizes: '256x256', type: 'image/png' }] });
       for (const [fileName, source] of Object.entries(extra)) this.emitFile({ type: 'asset', fileName, source });

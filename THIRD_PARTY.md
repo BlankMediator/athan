@@ -3,6 +3,7 @@
 This project uses pinned dependencies; their complete license texts remain in `node_modules` after installation.
 
 - `adhan` — Batoul Apps, MIT. [Repository and license](https://github.com/batoulapps/adhan-js). Astronomical calculations, prayer presets and Qibla bearing.
+- `geomagnetism` — Natural Atlas, Apache-2.0. Bundled NOAA World Magnetic Model data, including WMM2025, estimates magnetic declination offline. [Repository](https://github.com/naturalatlas/geomagnetism).
 - `zod` — MIT. Runtime configuration validation.
 - `commander` — MIT. Command-line argument handling.
 - `typescript` — Apache-2.0. Development compiler.

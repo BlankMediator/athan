@@ -10,7 +10,9 @@ The build uses relative URLs and a service worker scoped to its installation dir
 
 Local TLS certificates and private keys never belong in this repository or Pages build. GitHub provides the public site's HTTPS certificate. `.athan`, browser profiles, temporary files, logs and locally imported recordings are excluded from source publishing.
 
-## Use athan.abdullahhussain.com.au
+## Custom domain: athan.abdullahhussain.com.au
+
+The live address is **https://athan.abdullahhussain.com.au/**. DNS points to `blankmediator.github.io`, and GitHub has issued its certificate with HTTPS enforcement enabled. The steps below document the setup.
 
 1. Keep the working GitHub URL while DNS is being prepared.
 2. In this repository's **Settings → Pages → Custom domain**, enter `athan.abdullahhussain.com.au`.

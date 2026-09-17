@@ -1,6 +1,7 @@
 import { spawn } from 'node:child_process';
-import { statSync } from 'node:fs';
-import { resolve } from 'node:path';
+import { statSync, mkdtempSync, writeFileSync, unlinkSync, rmdirSync } from 'node:fs';
+import { resolve, join } from 'node:path';
+import { tmpdir } from 'node:os';
 
 // Fixed script; file names are supplied as JSON data on stdin, never interpolated into executable text.
 const PLAYER_SCRIPT = `
@@ -22,12 +23,21 @@ try {
   $player.Play()
   $clock.Restart()
   $limit = [Math]::Min($duration + 0.25, [double]$request.maxSeconds)
-  while ($clock.Elapsed.TotalSeconds -lt $limit) { Start-Sleep -Milliseconds 50 }
+  $paused = $false
+  while ($clock.Elapsed.TotalSeconds -lt $limit) {
+    if ($request.controlFile) {
+      $line = ''
+      try { $line = [IO.File]::ReadAllText([string]$request.controlFile) } catch [IO.IOException] { }
+      if ($line -eq 'pause' -and -not $paused) { $player.Pause(); $clock.Stop(); $paused = $true }
+      elseif ($line -eq 'resume' -and $paused) { $player.Play(); $clock.Start(); $paused = $false }
+    }
+    Start-Sleep -Milliseconds 50
+  }
   $player.Stop()
 } finally { $player.Close() }
 `;
 
-export interface PlayOptions { volume: number; maxSeconds: number; signal?: AbortSignal; }
+export interface PlayOptions { volume: number; maxSeconds: number; signal?: AbortSignal; onControl?: (pause: (paused: boolean) => void) => void; }
 export function validateAudio(path: string): void {
   const file = statSync(path);
   if (!file.isFile() || file.size === 0) throw new Error(`Audio file is missing or empty: ${path}`);
@@ -40,12 +50,15 @@ export function playFile(path: string, options: PlayOptions): Promise<string> {
   if (process.platform !== 'win32') throw new Error('Native playback currently requires Windows; calculation and dry runs work on other platforms.');
   if (options.signal?.aborted) return Promise.reject(new Error('Playback cancelled'));
   return new Promise((resolvePromise, reject) => {
+    const controlDirectory = options.onControl ? mkdtempSync(join(tmpdir(), 'athan-player-')) : null;
+    const controlFile = controlDirectory ? join(controlDirectory, 'state') : null;
+    if (controlFile) writeFileSync(controlFile, 'resume');
     const child = spawn('powershell.exe', ['-NoProfile', '-NonInteractive', '-STA', '-WindowStyle', 'Hidden',
       '-EncodedCommand', Buffer.from(PLAYER_SCRIPT, 'utf16le').toString('base64')],
       { windowsHide: true, stdio: ['pipe', 'pipe', 'pipe'] });
     let output = '', error = '';
     const stop = () => child.kill();
-    const timeout = setTimeout(stop, (options.maxSeconds + 25) * 1000);
+    let timeout = setTimeout(stop, (options.maxSeconds + 25) * 1000);
     options.signal?.addEventListener('abort', stop, { once: true });
     child.stdout.on('data', data => { output = (output + String(data)).slice(-4096); });
     child.stderr.on('data', data => { error = (error + String(data)).slice(-4096); });
@@ -53,10 +66,17 @@ export function playFile(path: string, options: PlayOptions): Promise<string> {
     child.once('error', reject);
     child.once('close', code => {
       clearTimeout(timeout); options.signal?.removeEventListener('abort', stop);
+      if (controlFile && controlDirectory) { try { unlinkSync(controlFile); rmdirSync(controlDirectory); } catch { /* Never remove anything beyond our two temporary paths. */ } }
       if (code === 0 && !options.signal?.aborted) resolvePromise(output.trim());
       else reject(new Error(options.signal?.aborted ? 'Playback cancelled' : `Audio playback failed (${code}): ${error}`));
     });
-    child.stdin.end(JSON.stringify({ file: resolve(path), volume: options.volume, maxSeconds: options.maxSeconds }));
+    child.stdin.end(JSON.stringify({ file: resolve(path), volume: options.volume, maxSeconds: options.maxSeconds, controlFile }));
+    if (options.onControl) options.onControl(paused => {
+      if (child.killed || child.exitCode !== null) return;
+      clearTimeout(timeout);
+      if (!paused) timeout = setTimeout(stop, (options.maxSeconds + 25) * 1000);
+      if (controlFile) writeFileSync(controlFile, paused ? 'pause' : 'resume');
+    });
   });
 }
 

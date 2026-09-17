@@ -3,6 +3,7 @@ const invoke = (method: string, ...args: unknown[]) => ipcRenderer.invoke('athan
 contextBridge.exposeInMainWorld('athan', Object.freeze({
   hadithStatus: () => invoke('hadithStatus'), hadithConnect: (key: string) => invoke('hadithConnect', key),
   hadithDownload: (id: string) => invoke('hadithDownload', id), hadithCancel: () => invoke('hadithCancel'),
+  hadithSaveAll: () => invoke('hadithSaveAll'),
   hadithRead: (id: string) => invoke('hadithRead', id), hadithRemove: (id: string) => invoke('hadithRemove', id),
   hadithSource: (id: string, number?: string) => invoke('hadithSource', id, number),
   snapshot: (date?: string) => invoke('snapshot', date),
@@ -15,6 +16,7 @@ contextBridge.exposeInMainWorld('athan', Object.freeze({
   preferences: (patch: unknown) => invoke('preferences', patch),
   running: (enabled: boolean) => invoke('running', enabled),
   dismissAlerts: () => invoke('dismissAlerts'),
+  pauseAudio: (paused: boolean) => invoke('pauseAudio', paused),
   chooseAudio: (selected?: string | null) => invoke('chooseAudio', selected), recordings: () => invoke('recordings'),
   preview: (path: string | null) => invoke('preview', path),
   deviceLocation: () => invoke('deviceLocation'),

@@ -32,6 +32,7 @@ export function validateCommunityPack(id:string, value:unknown):DownloadedHadith
 }
 export interface HadithStatus {
   connected: boolean; persistentKey: boolean;
+  savingAll?: boolean;
   downloading: { id: string; count: number; available: number } | null; error: string | null;
   collections: { id: string; count: number; total: number; available: number; complete: boolean; updated: string; source?:string }[];
 }
@@ -54,14 +55,26 @@ export class HadithLibrary {
   private controller: AbortController | null = null;
   private progress: HadithStatus['downloading'] = null;
   private error: string | null = null;
+  private loaded = new Map<string, DownloadedHadith>();
+  private loading = new Map<string, Promise<DownloadedHadith | null>>();
+  private summaries = new Map<string, HadithStatus['collections'][number]>();
+  private summaryReady: Promise<void> | undefined;
+  private savingAll = false;
+  private cancelled = false;
   constructor(private storage: HadithStorage, private fetcher: typeof fetch, private changed = () => {}, private pack?: (id:string,signal:AbortSignal)=>Promise<unknown>) {}
   async status(): Promise<HadithStatus> {
-    const collections: HadithStatus['collections'] = [];
-    for (const { id } of HADITH_COLLECTIONS) {
-      const data = await this.storage.read(id);
-      if (data) collections.push({ id, count: data.entries.length, total: data.total, available: data.available, complete: data.nextPage === null, updated: data.updated, source:data.source ?? 'official-api' });
-    }
-    return { connected: !!await this.storage.key(), persistentKey: this.storage.persistentKey, downloading: this.progress, error: this.error, collections };
+    this.summaryReady ??= (async () => {
+      for (const { id } of HADITH_COLLECTIONS) this.summarize(id, await this.storage.read(id));
+    })().catch(error => { this.summaryReady = undefined; throw error; });
+    await this.summaryReady;
+    return { connected: !!await this.storage.key(), persistentKey: this.storage.persistentKey, downloading: this.progress, savingAll: this.savingAll, error: this.error, collections: [...this.summaries.values()] };
+  }
+  private summarize(id: string, data: DownloadedHadith | null) {
+    if (!data) { this.summaries.delete(id); return; }
+    this.summaries.set(id, { id, count: data.entries.length, total: data.total, available: data.available, complete: data.nextPage === null, updated: data.updated, source: data.source ?? 'official-api' });
+  }
+  private async save(id: string, data: DownloadedHadith | null) {
+    await this.status(); await this.storage.write(id, data); this.summarize(id, data); this.loaded.delete(id);
   }
   async connect(key: string) {
     if (this.controller) throw new Error('Cancel the current download before changing the connection.');
@@ -69,14 +82,44 @@ export class HadithLibrary {
     if (value) await this.request('/collections?limit=1&page=1', value, AbortSignal.timeout(20000));
     await this.storage.key(value); this.error = null; this.changed();
   }
-  async read(id: string) { return this.storage.read(collectionId.parse(id)); }
+  async read(id: string): Promise<DownloadedHadith | null> {
+    collectionId.parse(id);
+    if (this.loaded.has(id)) return this.loaded.get(id)!;
+    if (this.loading.has(id)) return this.loading.get(id)!;
+    const request = (async () => {
+      const saved = await this.storage.read(id);
+      const data = saved ?? (this.pack ? validateCommunityPack(id, await this.pack(id, AbortSignal.timeout(60000))) : null);
+      if (data) {
+        this.loaded.set(id, data);
+        while (this.loaded.size > 2) this.loaded.delete(this.loaded.keys().next().value!);
+      }
+      return data;
+    })().finally(() => this.loading.delete(id));
+    this.loading.set(id, request); return request;
+  }
   async remove(id: string) {
     collectionId.parse(id);
     if (this.progress?.id === id) throw new Error('Cancel this download before removing it.');
-    await this.storage.write(id, null); this.changed();
+    await this.save(id, null); this.loaded.delete(id); this.changed();
   }
-  cancel() { this.controller?.abort(); }
+  cancel() { this.cancelled = true; this.controller?.abort(); }
+  async saveAll() {
+    if (!this.pack) throw new Error('Offline collection packs are unavailable.');
+    if (this.savingAll || this.controller) throw new Error('Offline saving is already running.');
+    this.savingAll = true; this.cancelled = false; this.error = null; this.changed();
+    try {
+      await this.status();
+      for (const collection of HADITH_COLLECTIONS) {
+        if (this.cancelled) break;
+        const saved = this.summaries.get(collection.id);
+        if (saved?.complete && saved.source === 'community' && saved.count === collection.count) continue;
+        await this.downloadPack(collection.id);
+        if (this.error) throw new Error(this.error);
+      }
+    } finally { this.savingAll = false; this.changed(); }
+  }
   async download(id: string) {
+    if (this.savingAll) throw new Error('Wait for offline saving to finish.');
     if(this.pack)return this.downloadPack(id);
     return this.downloadOfficial(id);
   }
@@ -87,7 +130,7 @@ export class HadithLibrary {
     try {
       const data=validateCommunityPack(id,await this.pack!(id,controller.signal));controller.signal.throwIfAborted();
       // Atomic replacement: cancellation or a bad pack never removes an existing download.
-      await this.storage.write(id,data);
+      await this.save(id,data); this.loaded.delete(id);
     } catch(error) {if(!controller.signal.aborted)this.error=error instanceof z.ZodError?'The collection pack failed validation. Existing readings are unchanged.':String(error).replace(/^Error: /,'');}
     finally {this.controller=null;this.progress=null;this.changed();}
   }
@@ -114,7 +157,7 @@ export class HadithLibrary {
         for (const row of response.data) { if (row.collection !== id) throw new Error('The API returned a different collection.'); entries.set(row.hadithNumber, row); }
         if (entries.size > 100000) throw new Error('Collection download exceeds the supported size.');
         data = { ...data, entries: [...entries.values()], nextPage: response.next, updated: new Date().toISOString() };
-        await this.storage.write(id, data);
+        await this.save(id, data);
         this.progress = { id, count: entries.size, available: data.available }; this.changed();
         // Sequential requests keep load modest and make cancellation responsive.
         if (data.nextPage !== null) await new Promise<void>(resolve => { const finish = () => { clearTimeout(timer); controller.signal.removeEventListener('abort', finish); resolve(); }; const timer = setTimeout(finish, 250); controller.signal.addEventListener('abort', finish, { once: true }); });

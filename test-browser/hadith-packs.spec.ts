@@ -1,11 +1,12 @@
 import { test, expect } from '@playwright/test';
 
-test('public collections download without a key, expose chapters and source references, and survive offline reload',async({page,context})=>{
+test('collections open from the server without installation and one offline option saves every collection',async({page,context})=>{
+  test.setTimeout(120000);
   await page.goto('/');await expect(page.locator('.prayer-card')).toHaveCount(6);
   await page.getByRole('navigation').getByRole('button',{name:'Hadith library',exact:true}).click();
   await expect(page.locator('.hadith-collection')).toHaveCount(17);
   expect((await page.evaluate(()=>window.athan.hadithStatus())).connected).toBe(false);
-  await page.locator('.hadith-collection').first().getByRole('button',{name:'Download',exact:true}).click();
+  await expect(page.getByRole('button',{name:'Download',exact:true})).toHaveCount(0);
   await expect(page.locator('.hadith-reader')).toContainText('intentions',{timeout:20000});
   await expect(page.locator('.hadith-reader .hadith-references')).toContainText('Book 1, Hadith 1');
   await page.getByLabel('Hadith book',{exact:true}).selectOption('1');
@@ -13,10 +14,16 @@ test('public collections download without a key, expose chapters and source refe
   expect(await chapters.locator('option').count()).toBeGreaterThan(2);
   await chapters.selectOption({index:1});
   await expect(page.locator('.hadith-reader')).toContainText('intentions');
+  expect((await page.evaluate(()=>window.athan.hadithStatus())).collections).toHaveLength(0);
+  await page.locator('.app-toolbar').getByRole('button',{name:'Save everything offline',exact:true}).click();
+  await expect(page.locator('.app-toolbar')).toContainText('Everything saved offline',{timeout:90000});
+  expect((await page.evaluate(()=>window.athan.hadithStatus())).collections).toHaveLength(17);
   await page.evaluate(()=>navigator.serviceWorker.ready);
   await context.setOffline(true);await page.reload();await expect(page.locator('.prayer-card')).toHaveCount(6);
   await page.getByRole('navigation').getByRole('button',{name:'Hadith library',exact:true}).click();
   await expect(page.locator('.hadith-reader')).toContainText('intentions');
+  const unopened = await page.evaluate(()=>window.athan.hadithRead('shahwaliullah40'));
+  expect(unopened?.entries.length).toBe(40);
   await page.getByLabel('Search hadith').fill('no matching fixture');await expect(page.locator('.hadith-reader')).toHaveText('No matching readings');
   await page.getByLabel('Search hadith').fill('');
   await page.locator('.language-picker select').selectOption('ar');
@@ -24,4 +31,20 @@ test('public collections download without a key, expose chapters and source refe
   await page.screenshot({path:'docs/screenshots/hadith-public-arabic.png',animations:'disabled'});
   await page.locator('.language-picker select').selectOption('en');
   await page.screenshot({path:'docs/screenshots/hadith-public-english.png',animations:'disabled'});
+});
+
+test('offline save failures keep completed collections and retry only the remaining library', async ({ page, context }) => {
+  test.setTimeout(120000);
+  let bukhariRequests = 0;
+  page.on('request', request => { if (/\/hadith\/bukhari-.*\.gz$/.test(request.url())) bukhariRequests++; });
+  await context.route('**/hadith/muslim-*.json.gz', route => route.abort());
+  await page.goto('/'); await expect(page.locator('.offline-status summary')).toHaveText('Available offline');
+  const toolbar = page.locator('.app-toolbar');
+  await toolbar.getByRole('button', { name: 'Save everything offline', exact: true }).click();
+  await expect(toolbar.getByRole('alert')).toBeVisible();
+  expect((await page.evaluate(() => window.athan.hadithStatus())).collections.map(c => c.id)).toEqual(['bukhari']);
+  await context.unrouteAll();
+  await toolbar.getByRole('button', { name: 'Save everything offline', exact: true }).click();
+  await expect(toolbar).toContainText('Everything saved offline', { timeout: 90000 });
+  expect(bukhariRequests).toBe(1);
 });

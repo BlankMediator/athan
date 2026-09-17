@@ -23,7 +23,7 @@ export interface Snapshot {
   next: { prayer: string; at: string; date: string; secondsRemaining: number } | null;
   preferences: Preferences; startupEnabled: boolean;
   readingAlerts: ReadingAlert[]; readingError: string | null;
-  runtime: { status: 'paused' | 'running' | 'external'; error: string | null; playing: string | null; alerts: { id: string; title: string }[] };
+  runtime: { status: 'paused' | 'running' | 'external'; error: string | null; playing: string | null; audioPaused?: boolean; audioLoading?: boolean; alerts: { id: string; title: string }[] };
   history: { id: string; scheduled: string; claimed: string; status: string; detail: string }[];
   observances: { name: string; date: string; estimated: boolean }[];
 }
@@ -32,6 +32,7 @@ export interface DesktopAPI {
   hadithStatus(): Promise<HadithStatus>;
   hadithConnect(key: string): Promise<void>;
   hadithDownload(id: string): Promise<void>;
+  hadithSaveAll(): Promise<void>;
   hadithCancel(): Promise<void>;
   hadithRemove(id: string): Promise<void>;
   hadithRead(id: string): Promise<DownloadedHadith | null>;
@@ -46,6 +47,7 @@ export interface DesktopAPI {
   preferences(patch: Partial<Preferences>): Promise<void>;
   running(enabled: boolean): Promise<void>;
   dismissAlerts(): Promise<void>;
+  pauseAudio(paused: boolean): Promise<void>;
   chooseAudio(selected?: string | null): Promise<string | null>;
   recordings(): Promise<Recording[]>;
   deviceLocation(): Promise<DeviceLocation>;

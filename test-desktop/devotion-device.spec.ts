@@ -131,7 +131,8 @@ test('device coordinates are reviewed before saving and compass handles live, ma
   await app.evaluate(() => { (globalThis as any).devices.compass = 'magnetic'; });
   await page.getByRole('button', { name: 'Use device compass' }).click();
   await expect(page.locator('.device-compass-controls')).toContainText('Magnetic heading: 34.0°');
-  await expect(page.locator('.compass>g').first()).toHaveAttribute('transform', 'rotate(0 200 200)');
+  await expect(page.locator('.compass>g').first()).not.toHaveAttribute('transform', 'rotate(0 200 200)');
+  await expect(page.locator('.device-compass-controls')).toContainText('estimated true north');
   const kills = await app.evaluate(() => (globalThis as any).devices.killed);
   await page.getByRole('navigation').getByRole('button', { name: 'Today', exact: true }).click();
   expect(await app.evaluate(() => (globalThis as any).devices.killed)).toBeGreaterThan(kills);

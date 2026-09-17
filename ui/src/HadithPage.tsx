@@ -3,19 +3,22 @@ import { BookOpen, Download, ExternalLink, LoaderCircle, Search, Trash2, X } fro
 import { HADITH_COLLECTIONS, narrationId, narrationText, type DownloadedHadith, type HadithStatus } from '../../src/hadith-library.js';
 import { getLanguage, tr } from './i18n/runtime';
 import { Panel, useApp } from './shared';
+import { OfflineLibraryControl } from './OfflineLibraryControl';
+import { isBrowser } from './browser/offline';
+import { isMobile } from './platform';
 
 const normalize = (text:string) => text.normalize('NFKD').replace(/[\p{M}\u0640]/gu,'').toLowerCase();
 export function HadithPage() {
   const { act } = useApp();
-  const [revision,setRevision]=useState(0);
+  const [revision,setRevision]=useState(0),[loading,setLoading]=useState(true);
   const [status,setStatus]=useState<HadithStatus|null>(null),[error,setError]=useState('');
   const [selected,setSelected]=useState('bukhari'),[data,setData]=useState<DownloadedHadith|null>(null);
   const [book,setBook]=useState('all'),[chapter,setChapter]=useState('all'),[query,setQuery]=useState(''),[number,setNumber]=useState(''),[limit,setLimit]=useState(100);
   const arabic=['ar','ur'].includes(getLanguage());
   useEffect(()=>{let live=true;const update=()=>window.athan.hadithStatus().then(s=>{if(live)setStatus(s);}).catch(e=>{if(live)setError(String(e));});void update();const timer=setInterval(()=>void update(),1500);return()=>{live=false;clearInterval(timer);};},[]);
   const saved=status?.collections.find(c=>c.id===selected);
-  useEffect(()=>{let live=true;void window.athan.hadithRead(selected).then(d=>{if(live)setData(d);}).catch(e=>{if(live)setError(String(e));});return()=>{live=false;};},[selected,saved?.updated,saved?.source,revision]);
-  const choose=(id:string)=>{setSelected(id);setBook('all');setChapter('all');setQuery('');setNumber('');setData(null);setLimit(100);};
+  useEffect(()=>{let live=true;setLoading(true);setError('');void window.athan.hadithRead(selected).then(d=>{if(live)setData(d);}).catch(e=>{if(live)setError('This collection could not be loaded. Reconnect to read it, or use a saved offline collection.');}).finally(()=>{if(live)setLoading(false);});return()=>{live=false;};},[selected,saved?.updated,saved?.source,revision]);
+  const choose=(id:string)=>{setSelected(id);setBook('all');setChapter('all');setQuery('');setNumber('');setData(null);setLimit(100);setRevision(v=>v+1);};
   const entries=useMemo(()=>data?.entries.filter(e=>(book==='all'||e.bookNumber===book)&&(chapter==='all'||(chapter==='unmapped'?!e.chapterId:e.chapterId===chapter))&&(!query||normalize(`${e.hadithNumber} ${e.reference??''} ${e.references?.map(r=>r.text).join(' ')} ${e.narrator??''} ${e.hadith.map(t=>`${t.chapterTitle} ${narrationText(t.body)} ${t.grades.map(g=>g.grade+' '+g.graded_by).join(' ')}`).join(' ')}`).includes(normalize(query))))??[],[data,book,chapter,query]);
   const current=entries.find(e=>narrationId(e)===number)??entries[0];
   const books=data?.books??[...new Set(data?.entries.map(e=>e.bookNumber))].map(number=>({number,name:tr('Book {0}',number),arabic:'',chapters:[]}));
@@ -24,9 +27,10 @@ export function HadithPage() {
   const chapters=selectedBook?.chapters.filter(c=>data?.entries.some(e=>e.bookNumber===book&&e.chapterId===c.id))??[];
   const collection=HADITH_COLLECTIONS.find(c=>c.id===selected)!;
   return <>
-    <Panel title="Your hadith library" subtitle="Choose the collections you would like to keep on this device.">
-      <p className="devotion-note">Collection packs combine public Sunnah.com datasets. No API key is needed. Downloads stay on this device for offline reading.</p>
+    <Panel title="Your hadith library" subtitle="Choose a collection and start reading.">
+      <p className="devotion-note">{isBrowser && !isMobile ? 'Collections open directly from the server as you read. Use Save everything offline to keep the complete library on this browser.' : 'Open any collection to read and search it. The complete library is included on this device.'}</p>
       <p className="devotion-note">Arabic and English source wording is preserved. Missing translations, chapter mappings and grades remain marked as unavailable.</p>
+      <OfflineLibraryControl />
       <details className="hadith-sources"><summary>Sources and coverage</summary><p className="devotion-note">Records are matched by their text and references, never by row position. Musnad Ahmad is partial in the source catalogue.</p>
         <div className="export-actions">{[['cheese','CheeseWithSauce'],['sehal','Sehal Hussain'],['jaguar','Open Hadith Data']].map(([id,name])=><button key={id} className="text-button" onClick={()=>void act(()=>window.athan.hadithSource(`source:${id}`))}>{name}<ExternalLink size={13}/></button>)}</div>
       </details>
@@ -37,10 +41,13 @@ export function HadithPage() {
       <button className="collection-title" onClick={()=>choose(c.id)}><BookOpen size={21}/><h3>{arabic?c.arabic:c.name}</h3></button>
       <p>{tr('{0} narrations · {1} MB',c.count,(c.bytes/1e6).toFixed(1))}</p><small>{c.partial?'Partial source collection':'Source catalogue snapshot'}</small>
       {installed&&<p className="installed-coverage">{tr('{0} saved on this device',installed.count)}{installed.source!=='community'&&<small>Legacy API download · refresh to use the collection pack</small>}</p>}
-      <div><button className="text-button" disabled={!!status?.downloading} onClick={()=>{choose(c.id);setError('');void window.athan.hadithDownload(c.id).then(async()=>{setStatus(await window.athan.hadithStatus());setRevision(v=>v+1);}).catch(e=>setError(String(e)));}}><Download size={14}/>{installed?'Refresh':'Download'}</button><button className="text-button" onClick={()=>void act(()=>window.athan.hadithSource(c.id))}>Online<ExternalLink size={13}/></button>{installed&&<button className="icon-button" aria-label={`Remove downloaded ${c.name}`} disabled={!!status?.downloading} onClick={()=>void act(async()=>{await window.athan.hadithRemove(c.id);setStatus(await window.athan.hadithStatus());if(selected===c.id)setData(null);})}><Trash2 size={14}/></button>}</div>
+      <div><button className="text-button" onClick={()=>choose(c.id)}>Read collection<BookOpen size={14}/></button><button className="text-button" onClick={()=>void act(()=>window.athan.hadithSource(c.id))}>Source<ExternalLink size={13}/></button></div>
+      <small>{installed || !isBrowser || isMobile ? 'Available offline' : 'Read from server'}</small>
     </article>;})}</div>
-    <Panel title={arabic?collection.arabic:collection.name} subtitle={data?'Browse by book and chapter, or search wording, grades and references.':'Download this collection to read and search it offline, or open it online.'}>
-      {data&&<>
+    <Panel title={arabic?collection.arabic:collection.name} subtitle="Browse by book and chapter, or search wording, grades and references.">
+      {loading && <p className="hadith-loading" role="status"><LoaderCircle size={18} className="spin"/> Opening collection…</p>}
+      {!loading && !data && <button className="button secondary" onClick={()=>setRevision(v=>v+1)}>Try again</button>}
+      {!loading && data&&<>
         {data.collection&&<p className="devotion-note" data-source-text dir="auto">{arabic?data.collection.author_ar:data.collection.author_en}</p>}
         <div className="reading-filter hadith-filters"><label className="reading-search"><Search size={16}/><input aria-label="Search hadith" placeholder="Search wording, grade or reference…" value={query} onChange={e=>{setQuery(e.target.value);setLimit(100);}}/></label>
           <select aria-label="Hadith book" value={book} onChange={e=>{setBook(e.target.value);setChapter('all');setNumber('');setLimit(100);}}><option value="all">All books</option>{books.map(b=><option key={b.number} value={b.number} data-source-text dir="auto">{b.number}. {named(b)}</option>)}</select>

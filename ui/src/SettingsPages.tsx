@@ -8,6 +8,7 @@ import { DeviceLocationPicker } from './DeviceTools';
 import { DailyReminderSettings } from './DevotionPage';
 import { isBrowser } from './browser/offline';
 import { isMobile } from './platform';
+import defaultAudio from '../../assets/audio/defaults.json';
 import { Empty, Field, filename, labels, longDate, methods, Modal, Panel, PrayerIcon, prayers, SaveBar, Switch, time, times, useApp } from './shared';
 
 function RecordingPicker({ value, onChange, label }: { value: string | null; onChange: (file: string | null) => void; label: string }) {
@@ -17,12 +18,19 @@ function RecordingPicker({ value, onChange, label }: { value: string | null; onC
 }
 
 export function SoundsPage() {
-  const { snapshot: s, save, busy } = useApp();
+  const { snapshot: s, save, busy, recordings } = useApp();
   const [draft, setDraft] = useState(() => structuredClone(s.config));
   useEffect(() => { setDraft(structuredClone(s.config)); }, [JSON.stringify(s.config.audio)]);
   const update = (edit: (c: Config) => void) => setDraft(c => { const next = structuredClone(c); edit(next); return next; });
   const commit = () => void save({ ...s.config, audio: draft.audio });
-  return <><div className="sound-overview"><div className="sound-emblem"><Headphones size={32} strokeWidth={1.2} /></div><div><h2>A call that feels like home.</h2><p>Your recordings stay on your computer. Preview any voice for up to 20 seconds.</p></div><Switch label="Enable prayer audio" checked={draft.audio.enabled} onChange={value => update(c => { c.audio.enabled = value; })} /></div>
+  const restoreDefaults = () => update(c => {
+    const path = (id: string) => { const item = defaultAudio.recordings.find(r => r.id === id)!; return recordings.find(r => r.path === id || r.path.replaceAll('\\', '/').endsWith(item.path))?.path ?? null; };
+    for (const prayer of prayers) c.audio.prayers[prayer] = { enabled: true, file: path(defaultAudio.defaults[prayer]) };
+    c.audio.duaFile = path(defaultAudio.defaults.dua); c.audio.startupFile = path(defaultAudio.defaults.startup);
+    c.audio.enabled = true; if (c.audio.volume === 0) c.audio.volume = 70;
+  });
+  return <><div className="sound-overview"><div className="sound-emblem"><Headphones size={32} strokeWidth={1.2} /></div><div><h2>A call that feels like home.</h2><p>Play a full recording. Pause, resume or stop it from the audio player on any page.</p></div><Switch label="Enable prayer audio" checked={draft.audio.enabled} onChange={value => update(c => { c.audio.enabled = value; })} /></div>
+    <div className="page-toolbar"><p>Choose a recording for each enabled prayer.</p><button type="button" className="button secondary" disabled={!recordings.length} onClick={restoreDefaults}>Use default recordings</button></div>
     <Panel title="The five daily calls" subtitle="A different voice for every prayer, or the familiar sound of one."><div className="sound-list">{prayers.map(prayer => <div className="sound-row" key={prayer}><span className="row-icon"><PrayerIcon prayer={prayer} /></span><div className="sound-name"><h4>{labels[prayer]}</h4><small>{prayer === 'fajr' ? 'The first light' : prayer === 'isha' ? 'As the day settles' : 'A moment to return'}</small></div><RecordingPicker label={`${labels[prayer]} recording`} value={draft.audio.prayers[prayer].file} onChange={file => update(c => { c.audio.prayers[prayer].file = file; })} /><Switch label={`${labels[prayer]} sound`} checked={draft.audio.prayers[prayer].enabled} onChange={enabled => update(c => { c.audio.prayers[prayer].enabled = enabled; })} /></div>)}</div></Panel>
     <div className="two-columns"><Panel title="A little before. A little after." subtitle="Optional recordings to complete your routine."><div className="stacked-field"><span>Dua after Athan</span><RecordingPicker label="Dua recording" value={draft.audio.duaFile} onChange={file => update(c => { c.audio.duaFile = file; })} /></div></Panel><Panel title="Just the right volume" subtitle="Previews use your saved volume."><div className="volume-value"><Volume2 size={24} /><strong>{draft.audio.volume}<small>%</small></strong></div><input aria-label="Athan volume" type="range" min="0" max="100" value={draft.audio.volume} onChange={e => update(c => { c.audio.volume = +e.target.value; })} /><div className="range-labels"><span>Quiet</span><span>Full volume</span></div><p className="fine-print">Your device volume also affects playback.</p></Panel></div>
     <SaveBar dirty={JSON.stringify(draft.audio) !== JSON.stringify(s.config.audio)} reset={() => setDraft(structuredClone(s.config))} save={commit} />

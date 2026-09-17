@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { Compass as CompassIcon, LocateFixed, LoaderCircle, Square } from 'lucide-react';
 import type { Location } from '../../src/config.js';
 import type { DeviceLocation } from '../../src/desktop/types.js';
@@ -6,6 +6,7 @@ import type { CompassState } from '../../src/device.js';
 import { Panel } from './shared';
 import { isBrowser } from './browser/offline';
 import { isMobile } from './platform';
+import { magneticDeclination, normalizeHeading } from '../../src/compass.js';
 
 export function DeviceLocationPicker({ choose }: { choose: (location: Location) => void }) {
   const [busy, setBusy] = useState(false), [result, setResult] = useState<DeviceLocation | null>(null), [error, setError] = useState('');
@@ -23,7 +24,7 @@ export function DeviceLocationPicker({ choose }: { choose: (location: Location) 
   </Panel>;
 }
 
-export function useDeviceCompass() {
+export function useDeviceCompass(location: Location) {
   const [state, setState] = useState<CompassState>({ status: 'off' });
   const [enabled, setEnabled] = useState(false);
   useEffect(() => {
@@ -34,13 +35,15 @@ export function useDeviceCompass() {
   const [clock, setClock] = useState(Date.now());
   useEffect(() => { if (!enabled) return; const timer = setInterval(() => setClock(Date.now()), 1000); return () => clearInterval(timer); }, [enabled]);
   const fresh = state.status === 'reading' && !!state.timestamp && clock - +new Date(state.timestamp) < 5000;
-  const heading = fresh && state.trueNorth != null ? state.trueNorth : undefined;
+  const declination = useMemo(() => magneticDeclination(location.latitude, location.longitude), [location.latitude, location.longitude]);
+  const estimated = state.trueNorth == null;
+  const heading = !fresh ? undefined : state.trueNorth ?? (state.magneticNorth == null ? undefined : normalizeHeading(state.magneticNorth + (declination ?? 0)));
   const toggle = async () => {
     const next = !enabled; setEnabled(next); setState(next ? { status: 'waiting' } : { status: 'off' });
     try { await window.athan.compass(next); }
     catch { setEnabled(false); setState({ status: 'error', message: 'Could not connect to the device compass.' }); }
   };
-  return { heading, controls: <div className="device-compass-controls"><button type="button" className="button secondary" onClick={() => void toggle()}>{enabled ? <Square size={14} /> : <CompassIcon size={16} />}{enabled ? 'Stop device compass' : 'Use device compass'}</button><div role="status">
-    {heading !== undefined ? <><strong>Live heading · {heading.toFixed(1)}° true north</strong><p>Point the device's normal top edge ahead. Keep it flat and away from magnetic objects. Accuracy: {state.accuracy ?? 'unknown'}.</p></> : state.status === 'reading' ? <p>{fresh ? `Magnetic heading: ${state.magneticNorth?.toFixed(1)}°. True north is unavailable, so the Qibla dial stays fixed to true north.` : 'Waiting for a fresh compass reading. The dial shows the calculated true-north bearing.'}</p> : <p>{state.message ?? (enabled ? 'Looking for a compass sensor…' : 'Connect a supported compass sensor to orient the dial as your device turns.')}</p>}
+  return { heading, approximate: estimated && declination === undefined, button: <button type="button" className="button secondary compass-toggle" onClick={() => void toggle()}>{enabled ? <Square size={14} /> : <CompassIcon size={16} />}{enabled ? 'Stop device compass' : 'Use device compass'}</button>, controls: <div className="device-compass-controls"><div role="status">
+    {heading !== undefined ? <><strong>Live heading · {heading.toFixed(1)}° {estimated ? declination === undefined ? 'magnetic north' : 'estimated true north' : 'true north'}</strong><p>Point the top of the screen ahead. Keep your device flat and away from magnetic objects. Accuracy: {state.accuracy ?? 'unknown'}.</p>{estimated && <p>{declination === undefined ? 'Magnetic correction is unavailable; the Kaaba direction is approximate.' : `Magnetic heading: ${state.magneticNorth?.toFixed(1)}°. Corrected for your saved location using the World Magnetic Model.`}</p>}</> : state.status === 'reading' ? <p>Waiting for a fresh compass reading. The dial shows the calculated true-north bearing.</p> : <p>{state.message ?? (enabled ? 'Looking for a compass sensor…' : 'Use device compass to follow your heading. Turn until the Kaaba reaches the marker at the top.')}</p>}
   </div></div> };
 }

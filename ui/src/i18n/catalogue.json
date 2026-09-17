@@ -4387,5 +4387,117 @@
     "Yüksek enlemlerde bazı vakitler yoktur veya tahminidir. Kullanmadan önce yerel takvimi kontrol edin.",
     "Sebagian waktu tidak tersedia atau berupa perkiraan di lintang tinggi. Periksa jadwal setempat sebelum mengandalkannya.",
     "Certaines heures sont indisponibles ou estimées aux hautes latitudes. Vérifiez votre calendrier local avant de vous y fier."
+  ],
+  "Collapse navigation": [
+    "طيّ القائمة",
+    "مینو سمیٹیں",
+    "Menüyü daralt",
+    "Ciutkan menu",
+    "Réduire le menu"
+  ],
+  "Expand navigation": [
+    "فتح القائمة",
+    "مینو کھولیں",
+    "Menüyü aç",
+    "Buka menu",
+    "Développer le menu"
+  ],
+  "Save everything offline": [
+    "حفظ الكل دون اتصال",
+    "سب کچھ آف لائن محفوظ کریں",
+    "Her şeyi çevrimdışı kaydet",
+    "Simpan semua untuk luring",
+    "Tout enregistrer hors ligne"
+  ],
+  "Everything saved offline": [
+    "تم حفظ الكل دون اتصال",
+    "سب کچھ آف لائن محفوظ ہے",
+    "Her şey çevrimdışı kaydedildi",
+    "Semua tersimpan luring",
+    "Tout est enregistré hors ligne"
+  ],
+  "Cancel offline saving": [
+    "إلغاء الحفظ دون اتصال",
+    "آف لائن محفوظ کرنا منسوخ کریں",
+    "Çevrimdışı kaydetmeyi iptal et",
+    "Batalkan penyimpanan luring",
+    "Annuler l’enregistrement hors ligne"
+  ],
+  "Pause audio": [
+    "إيقاف الصوت مؤقتًا",
+    "آواز روکیں",
+    "Sesi duraklat",
+    "Jeda audio",
+    "Mettre en pause"
+  ],
+  "Resume audio": [
+    "استئناف الصوت",
+    "آواز جاری کریں",
+    "Sesi sürdür",
+    "Lanjutkan audio",
+    "Reprendre la lecture"
+  ],
+  "Audio paused": [
+    "الصوت متوقف مؤقتًا",
+    "آواز رکی ہوئی ہے",
+    "Ses duraklatıldı",
+    "Audio dijeda",
+    "Lecture en pause"
+  ],
+  "Now playing": [
+    "يُشغّل الآن",
+    "اب چل رہا ہے",
+    "Şimdi çalıyor",
+    "Sedang diputar",
+    "Lecture en cours"
+  ],
+  "Loading recording…": [
+    "جارٍ تحميل التسجيل…",
+    "ریکارڈنگ لوڈ ہو رہی ہے…",
+    "Kayıt yükleniyor…",
+    "Memuat rekaman…",
+    "Chargement de l’enregistrement…"
+  ],
+  "Audio player": [
+    "مشغّل الصوت",
+    "آڈیو پلیئر",
+    "Ses oynatıcı",
+    "Pemutar audio",
+    "Lecteur audio"
+  ],
+  "Read collection": [
+    "قراءة المجموعة",
+    "مجموعہ پڑھیں",
+    "Koleksiyonu oku",
+    "Baca koleksi",
+    "Lire le recueil"
+  ],
+  "Read from server": [
+    "قراءة من الخادم",
+    "سرور سے پڑھیں",
+    "Sunucudan oku",
+    "Baca dari server",
+    "Lire depuis le serveur"
+  ],
+  "Opening collection…": [
+    "جارٍ فتح المجموعة…",
+    "مجموعہ کھل رہا ہے…",
+    "Koleksiyon açılıyor…",
+    "Membuka koleksi…",
+    "Ouverture du recueil…"
+  ],
+  "You are facing the Qibla": [
+    "أنت متجه نحو القبلة",
+    "آپ قبلہ رخ ہیں",
+    "Kıbleye dönüksünüz",
+    "Anda menghadap kiblat",
+    "Vous faites face à la qibla"
+  ],
+  "Use default recordings": [
+    "استخدام التسجيلات الافتراضية",
+    "پہلے سے موجود ریکارڈنگ استعمال کریں",
+    "Varsayılan kayıtları kullan",
+    "Gunakan rekaman bawaan",
+    "Utiliser les enregistrements par défaut"
   ]
 }

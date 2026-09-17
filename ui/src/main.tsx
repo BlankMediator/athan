@@ -8,6 +8,7 @@ import '@fontsource/cormorant-garamond/600.css';
 import './browser.css';
 import './styles.css';
 import './mobile.css';
+import './interaction.css';
 import { isMobile } from './platform';
 import { App } from './App';
 import { isBrowser, prepareOffline } from './browser/offline';
