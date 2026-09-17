@@ -1,0 +1,10 @@
+{
+  "repository": "https://github.com/majmoo-io/hisnu-al-muslim-data",
+  "revision": "8786672f2a89115f13d5a27765066378993bd358",
+  "file": "packages/helpers/scripts/sunnah-com-hisnu-al-muslim.html",
+  "archiveSha256": "ccec37548cb3eeebb0cfec9473c065ef957908f84f6a1806794810fa39dba83b",
+  "source": "https://sunnah.com/hisn",
+  "licence": "AGPL-3.0",
+  "chapters": 132,
+  "entries": 268
+}

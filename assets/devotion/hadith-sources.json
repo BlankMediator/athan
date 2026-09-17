@@ -1,0 +1,92 @@
+{
+  "source": "https://sunnah.com",
+  "permission": "https://sunnah.com/about#reproduction",
+  "scope": "Twelve individual narrations for reading and personal study; not a book or collection download.",
+  "textPolicy": "Original Arabic and published English wording, including narration context; only HTML markup and whitespace are normalized.",
+  "entries": [
+    {
+      "id": "bukhari-1",
+      "url": "https://sunnah.com/bukhari:1",
+      "htmlSha256": "7c375638ed6256ab7833e745ba42aa6c719c6a9cc6537947894594badd160c9f",
+      "arabicSha256": "506e037c20bff0f6992e68b13f6837a51a6c0352a31ba86fe50eaa78b6e3ff23",
+      "englishSha256": "9821da061f9cda4c20bf5a2e5d0860cea2fe2d50bdb7f787c3a022ec03612fbb"
+    },
+    {
+      "id": "muslim-2699a",
+      "url": "https://sunnah.com/muslim:2699a",
+      "htmlSha256": "42f3202decb2b674c50f2038aa0236220529c928f36efdfbd6c39609a21d5ac4",
+      "arabicSha256": "97684dbbd75ee36c535a1c11311704257dd95c2dcc3bd3187f2a4006f2a0d137",
+      "englishSha256": "78841f2159fb5356d422969979f17592a13b304d1d2fd3f94229070eae526434"
+    },
+    {
+      "id": "bukhari-6018",
+      "url": "https://sunnah.com/bukhari:6018",
+      "htmlSha256": "decb281375308e5eb65482c24ae233d40a03538ebc682469ea1bd6c832eec075",
+      "arabicSha256": "ed6e2f3539c0e4cfe8d1654466284fe2715ea9778a30b2c4027f8703bdc64ea8",
+      "englishSha256": "11835538cbe40f3675f205f4cc2126aa26ca1b8dc9d8a666687932aa5bf1e5c1"
+    },
+    {
+      "id": "muslim-223",
+      "url": "https://sunnah.com/muslim:223",
+      "htmlSha256": "5a55f58cda3093491b0f92cf8087a1109354b1895892041793e44c47a814413a",
+      "arabicSha256": "8c6abef09c069f1c262a483dc7f05c0110d3aadbaecc439a886eeb5a850e5c04",
+      "englishSha256": "a554ac0ca49b076b21433931794d6b42930d14fb9ac00df24159cb9016ae5450"
+    },
+    {
+      "id": "bukhari-13",
+      "url": "https://sunnah.com/bukhari:13",
+      "htmlSha256": "715ae4fa8db821f91a4f9b65125bbc3434b9e3d577321524b35b20d96221b219",
+      "arabicSha256": "9483cf140f1467227353de37b285950613a4896ab005441317ec026e8150b002",
+      "englishSha256": "5579d8b8c53a49fc7e263500b79562f4937553008e4b6db0838397b426f66bdb"
+    },
+    {
+      "id": "bukhari-6116",
+      "url": "https://sunnah.com/bukhari:6116",
+      "htmlSha256": "5e9ed7016e0af49df488a0f09cc57be92cc87032ed924aab858fc1a283f56f91",
+      "arabicSha256": "7a7bd6fe9bc7c850779f8c3c8214ed02927c9e866f5f9ae6618eaebe53b9b25b",
+      "englishSha256": "3f3b582f194f3e87df99e4fd5225eb7f15dc02a3367404e081453d7b446b80a3"
+    },
+    {
+      "id": "muslim-2593",
+      "url": "https://sunnah.com/muslim:2593",
+      "htmlSha256": "05478cf6121e46818f47151cac5b50a1ac6e3a7eb648acdca217d360e67f3ae9",
+      "arabicSha256": "9c5378bfbe06dd8478c4dc456a55242f52492bcf70f9facbce3c63e13ca8274f",
+      "englishSha256": "38ef7e03e42852744eede653d1b99d1b4272d0d8b16bf2561e9f838dfb99bbf9"
+    },
+    {
+      "id": "bukhari-6464",
+      "url": "https://sunnah.com/bukhari:6464",
+      "htmlSha256": "54d51c861bc1263a653c5be72279a398e2fd3d98f988a257bacd906778a4fbcc",
+      "arabicSha256": "c914d2e3f3409666e0537913b61ea148f16e7def1b33e8652035705293bbda7e",
+      "englishSha256": "f1f03f952b23653c4732c4e953a932b421e1179d383573f84c557b0bb300c2fb"
+    },
+    {
+      "id": "muslim-2626",
+      "url": "https://sunnah.com/muslim:2626",
+      "htmlSha256": "f6ec81e9f62a610d899f72af12f4f78cfb91a98b48529d0f3e9f97ca49b79b80",
+      "arabicSha256": "3d39b245b7a2365c5dd62d97d22d43404f92583d20245673ac81c6cfd228d20f",
+      "englishSha256": "7b06897f54de170256bcf8cfede5a6d286d2942811ec58e7fe0821019486cb15"
+    },
+    {
+      "id": "bukhari-6021",
+      "url": "https://sunnah.com/bukhari:6021",
+      "htmlSha256": "d1806b9d2fb5d2e417966d41a81cf76072ec65f8c1f85a8b0b65e3555f7a5da5",
+      "arabicSha256": "af4138120153dd5af9c6ecef9386fa851acd6a340b112476854d19424d2ed072",
+      "englishSha256": "c3a8540cd5280cbcfc3ecda12b98839012e4489f997f42e27a17c5d058dd3591"
+    },
+    {
+      "id": "bukhari-5027",
+      "url": "https://sunnah.com/bukhari:5027",
+      "htmlSha256": "98dffac3ad71ad79a2398205b71725ef66bcd46abb3220863849452f3b2dbca7",
+      "arabicSha256": "a737821045373d40a106f9eb95dbe9626d28ca5a76c4ddf5be680dc26f392efc",
+      "englishSha256": "6e67e64cf8878b1236c5ba862e35f88d1441d34e34fe7450f75762b9e4c16851"
+    },
+    {
+      "id": "bukhari-6412",
+      "url": "https://sunnah.com/bukhari:6412",
+      "htmlSha256": "fc3ea3fcbf4db6dbd7417c2c29174eee2d1a20320ce9b96758a6027976aaaefb",
+      "arabicSha256": "e641cf0dd7938f2a5c83b003d2c2f10009180d04f1065dde4e24a471f61d903f",
+      "englishSha256": "4d1bc76c47c82c5fdb6f2440edeb7b69cde6c619b3468eda3db3a3efc8a8ca54"
+    }
+  ]
+}

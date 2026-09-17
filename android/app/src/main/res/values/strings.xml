@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Athan</string>
+    <string name="title_activity_main">Athan</string>
+    <string name="package_name">app.athan.companion</string>
+    <string name="custom_url_scheme">app.athan.companion</string>
+</resources>

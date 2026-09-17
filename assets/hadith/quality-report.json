@@ -1,0 +1,141 @@
+{
+  "collections": {
+    "adab": {
+      "entries": 1326,
+      "chapterMappings": 0,
+      "graded": 30,
+      "missingEnglish": 0,
+      "structuredMatches": 1322,
+      "exactDuplicatesRemoved": 0
+    },
+    "ahmad": {
+      "entries": 1374,
+      "chapterMappings": 0,
+      "graded": 1265,
+      "missingEnglish": 15,
+      "structuredMatches": 1382,
+      "exactDuplicatesRemoved": 0
+    },
+    "bukhari": {
+      "entries": 7278,
+      "chapterMappings": 7277,
+      "graded": 0,
+      "missingEnglish": 0,
+      "structuredMatches": 7252,
+      "exactDuplicatesRemoved": 0
+    },
+    "bulugh": {
+      "entries": 1767,
+      "chapterMappings": 0,
+      "graded": 486,
+      "missingEnglish": 0,
+      "structuredMatches": 1556,
+      "exactDuplicatesRemoved": 0
+    },
+    "darimi": {
+      "entries": 3406,
+      "chapterMappings": 0,
+      "graded": 0,
+      "missingEnglish": 3406,
+      "structuredMatches": 3407,
+      "exactDuplicatesRemoved": 0
+    },
+    "ibnmajah": {
+      "entries": 4345,
+      "chapterMappings": 0,
+      "graded": 4263,
+      "missingEnglish": 0,
+      "structuredMatches": 4339,
+      "exactDuplicatesRemoved": 0
+    },
+    "malik": {
+      "entries": 1985,
+      "chapterMappings": 0,
+      "graded": 12,
+      "missingEnglish": 12,
+      "structuredMatches": 1841,
+      "exactDuplicatesRemoved": 0
+    },
+    "mishkat": {
+      "entries": 5319,
+      "chapterMappings": 0,
+      "graded": 310,
+      "missingEnglish": 0,
+      "structuredMatches": 5015,
+      "exactDuplicatesRemoved": 0
+    },
+    "muslim": {
+      "entries": 7459,
+      "chapterMappings": 7459,
+      "graded": 0,
+      "missingEnglish": 1,
+      "structuredMatches": 3087,
+      "exactDuplicatesRemoved": 0
+    },
+    "nasai": {
+      "entries": 5768,
+      "chapterMappings": 0,
+      "graded": 5672,
+      "missingEnglish": 0,
+      "structuredMatches": 5676,
+      "exactDuplicatesRemoved": 0
+    },
+    "nawawi40": {
+      "entries": 42,
+      "chapterMappings": 0,
+      "graded": 10,
+      "missingEnglish": 0,
+      "structuredMatches": 42,
+      "exactDuplicatesRemoved": 0
+    },
+    "qudsi40": {
+      "entries": 40,
+      "chapterMappings": 0,
+      "graded": 3,
+      "missingEnglish": 0,
+      "structuredMatches": 40,
+      "exactDuplicatesRemoved": 0
+    },
+    "riyadussalihin": {
+      "entries": 1896,
+      "chapterMappings": 1896,
+      "graded": 169,
+      "missingEnglish": 0,
+      "structuredMatches": 1902,
+      "exactDuplicatesRemoved": 0
+    },
+    "shahwaliullah40": {
+      "entries": 40,
+      "chapterMappings": 0,
+      "graded": 0,
+      "missingEnglish": 0,
+      "structuredMatches": 22,
+      "exactDuplicatesRemoved": 0
+    },
+    "shamail": {
+      "entries": 402,
+      "chapterMappings": 0,
+      "graded": 396,
+      "missingEnglish": 0,
+      "structuredMatches": 400,
+      "exactDuplicatesRemoved": 0
+    },
+    "tirmidhi": {
+      "entries": 4053,
+      "chapterMappings": 0,
+      "graded": 3963,
+      "missingEnglish": 0,
+      "structuredMatches": 3954,
+      "exactDuplicatesRemoved": 0
+    },
+    "abudawud": {
+      "entries": 5276,
+      "chapterMappings": 0,
+      "graded": 5143,
+      "missingEnglish": 0,
+      "structuredMatches": 5278,
+      "exactDuplicatesRemoved": 0
+    }
+  },
+  "skipped": []
+}

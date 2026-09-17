@@ -1,0 +1,627 @@
+Today|اليوم|آج|Bugün|Hari ini|Aujourd’hui
+Tomorrow|غدًا|کل|Yarın|Besok|Demain
+Calendar|التقويم|کیلنڈر|Takvim|Kalender|Calendrier
+Qibla|القبلة|قبلہ|Kıble|Kiblat|Qibla
+Athan & sounds|الأذان والأصوات|اذان اور آوازیں|Ezan ve sesler|Azan dan suara|Adhan et sons
+Reminders|التذكيرات|یاد دہانیاں|Hatırlatıcılar|Pengingat|Rappels
+Hisnul Muslim|حصن المسلم|حصن المسلم|Hısnü’l-Müslim|Hisnul Muslim|La Citadelle du musulman
+Hadith library|مكتبة الحديث|حدیث کی لائبریری|Hadis kütüphanesi|Pustaka hadis|Bibliothèque de hadiths
+Settings|الإعدادات|ترتیبات|Ayarlar|Pengaturan|Paramètres
+Activity & health|النشاط وحالة التطبيق|سرگرمی اور ایپ کی حالت|Etkinlik ve durum|Aktivitas dan status|Activité et état
+A little closer|أقرب قليلًا|کچھ اور قریب|Biraz daha yakın|Sedikit lebih dekat|Un peu plus près
+Your daily companion|رفيقك اليومي|آپ کا روزانہ ساتھی|Günlük yol arkadaşınız|Teman harian Anda|Votre compagnon quotidien
+Prayer times, always offline.|مواقيت الصلاة دون إنترنت دائمًا.|نماز کے اوقات، ہمیشہ آف لائن۔|Namaz vakitleri her zaman çevrimdışı.|Waktu salat selalu tersedia luring.|Les horaires de prière, toujours hors ligne.
+Made for a mindful day.|ليوم عامر بالذكر.|ایک پُرسکون دن کے لیے۔|Huzurlu bir gün için.|Untuk hari penuh kesadaran.|Pour une journée sereine.
+Language|اللغة|زبان|Dil|Bahasa|Langue
+Device language|لغة الجهاز|آلے کی زبان|Cihaz dili|Bahasa perangkat|Langue de l’appareil
+Your location|موقعك|آپ کا مقام|Konumunuz|Lokasi Anda|Votre position
+A moment for what matters.|لحظة لما يستحق.|اہم چیزوں کے لیے ایک لمحہ۔|Önemli olana bir an ayırın.|Sejenak untuk yang bermakna.|Un instant pour l’essentiel.
+A gentle return, five times a day.|عودة هادئة، خمس مرات كل يوم.|دن میں پانچ مرتبہ، پُرسکون رجوع۔|Günde beş kez huzurlu bir dönüş.|Kembali dengan tenang, lima kali sehari.|Un retour paisible, cinq fois par jour.
+Days with intention.|أيام بنية صادقة.|بامقصد دن۔|Niyetle yaşanan günler.|Hari-hari penuh niat.|Des journées pleines de sens.
+Your prayer timetable, one month at a time.|جدول صلاتك، شهرًا بشهر.|آپ کا نماز کا جدول، ماہ بہ ماہ۔|Aylık namaz vakti çizelgeniz.|Jadwal salat Anda, bulan demi bulan.|Vos horaires de prière, mois après mois.
+Look a little ahead|نظرة إلى القادم|آنے والے دنوں پر نظر|Biraz ileriye bakın|Menatap hari mendatang|Un regard sur les jours à venir
+One direction. A shared connection.|وجهة واحدة تجمعنا.|ایک سمت، مشترکہ تعلق۔|Tek yön, ortak bağ.|Satu arah, ikatan bersama.|Une direction, un lien commun.
+Find your bearing toward the Sacred Mosque.|اعرف اتجاهك نحو المسجد الحرام.|مسجد الحرام کی سمت معلوم کریں۔|Mescid-i Haram yönünü bulun.|Temukan arah menuju Masjidilharam.|Trouvez la direction de la Mosquée sacrée.
+The sound of a pause.|صوت يدعوك للتوقف.|وقفے کی صدا۔|Bir molanın sesi.|Suara untuk sejenak berhenti.|Un appel à faire une pause.
+Choose the voices that bring you back to prayer.|اختر الأصوات التي تدعوك للصلاة.|وہ آوازیں چنیں جو نماز کی طرف بلائیں۔|Sizi namaza çağıran sesleri seçin.|Pilih suara yang mengajak Anda salat.|Choisissez les voix qui vous appellent à la prière.
+A reminder to return.|تذكير بالعودة.|رجوع کی یاد دہانی۔|Dönüş için bir hatırlatma.|Pengingat untuk kembali.|Un rappel pour revenir.
+A quiet nudge before or after your prayer.|تذكير لطيف قبل الصلاة أو بعدها.|نماز سے پہلے یا بعد ہلکی یاد دہانی۔|Namazdan önce veya sonra sakin bir hatırlatma.|Pengingat lembut sebelum atau sesudah salat.|Un rappel discret avant ou après la prière.
+Thoughtfully set for you.|إعدادات تناسبك.|آپ کے لیے موزوں ترتیبات۔|Size uygun ayarlar.|Pengaturan yang sesuai untuk Anda.|Des réglages qui vous ressemblent.
+Your location, your calculation, your daily rhythm.|موقعك وحساباتك وإيقاع يومك.|آپ کا مقام، حساب اور روزانہ کا معمول۔|Konumunuz, hesabınız, günlük düzeniniz.|Lokasi, perhitungan, dan ritme harian Anda.|Votre position, votre calcul, votre rythme quotidien.
+A place for remembrance.|مساحة للذكر.|ذکر کے لیے ایک جگہ۔|Zikir için bir yer.|Ruang untuk berzikir.|Un espace pour le rappel.
+Duas, dhikr and a daily moment of reflection.|أدعية وأذكار ولحظة تأمل يومية.|دعائیں، اذکار اور روزانہ غور کا لمحہ۔|Dualar, zikirler ve günlük tefekkür.|Doa, zikir, dan renungan harian.|Invocations, dhikr et réflexion quotidienne.
+Words to return to.|كلمات نعود إليها.|بار بار پڑھنے کے لیے کلمات۔|Tekrar dönülecek sözler.|Kata-kata untuk direnungkan kembali.|Des paroles à retrouver.
+Explore the major collections, at your own pace.|تصفح أمهات كتب الحديث بالوتيرة التي تناسبك.|حدیث کے اہم مجموعے اپنی سہولت سے پڑھیں۔|Temel hadis kaynaklarını kendi hızınızda keşfedin.|Jelajahi kitab hadis utama sesuai kenyamanan Anda.|Explorez les grands recueils à votre rythme.
+Read with understanding|قراءة بتدبر|سمجھ کر پڑھیں|Anlayarak okuyun|Baca dengan pemahaman|Lire pour comprendre
+Next prayer|الصلاة القادمة|اگلی نماز|Sonraki namaz|Salat berikutnya|Prochaine prière
+Your next prayer|صلاتك القادمة|آپ کی اگلی نماز|Sıradaki namazınız|Salat Anda berikutnya|Votre prochaine prière
+Fajr|الفجر|فجر|Sabah|Subuh|Fajr
+Sunrise|الشروق|طلوع آفتاب|Güneş|Terbit|Lever du soleil
+Dhuhr|الظهر|ظہر|Öğle|Zuhur|Dhuhr
+Asr|العصر|عصر|İkindi|Asar|Asr
+Maghrib|المغرب|مغرب|Akşam|Magrib|Maghrib
+Isha|العشاء|عشاء|Yatsı|Isya|Isha
+Duha / Ishraq|الضحى / الإشراق|چاشت / اشراق|Kuşluk / İşrak|Duha / Isyraq|Duha / Ishraq
+Estimated voluntary prayer window|فترة تقديرية لصلاة النافلة|نفل نماز کا تخمینی وقت|Tahmini nafile namaz aralığı|Perkiraan rentang salat sunah|Plage estimée de prière surérogatoire
+Hours|ساعات|گھنٹے|Saat|Jam|Heures
+Minutes|دقائق|منٹ|Dakika|Menit|Minutes
+Seconds|ثوانٍ|سیکنڈ|Saniye|Detik|Secondes
+Athan is on|الأذان مفعّل|اذان فعال ہے|Ezan açık|Azan aktif|Adhan activé
+Enable Athan|تفعيل الأذان|اذان فعال کریں|Ezanı etkinleştir|Aktifkan azan|Activer l’adhan
+Automatic Athan on|الأذان التلقائي مفعّل|خودکار اذان فعال|Otomatik ezan açık|Azan otomatis aktif|Adhan automatique activé
+Automatic Athan paused|الأذان التلقائي متوقف مؤقتًا|خودکار اذان موقوف|Otomatik ezan duraklatıldı|Azan otomatis dijeda|Adhan automatique en pause
+Automatic Athan paused.|تم إيقاف الأذان التلقائي مؤقتًا.|خودکار اذان روک دی گئی۔|Otomatik ezan duraklatıldı.|Azan otomatis dijeda.|Adhan automatique en pause.
+Automatic Athan is on.|الأذان التلقائي مفعّل.|خودکار اذان فعال ہے۔|Otomatik ezan açık.|Azan otomatis aktif.|Adhan automatique activé.
+Prayer audio|صوت الصلاة|نماز کی آواز|Namaz sesi|Suara salat|Son de prière
+Ready for the next call|جاهز للأذان القادم|اگلی اذان کے لیے تیار|Sonraki ezana hazır|Siap untuk azan berikutnya|Prêt pour le prochain appel
+A prayer, reminder or recording is active|صلاة أو تذكير أو تسجيل قيد التشغيل|نماز، یاد دہانی یا ریکارڈنگ جاری ہے|Namaz, hatırlatma veya kayıt etkin|Salat, pengingat, atau rekaman sedang aktif|Une prière, un rappel ou un enregistrement est actif
+Stop Athan|إيقاف الأذان|اذان بند کریں|Ezanı durdur|Hentikan azan|Arrêter l’adhan
+Stops the current sound. Future prayers stay scheduled.|يوقف الصوت الحالي. تبقى الصلوات القادمة مجدولة.|موجودہ آواز بند ہوتی ہے۔ آئندہ نمازوں کا نظام برقرار رہتا ہے۔|Geçerli sesi durdurur. Sonraki namazlar planlı kalır.|Menghentikan suara saat ini. Salat berikutnya tetap terjadwal.|Arrête le son actuel. Les prochaines prières restent programmées.
+Prayer times|مواقيت الصلاة|نماز کے اوقات|Namaz vakitleri|Waktu salat|Horaires de prière
+Prayer time|وقت الصلاة|نماز کا وقت|Namaz vakti|Waktu salat|Heure de prière
+Next|القادمة|اگلی|Sıradaki|Berikutnya|Suivante
+Daybreak|بداية النهار|دن کا آغاز|Gün doğumu|Fajar menyingsing|Début du jour
+Coming up|قريبًا|آنے والی|Yaklaşıyor|Segera tiba|À venir
+Earlier today|في وقت سابق اليوم|آج پہلے|Bugün daha önce|Sebelumnya hari ini|Plus tôt aujourd’hui
+Adjust settings|ضبط الإعدادات|ترتیبات بدلیں|Ayarları düzenle|Sesuaikan pengaturan|Ajuster les paramètres
+Previous day|اليوم السابق|پچھلا دن|Önceki gün|Hari sebelumnya|Jour précédent
+Next day|اليوم التالي|اگلا دن|Sonraki gün|Hari berikutnya|Jour suivant
+Open calendar|فتح التقويم|کیلنڈر کھولیں|Takvimi aç|Buka kalender|Ouvrir le calendrier
+The last third of the night|الثلث الأخير من الليل|رات کا آخری تہائی حصہ|Gecenin son üçte biri|Sepertiga malam terakhir|Le dernier tiers de la nuit
+A quiet window for prayer and reflection.|وقت هادئ للصلاة والتأمل.|نماز اور غور کے لیے پُرسکون وقت۔|Namaz ve tefekkür için sakin bir zaman.|Waktu tenang untuk salat dan merenung.|Un moment paisible pour prier et réfléchir.
+Calculated from Maghrib to Fajr|محسوب من المغرب إلى الفجر|مغرب سے فجر تک حساب|Akşamdan sabaha hesaplanır|Dihitung dari Magrib hingga Subuh|Calculé de Maghrib à Fajr
+Gregorian|ميلادي|عیسوی|Miladi|Masehi|Grégorien
+Hijri|هجري|ہجری|Hicri|Hijriah|Hégirien
+AH|هـ|ھ|H|H|H
+Previous month|الشهر السابق|پچھلا مہینہ|Önceki ay|Bulan sebelumnya|Mois précédent
+Next month|الشهر التالي|اگلا مہینہ|Sonraki ay|Bulan berikutnya|Mois suivant
+This month|هذا الشهر|یہ مہینہ|Bu ay|Bulan ini|Ce mois-ci
+Go to month|الانتقال إلى شهر|مہینے پر جائیں|Aya git|Ke bulan|Aller au mois
+Export calendar|تصدير التقويم|کیلنڈر برآمد کریں|Takvimi dışa aktar|Ekspor kalender|Exporter le calendrier
+Calendar system|نظام التقويم|کیلنڈر کا نظام|Takvim sistemi|Sistem kalender|Système de calendrier
+Your daily timetable|جدولك اليومي|آپ کا روزانہ جدول|Günlük çizelgeniz|Jadwal harian Anda|Votre emploi du temps quotidien
+Print this month|طباعة هذا الشهر|یہ مہینہ پرنٹ کریں|Bu ayı yazdır|Cetak bulan ini|Imprimer ce mois
+Key event|مناسبة مهمة|اہم موقع|Önemli gün|Peristiwa penting|Date importante
+Small numerals ·|الأرقام الصغيرة ·|چھوٹے ہندسے ·|Küçük rakamlar ·|Angka kecil ·|Petits chiffres ·
+Ramadan|رمضان|رمضان|Ramazan|Ramadan|Ramadan
+Muharram|محرم|محرم|Muharrem|Muharam|Mouharram
+Safar|صفر|صفر|Safer|Safar|Safar
+Rabi al-Awwal|ربيع الأول|ربیع الاول|Rebiülevvel|Rabiulawal|Rabi al-Awwal
+Rabi al-Thani|ربيع الآخر|ربیع الثانی|Rebiülahir|Rabiulakhir|Rabi al-Thani
+Jumada al-Awwal|جمادى الأولى|جمادی الاول|Cemaziyelevvel|Jumadilawal|Joumada al-Awwal
+Jumada al-Thani|جمادى الآخرة|جمادی الثانی|Cemaziyelahir|Jumadilakhir|Joumada al-Thani
+Rajab|رجب|رجب|Recep|Rajab|Rajab
+Shaban|شعبان|شعبان|Şaban|Syakban|Chaabane
+Shawwal|شوال|شوال|Şevval|Syawal|Chawwal
+Dhu al-Qadah|ذو القعدة|ذوالقعدہ|Zilkade|Zulkaidah|Dhou al-Qada
+Dhu al-Hijjah|ذو الحجة|ذوالحجہ|Zilhicce|Zulhijah|Dhou al-Hijja
+Monday|الاثنين|پیر|Pazartesi|Senin|Lundi
+Tuesday|الثلاثاء|منگل|Salı|Selasa|Mardi
+Wednesday|الأربعاء|بدھ|Çarşamba|Rabu|Mercredi
+Thursday|الخميس|جمعرات|Perşembe|Kamis|Jeudi
+Friday|الجمعة|جمعہ|Cuma|Jumat|Vendredi
+Saturday|السبت|ہفتہ|Cumartesi|Sabtu|Samedi
+Sunday|الأحد|اتوار|Pazar|Minggu|Dimanche
+Mon|اثن|پیر|Pzt|Sen|Lun
+Tue|ثلا|منگل|Sal|Sel|Mar
+Wed|أرب|بدھ|Çar|Rab|Mer
+Thu|خمي|جمعرات|Per|Kam|Jeu
+Fri|جمع|جمعہ|Cum|Jum|Ven
+Sat|سبت|ہفتہ|Cmt|Sab|Sam
+Sun|أحد|اتوار|Paz|Min|Dim
+Two calendars, one day|تقويمان ليوم واحد|ایک دن، دو کیلنڈر|İki takvim, bir gün|Dua kalender, satu hari|Deux calendriers, un seul jour
+Convert a date, then find it in your calendar.|حوّل التاريخ، ثم اعرضه في تقويمك.|تاریخ تبدیل کریں، پھر کیلنڈر میں دیکھیں۔|Tarihi dönüştürüp takvimde bulun.|Konversikan tanggal, lalu temukan di kalender.|Convertissez une date, puis retrouvez-la dans le calendrier.
+Gregorian → Hijri|ميلادي ← هجري|عیسوی ← ہجری|Miladi → Hicri|Masehi → Hijriah|Grégorien → Hégirien
+Hijri → Gregorian|هجري ← ميلادي|ہجری ← عیسوی|Hicri → Miladi|Hijriah → Masehi|Hégirien → Grégorien
+Gregorian date|التاريخ الميلادي|عیسوی تاریخ|Miladi tarih|Tanggal Masehi|Date grégorienne
+Hijri day|اليوم الهجري|ہجری دن|Hicri gün|Hari Hijriah|Jour hégirien
+Hijri month|الشهر الهجري|ہجری مہینہ|Hicri ay|Bulan Hijriah|Mois hégirien
+Hijri year|السنة الهجرية|ہجری سال|Hicri yıl|Tahun Hijriah|Année hégirienne
+Convert date|تحويل التاريخ|تاریخ تبدیل کریں|Tarihi dönüştür|Konversi tanggal|Convertir la date
+Use selected day|استخدام اليوم المحدد|منتخب دن استعمال کریں|Seçili günü kullan|Gunakan hari terpilih|Utiliser le jour sélectionné
+Show in calendar|عرض في التقويم|کیلنڈر میں دکھائیں|Takvimde göster|Tampilkan di kalender|Afficher dans le calendrier
+Key Islamic events|المناسبات الإسلامية المهمة|اہم اسلامی مواقع|Önemli İslami günler|Peristiwa penting Islam|Grandes dates islamiques
+Choose an event to jump to its date in the main calendar.|اختر مناسبة للانتقال إلى تاريخها في التقويم.|اہم موقع چن کر کیلنڈر میں اس کی تاریخ دیکھیں۔|Takvimde tarihine gitmek için bir gün seçin.|Pilih peristiwa untuk melihat tanggalnya di kalender.|Choisissez un événement pour accéder à sa date dans le calendrier.
+Current year|السنة الحالية|موجودہ سال|Bu yıl|Tahun ini|Année en cours
+Previous event year|سنة المناسبات السابقة|مواقع کا پچھلا سال|Önceki etkinlik yılı|Tahun peristiwa sebelumnya|Année précédente
+Next event year|سنة المناسبات التالية|مواقع کا اگلا سال|Sonraki etkinlik yılı|Tahun peristiwa berikutnya|Année suivante
+Loading events…|جارٍ تحميل المناسبات…|مواقع لوڈ ہو رہے ہیں…|Günler yükleniyor…|Memuat peristiwa…|Chargement des événements…
+Estimated Islamic date|تاريخ إسلامي تقديري|تخمینی اسلامی تاریخ|Tahmini İslami tarih|Perkiraan tanggal Islam|Date islamique estimée
+A calendar to keep close|تقويم يبقى بقربك|آپ کے پاس رکھنے کے لیے کیلنڈر|Yanınızda bir takvim|Kalender untuk disimpan|Un calendrier à garder près de soi
+Monthly prayer timetable|جدول الصلاة الشهري|ماہانہ نماز کا جدول|Aylık namaz çizelgesi|Jadwal salat bulanan|Horaires mensuels de prière
+Ramadan timetable|جدول رمضان|رمضان کا جدول|Ramazan imsakiyesi|Jadwal Ramadan|Calendrier du Ramadan
+Year at a glance|السنة في نظرة|پورا سال ایک نظر میں|Bir bakışta yıl|Setahun sekilas|L’année en un coup d’œil
+Full year of prayer times|مواقيت الصلاة لسنة كاملة|پورے سال کے نماز کے اوقات|Yıllık namaz vakitleri|Waktu salat setahun penuh|Horaires de prière pour l’année
+One A4 page · daily prayer times and Hijri dates|صفحة A4 واحدة · مواقيت يومية وتواريخ هجرية|ایک A4 صفحہ · روزانہ اوقات اور ہجری تاریخیں|Bir A4 sayfa · günlük vakitler ve hicri tarihler|Satu halaman A4 · waktu salat dan tanggal Hijriah|Une page A4 · horaires quotidiens et dates hégiriennes
+One A4 page · suhoor, iftar and all prayer times|صفحة A4 واحدة · السحور والإفطار وكل الصلوات|ایک A4 صفحہ · سحری، افطار اور نماز کے اوقات|Bir A4 sayfa · sahur, iftar ve tüm vakitler|Satu halaman A4 · sahur, iftar, dan salat|Une page A4 · suhur, iftar et toutes les prières
+One A3 landscape page · twelve months and key events|صفحة A3 أفقية · اثنا عشر شهرًا والمناسبات|ایک افقی A3 صفحہ · بارہ ماہ اور اہم مواقع|Bir yatay A3 sayfa · on iki ay ve önemli günler|Satu halaman A3 mendatar · dua belas bulan dan peristiwa|Une page A3 paysage · douze mois et dates importantes
+Twelve A4 pages · one monthly timetable per page|اثنتا عشرة صفحة A4 · شهر في كل صفحة|بارہ A4 صفحات · ہر صفحے پر ایک مہینہ|On iki A4 sayfa · sayfa başına bir ay|Dua belas halaman A4 · satu bulan per halaman|Douze pages A4 · un mois par page
+Ramadan Hijri year|سنة رمضان الهجرية|رمضان کا ہجری سال|Ramazanın hicri yılı|Tahun Hijriah Ramadan|Année hégirienne du Ramadan
+Hijri year to print|السنة الهجرية للطباعة|پرنٹ کرنے کا ہجری سال|Yazdırılacak hicri yıl|Tahun Hijriah untuk dicetak|Année hégirienne à imprimer
+Gregorian year to print|السنة الميلادية للطباعة|پرنٹ کرنے کا عیسوی سال|Yazdırılacak miladi yıl|Tahun Masehi untuk dicetak|Année grégorienne à imprimer
+Save PDF|حفظ PDF|PDF محفوظ کریں|PDF kaydet|Simpan PDF|Enregistrer le PDF
+Print / Save PDF|طباعة / حفظ PDF|پرنٹ / PDF محفوظ کریں|Yazdır / PDF kaydet|Cetak / Simpan PDF|Imprimer / Enregistrer le PDF
+Open file|فتح الملف|فائل کھولیں|Dosyayı aç|Buka berkas|Ouvrir le fichier
+Show in folder|عرض في المجلد|فولڈر میں دکھائیں|Klasörde göster|Tampilkan di folder|Afficher dans le dossier
+Calendar file (.ics)|ملف التقويم (.ics)|کیلنڈر فائل (.ics)|Takvim dosyası (.ics)|Berkas kalender (.ics)|Fichier calendrier (.ics)
+Spreadsheet (.csv)|جدول بيانات (.csv)|اسپریڈشیٹ (.csv)|Elektronik tablo (.csv)|Lembar kerja (.csv)|Tableur (.csv)
+Close|إغلاق|بند کریں|Kapat|Tutup|Fermer
+Cancel|إلغاء|منسوخ|İptal|Batal|Annuler
+Save changes|حفظ التغييرات|تبدیلیاں محفوظ کریں|Değişiklikleri kaydet|Simpan perubahan|Enregistrer les modifications
+Discard|تجاهل|رد کریں|Vazgeç|Buang|Annuler les modifications
+You have unsaved changes|لديك تغييرات غير محفوظة|آپ کی تبدیلیاں محفوظ نہیں ہوئیں|Kaydedilmemiş değişiklikleriniz var|Ada perubahan yang belum disimpan|Vous avez des modifications non enregistrées
+Your changes have been saved.|تم حفظ تغييراتك.|آپ کی تبدیلیاں محفوظ ہو گئیں۔|Değişiklikleriniz kaydedildi.|Perubahan Anda telah disimpan.|Vos modifications ont été enregistrées.
+Your settings have been saved.|تم حفظ إعداداتك.|آپ کی ترتیبات محفوظ ہو گئیں۔|Ayarlarınız kaydedildi.|Pengaturan Anda telah disimpan.|Vos paramètres ont été enregistrés.
+Location|الموقع|مقام|Konum|Lokasi|Position
+Prayer calculation|حساب الصلاة|نماز کا حساب|Namaz hesabı|Perhitungan salat|Calcul des prières
+App preferences|تفضيلات التطبيق|ایپ کی ترجیحات|Uygulama tercihleri|Preferensi aplikasi|Préférences de l’application
+Settings categories|أقسام الإعدادات|ترتیبات کے زمرے|Ayar kategorileri|Kategori pengaturan|Catégories de paramètres
+Your place in the world|مكانك في العالم|دنیا میں آپ کا مقام|Dünyadaki yeriniz|Tempat Anda di dunia|Votre place dans le monde
+Automatic daylight saving|التوقيت الصيفي تلقائيًا|خودکار گرمیوں کا وقت|Otomatik yaz saati|Waktu musim panas otomatis|Heure d’été automatique
+Location details|تفاصيل الموقع|مقام کی تفصیلات|Konum ayrıntıları|Detail lokasi|Détails de la position
+Time zones automatically follow daylight saving rules.|تتبع المناطق الزمنية قواعد التوقيت الصيفي تلقائيًا.|ٹائم زون خودکار طور پر موسمی وقت کے اصول اپناتے ہیں۔|Saat dilimleri yaz saati kurallarına otomatik uyar.|Zona waktu mengikuti aturan waktu musim panas otomatis.|Les fuseaux horaires suivent automatiquement l’heure d’été.
+Saved locations|المواقع المحفوظة|محفوظ مقامات|Kayıtlı konumlar|Lokasi tersimpan|Positions enregistrées
+Location name|اسم الموقع|مقام کا نام|Konum adı|Nama lokasi|Nom du lieu
+Country|البلد|ملک|Ülke|Negara|Pays
+City|المدينة|شہر|Şehir|Kota|Ville
+Time zone|المنطقة الزمنية|ٹائم زون|Saat dilimi|Zona waktu|Fuseau horaire
+Latitude|خط العرض|عرض بلد|Enlem|Lintang|Latitude
+Longitude|خط الطول|طول بلد|Boylam|Bujur|Longitude
+Calculation method|طريقة الحساب|حساب کا طریقہ|Hesaplama yöntemi|Metode perhitungan|Méthode de calcul
+Asr calculation|حساب العصر|عصر کا حساب|İkindi hesabı|Perhitungan Asar|Calcul de l’Asr
+A timetable you can trust|جدول يمكنك الاعتماد عليه|قابل اعتماد جدول|Güvenebileceğiniz bir çizelge|Jadwal yang dapat dipercaya|Des horaires fiables
+Match the method and Asr convention used by your local community.|طابق طريقة الحساب ومذهب العصر المعتمد محليًا.|اپنی مقامی برادری کے طریقے اور عصر کے مسلک کے مطابق رکھیں۔|Yerel topluluğunuzun yöntemini ve ikindi hesabını seçin.|Sesuaikan metode dan mazhab Asar dengan komunitas setempat.|Adoptez la méthode et la convention d’Asr de votre communauté.
+Standard · Shafi, Maliki, Hanbali|المعتاد · شافعي، مالكي، حنبلي|معیاری · شافعی، مالکی، حنبلی|Standart · Şafiî, Malikî, Hanbelî|Standar · Syafii, Maliki, Hanbali|Standard · chaféite, malikite, hanbalite
+Hanafi · later Asr|حنفي · عصر متأخر|حنفی · عصر بعد میں|Hanefî · daha geç ikindi|Hanafi · Asar lebih akhir|Hanafite · Asr plus tardif
+Dhuhr minutes after solar noon|دقائق الظهر بعد الزوال|شمسی زوال کے بعد ظہر کے منٹ|Güneş öğlesinden sonra öğle dakikası|Menit Zuhur setelah tengah hari matahari|Minutes de Dhuhr après le midi solaire
+Maghrib minutes after sunset|دقائق المغرب بعد الغروب|غروب کے بعد مغرب کے منٹ|Gün batımından sonra akşam dakikası|Menit Magrib setelah matahari terbenam|Minutes de Maghrib après le coucher du soleil
+Ishraq minutes after sunrise|دقائق الإشراق بعد الشروق|طلوع کے بعد اشراق کے منٹ|Gün doğumundan sonra işrak dakikası|Menit Isyraq setelah matahari terbit|Minutes d’Ishraq après le lever du soleil
+Duha ends before solar noon (minutes)|نهاية الضحى قبل الزوال (دقائق)|زوال سے پہلے چاشت کا اختتام (منٹ)|Kuşluğun güneş öğlesinden önce bitişi (dakika)|Akhir Duha sebelum tengah hari matahari (menit)|Fin de Duha avant le midi solaire (minutes)
+Fine-tune your prayer times|الضبط الدقيق للمواقيت|نماز کے اوقات کی باریک ترتیب|Namaz vakitlerini ince ayarlayın|Sesuaikan waktu salat|Ajuster précisément les horaires
+Add or subtract minutes to align with your local timetable.|أضف أو اطرح دقائق لمطابقة الجدول المحلي.|مقامی جدول سے ملانے کے لیے منٹ بڑھائیں یا گھٹائیں۔|Yerel çizelgenize uyması için dakika ekleyin veya çıkarın.|Tambah atau kurangi menit agar sesuai jadwal setempat.|Ajoutez ou retirez des minutes selon vos horaires locaux.
+Calendar & display|التقويم والعرض|کیلنڈر اور نمائش|Takvim ve görünüm|Kalender dan tampilan|Calendrier et affichage
+Clock format|تنسيق الساعة|وقت کا انداز|Saat biçimi|Format jam|Format de l’heure
+Hijri date adjustment|تصحيح التاريخ الهجري|ہجری تاریخ کی تصحیح|Hicri tarih düzeltmesi|Penyesuaian tanggal Hijriah|Correction de la date hégirienne
+No adjustment|دون تصحيح|کوئی تصحیح نہیں|Düzeltme yok|Tanpa penyesuaian|Aucune correction
+12 hour · 5:30 pm|12 ساعة · 5:30 م|12 گھنٹے · شام 5:30|12 saat · 5:30 pm|12 jam · 5:30 sore|12 heures · 5:30 pm
+24 hour · 17:30|24 ساعة · 17:30|24 گھنٹے · 17:30|24 saat · 17:30|24 jam · 17:30|24 heures · 17:30
+Advanced calculation|حساب متقدم|اعلی درجے کا حساب|Gelişmiş hesaplama|Perhitungan lanjutan|Calcul avancé
+High latitude rule|قاعدة العروض العليا|بلند عرض بلد کا اصول|Yüksek enlem kuralı|Aturan lintang tinggi|Règle des hautes latitudes
+Polar resolution|معالجة المناطق القطبية|قطبی علاقوں کا حل|Kutup çözümü|Penanganan wilayah kutub|Gestion des régions polaires
+Twilight angle|زاوية الشفق|شفق کا زاویہ|Alacakaranlık açısı|Sudut senja|Angle du crépuscule
+Middle of the night|منتصف الليل|نصف شب|Gecenin yarısı|Tengah malam|Milieu de la nuit
+Seventh of the night|سُبع الليل|رات کا ساتواں حصہ|Gecenin yedide biri|Sepertujuh malam|Septième de la nuit
+Leave unavailable times unresolved|ترك المواقيت غير المتاحة دون تقدير|غیر دستیاب اوقات کا تخمینہ نہ لگائیں|Bulunamayan vakitleri boş bırak|Biarkan waktu tak tersedia tanpa perkiraan|Laisser les horaires indisponibles non résolus
+Nearest suitable latitude|أقرب خط عرض مناسب|قریب ترین موزوں عرض بلد|En yakın uygun enlem|Lintang sesuai terdekat|Latitude appropriée la plus proche
+Nearest suitable day|أقرب يوم مناسب|قریب ترین موزوں دن|En yakın uygun gün|Hari sesuai terdekat|Jour approprié le plus proche
+Leave blank to use the selected method|اتركه فارغًا لاستخدام الطريقة المختارة|منتخب طریقہ استعمال کرنے کے لیے خالی چھوڑیں|Seçili yöntem için boş bırakın|Kosongkan untuk memakai metode terpilih|Laissez vide pour utiliser la méthode choisie
+Bismillah on startup|البسملة عند بدء التشغيل|شروع ہونے پر بسم اللہ|Açılışta besmele|Basmalah saat mulai|Bismillah au démarrage
+Play when Athan opens, including Windows sign-in when automatic startup is enabled. Off by default.|تشغيل عند فتح التطبيق، بما في ذلك تسجيل الدخول إلى Windows عند تفعيل البدء التلقائي. معطّل افتراضيًا.|ایپ کھلنے پر چلائیں، خودکار آغاز فعال ہو تو Windows میں داخل ہونے پر بھی۔ ابتدائی طور پر بند ہے۔|Athan açıldığında çal; otomatik başlatma açıksa Windows oturum açılışında da. Varsayılan olarak kapalı.|Putar saat Athan dibuka, termasuk saat masuk Windows jika mulai otomatis aktif. Nonaktif secara bawaan.|Jouer à l’ouverture d’Athan, y compris à la connexion Windows si le démarrage automatique est activé. Désactivé par défaut.
+Uses your saved recording and prayer audio volume.|يستخدم التسجيل المحفوظ ومستوى صوت الصلاة.|محفوظ ریکارڈنگ اور نماز کی آواز کی سطح استعمال ہوتی ہے۔|Kayıtlı sesinizi ve namaz ses düzeyini kullanır.|Menggunakan rekaman dan volume salat tersimpan.|Utilise votre enregistrement et le volume de prière enregistrés.
+Startup recording|تسجيل بدء التشغيل|آغاز کی ریکارڈنگ|Açılış kaydı|Rekaman awal|Enregistrement au démarrage
+Open when I sign in|الفتح عند تسجيل الدخول|لاگ ان پر کھولیں|Oturum açınca başlat|Buka saat masuk|Ouvrir à la connexion
+Start quietly with Windows. Your last prayer playback state is remembered.|ابدأ بهدوء مع Windows مع حفظ آخر حالة لتشغيل الصلوات.|Windows کے ساتھ خاموشی سے شروع کریں۔ نماز کی آخری حالت یاد رکھی جاتی ہے۔|Windows ile sessizce başlar. Son namaz oynatma durumu korunur.|Mulai diam-diam bersama Windows. Status pemutaran salat terakhir disimpan.|Démarre discrètement avec Windows. Le dernier état des prières est mémorisé.
+Keep Athan in the system tray|إبقاء أذان في علبة النظام|اذان کو سسٹم ٹرے میں رکھیں|Athan sistem tepsisinde kalsın|Simpan Athan di baki sistem|Garder Athan dans la zone de notification
+Closing the window keeps enabled prayers running.|إغلاق النافذة يُبقي الصلوات المفعّلة قيد التشغيل.|کھڑکی بند کرنے پر فعال نمازیں جاری رہتی ہیں۔|Pencere kapanınca etkin namazlar çalışır.|Menutup jendela tetap menjalankan salat yang aktif.|Fermer la fenêtre laisse les prières activées fonctionner.
+Desktop notifications|إشعارات سطح المكتب|ڈیسک ٹاپ اطلاعات|Masaüstü bildirimleri|Notifikasi desktop|Notifications du bureau
+Browser notifications|إشعارات المتصفح|براؤزر اطلاعات|Tarayıcı bildirimleri|Notifikasi browser|Notifications du navigateur
+Show a silent notification when a prayer or reminder is due.|عرض إشعار صامت عند حلول صلاة أو تذكير.|نماز یا یاد دہانی پر خاموش اطلاع دکھائیں۔|Namaz veya hatırlatma zamanı sessiz bildirim göster.|Tampilkan notifikasi senyap saat salat atau pengingat tiba.|Afficher une notification silencieuse à l’heure d’une prière ou d’un rappel.
+Your weekly rhythm|إيقاع أسبوعك|آپ کا ہفتہ وار معمول|Haftalık düzeniniz|Ritme mingguan Anda|Votre rythme hebdomadaire
+Prayer calls and reminders run on these days when automatic Athan is on.|تعمل الصلوات والتذكيرات في هذه الأيام عند تفعيل الأذان التلقائي.|خودکار اذان فعال ہو تو ان دنوں اذانیں اور یاد دہانیاں چلیں گی۔|Otomatik ezan açıkken çağrılar ve hatırlatmalar bu günlerde çalışır.|Azan dan pengingat berjalan pada hari ini saat azan otomatis aktif.|Les appels et rappels fonctionnent ces jours lorsque l’adhan automatique est activé.
+Morning light|ضوء الصباح|صبح کی روشنی|Sabah ışığı|Cahaya pagi|Lumière du matin
+After sunset|بعد الغروب|غروب کے بعد|Gün batımından sonra|Setelah matahari terbenam|Après le coucher du soleil
+Follow Windows|اتباع Windows|Windows کے مطابق|Windows’u izle|Ikuti Windows|Suivre Windows
+Follow device|اتباع الجهاز|آلے کے مطابق|Cihazı izle|Ikuti perangkat|Suivre l’appareil
+A different kind of atmosphere|أجواء تناسبك|ایک مختلف ماحول|Farklı bir atmosfer|Suasana yang berbeda|Une autre ambiance
+Choose the light that feels right.|اختر الإضاءة التي تناسبك.|اپنی پسند کی روشنی چنیں۔|Size uygun ışığı seçin.|Pilih pencahayaan yang nyaman.|Choisissez la lumière qui vous convient.
+Fits quietly into your day|ينسجم بهدوء مع يومك|آپ کے دن میں خاموشی سے شامل|Gününüze sessizce uyum sağlar|Menyatu tenang dengan hari Anda|S’intègre discrètement à votre journée
+No recording · silent|دون تسجيل · صامت|کوئی ریکارڈنگ نہیں · خاموش|Kayıt yok · sessiz|Tanpa rekaman · senyap|Aucun enregistrement · silencieux
+Enable prayer audio|تفعيل صوت الصلاة|نماز کی آواز فعال کریں|Namaz sesini etkinleştir|Aktifkan suara salat|Activer le son de prière
+The five daily calls|النداءات الخمسة اليومية|روزانہ کی پانچ اذانیں|Beş günlük çağrı|Lima panggilan harian|Les cinq appels quotidiens
+A call that feels like home.|نداء مألوف يطمئن القلب.|اپنائیت بھری پکار۔|Tanıdık, sıcak bir çağrı.|Panggilan yang terasa akrab.|Un appel familier et rassurant.
+Your recordings stay on your computer. Preview any voice for up to 20 seconds.|تبقى تسجيلاتك على جهازك. استمع إلى معاينة حتى 20 ثانية.|آپ کی ریکارڈنگ کمپیوٹر پر رہتی ہے۔ 20 سیکنڈ تک پیشگی سنیں۔|Kayıtlarınız bilgisayarda kalır. 20 saniyeye kadar önizleyin.|Rekaman tersimpan di komputer. Pratinjau hingga 20 detik.|Vos enregistrements restent sur votre ordinateur. Écoutez un aperçu de 20 secondes maximum.
+Dua after Athan|الدعاء بعد الأذان|اذان کے بعد دعا|Ezandan sonra dua|Doa setelah azan|Invocation après l’adhan
+Dua recording|تسجيل الدعاء|دعا کی ریکارڈنگ|Dua kaydı|Rekaman doa|Enregistrement de l’invocation
+Just the right volume|مستوى الصوت المناسب|موزوں آواز کی سطح|Tam uygun ses düzeyi|Volume yang pas|Le bon volume
+Previews use your saved volume.|تستخدم المعاينات مستوى الصوت المحفوظ.|پیشگی سماعت محفوظ آواز کی سطح استعمال کرتی ہے۔|Önizlemeler kayıtlı ses düzeyini kullanır.|Pratinjau memakai volume tersimpan.|Les aperçus utilisent le volume enregistré.
+Quiet|هادئ|ہلکی آواز|Sessiz|Pelan|Faible
+Full volume|أعلى صوت|پوری آواز|Tam ses|Volume penuh|Volume maximal
+Your device volume also affects playback.|يؤثر مستوى صوت جهازك أيضًا في التشغيل.|آلے کی آواز کی سطح بھی اثر انداز ہوتی ہے۔|Cihazın ses düzeyi de oynatmayı etkiler.|Volume perangkat juga memengaruhi pemutaran.|Le volume de votre appareil affecte aussi la lecture.
+Add reminder|إضافة تذكير|یاد دہانی شامل کریں|Hatırlatma ekle|Tambah pengingat|Ajouter un rappel
+Create your first reminder|أنشئ أول تذكير|پہلی یاد دہانی بنائیں|İlk hatırlatmanızı oluşturun|Buat pengingat pertama|Créer votre premier rappel
+Prayer|الصلاة|نماز|Namaz|Salat|Prière
+Minutes from prayer|الدقائق من وقت الصلاة|نماز سے منٹ کا فرق|Namazdan dakika farkı|Selisih menit dari salat|Minutes par rapport à la prière
+Negative = before · positive = after|سالب = قبل · موجب = بعد|منفی = پہلے · مثبت = بعد|Eksi = önce · artı = sonra|Negatif = sebelum · positif = sesudah|Négatif = avant · positif = après
+Optional recording|تسجيل اختياري|اختیاری ریکارڈنگ|İsteğe bağlı kayıt|Rekaman opsional|Enregistrement facultatif
+Reminder recording|تسجيل التذكير|یاد دہانی کی ریکارڈنگ|Hatırlatma kaydı|Rekaman pengingat|Enregistrement du rappel
+Recording repetitions|تكرار التسجيل|ریکارڈنگ کی تکرار|Kayıt tekrarı|Pengulangan rekaman|Répétitions de l’enregistrement
+Save reminder|حفظ التذكير|یاد دہانی محفوظ کریں|Hatırlatmayı kaydet|Simpan pengingat|Enregistrer le rappel
+Remove reminder|حذف التذكير|یاد دہانی ہٹائیں|Hatırlatmayı kaldır|Hapus pengingat|Supprimer le rappel
+Keep reminder|الإبقاء على التذكير|یاد دہانی رکھیں|Hatırlatmayı koru|Pertahankan pengingat|Garder le rappel
+Remove this reminder?|حذف هذا التذكير؟|یہ یاد دہانی ہٹائیں؟|Bu hatırlatma kaldırılsın mı?|Hapus pengingat ini?|Supprimer ce rappel ?
+Silent reminder|تذكير صامت|خاموش یاد دہانی|Sessiz hatırlatma|Pengingat senyap|Rappel silencieux
+Save time|حفظ الوقت|وقت محفوظ کریں|Saati kaydet|Simpan waktu|Enregistrer l’heure
+Daily dua|دعاء يومي|روزانہ دعا|Günlük dua|Doa harian|Invocation quotidienne
+Daily hadith|حديث يومي|روزانہ حدیث|Günlük hadis|Hadis harian|Hadith quotidien
+Daily dua time|وقت الدعاء اليومي|روزانہ دعا کا وقت|Günlük dua saati|Waktu doa harian|Heure de l’invocation quotidienne
+Daily hadith time|وقت الحديث اليومي|روزانہ حدیث کا وقت|Günlük hadis saati|Waktu hadis harian|Heure du hadith quotidien
+Enable daily dua|تفعيل الدعاء اليومي|روزانہ دعا فعال کریں|Günlük duayı etkinleştir|Aktifkan doa harian|Activer l’invocation quotidienne
+Enable daily hadith|تفعيل الحديث اليومي|روزانہ حدیث فعال کریں|Günlük hadisi etkinleştir|Aktifkan hadis harian|Activer le hadith quotidien
+A daily moment of remembrance|لحظة ذكر يومية|روزانہ ذکر کا ایک لمحہ|Günlük bir zikir anı|Momen zikir harian|Un moment de rappel quotidien
+Optional hadith and dua readings. Both are off until you enable them.|قراءات اختيارية للحديث والدعاء. كلاهما معطّل حتى تفعيله.|حدیث اور دعا کی اختیاری قراءت۔ فعال کرنے تک دونوں بند ہیں۔|İsteğe bağlı hadis ve dua. Siz açana kadar ikisi de kapalı.|Bacaan hadis dan doa opsional. Keduanya nonaktif sampai diaktifkan.|Lectures de hadiths et d’invocations facultatives, désactivées jusqu’à leur activation.
+Daily reminder settings|إعدادات التذكير اليومي|روزانہ یاد دہانی کی ترتیبات|Günlük hatırlatma ayarları|Pengaturan pengingat harian|Paramètres des rappels quotidiens
+Today's dua|دعاء اليوم|آج کی دعا|Bugünün duası|Doa hari ini|Invocation du jour
+Today's hadith|حديث اليوم|آج کی حدیث|Bugünün hadisi|Hadis hari ini|Hadith du jour
+Hadith reflections|تأملات في الحديث|حدیث پر غور|Hadis tefekkürleri|Renungan hadis|Réflexions sur les hadiths
+Search readings|البحث في القراءات|متون میں تلاش|Okumalarda ara|Cari bacaan|Rechercher dans les lectures
+Search a situation, meaning or Arabic phrase…|ابحث عن موقف أو معنى أو عبارة عربية…|حالت، مفہوم یا عربی عبارت تلاش کریں…|Durum, anlam veya Arapça ifade ara…|Cari keadaan, makna, atau frasa Arab…|Rechercher une situation, un sens ou une expression arabe…
+Dua category|باب الدعاء|دعا کا باب|Dua kategorisi|Kategori doa|Catégorie d’invocation
+All occasions|كل الأبواب|تمام مواقع|Tüm durumlar|Semua keadaan|Toutes les occasions
+Favorites|المفضلة|پسندیدہ|Favoriler|Favorit|Favoris
+Save dua to favorites|حفظ الدعاء في المفضلة|دعا پسندیدہ میں محفوظ کریں|Duayı favorilere ekle|Simpan doa ke favorit|Ajouter l’invocation aux favoris
+Remove dua from favorites|إزالة الدعاء من المفضلة|دعا پسندیدہ سے ہٹائیں|Duayı favorilerden çıkar|Hapus doa dari favorit|Retirer l’invocation des favoris
+Transliteration|النقل الصوتي|رومن تلفظ|Okunuş|Transliterasi|Translittération
+Meaning|المعنى|مفہوم|Anlamı|Makna|Sens
+Copy dua|نسخ الدعاء|دعا نقل کریں|Duayı kopyala|Salin doa|Copier l’invocation
+Copied|تم النسخ|نقل ہو گئی|Kopyalandı|Disalin|Copié
+Read on Sunnah.com|القراءة على Sunnah.com|Sunnah.com پر پڑھیں|Sunnah.com’da oku|Baca di Sunnah.com|Lire sur Sunnah.com
+Read the full narration|قراءة الرواية كاملة|مکمل روایت پڑھیں|Rivayetin tamamını oku|Baca riwayat lengkap|Lire le récit complet
+Count recitation|عدّ التلاوة|تلاوت کی گنتی|Okuma sayacı|Hitung bacaan|Compter les récitations
+Reset recitation count|تصفير العداد|گنتی صفر کریں|Sayacı sıfırla|Atur ulang hitungan|Réinitialiser le compteur
+No matching readings|لا توجد قراءات مطابقة|کوئی متن نہیں ملا|Eşleşen okuma yok|Tidak ada bacaan yang cocok|Aucune lecture correspondante
+Your hadith library|مكتبة حديثك|آپ کی حدیث لائبریری|Hadis kütüphaneniz|Pustaka hadis Anda|Votre bibliothèque de hadiths
+Choose the collections you would like to keep on this device.|اختر المجموعات التي تريد حفظها على هذا الجهاز.|اس آلے پر رکھنے کے لیے مجموعے چنیں۔|Bu cihazda saklamak istediğiniz kaynakları seçin.|Pilih koleksi yang ingin disimpan di perangkat ini.|Choisissez les recueils à conserver sur cet appareil.
+Sunnah.com connection|الاتصال بـ Sunnah.com|Sunnah.com کنکشن|Sunnah.com bağlantısı|Koneksi Sunnah.com|Connexion à Sunnah.com
+Sunnah.com API key|مفتاح API الخاص بـ Sunnah.com|Sunnah.com کی API کلید|Sunnah.com API anahtarı|Kunci API Sunnah.com|Clé API Sunnah.com
+Connected|متصل|منسلک|Bağlı|Terhubung|Connecté
+Not connected|غير متصل|منسلک نہیں|Bağlı değil|Tidak terhubung|Non connecté
+Connect|اتصال|جوڑیں|Bağlan|Hubungkan|Connecter
+Disconnect|قطع الاتصال|کنکشن ختم کریں|Bağlantıyı kes|Putuskan|Déconnecter
+API access information|معلومات الوصول إلى API|API رسائی کی معلومات|API erişim bilgileri|Informasi akses API|Informations d’accès à l’API
+Download|تنزيل|ڈاؤن لوڈ|İndir|Unduh|Télécharger
+Optional download|تنزيل اختياري|اختیاری ڈاؤن لوڈ|İsteğe bağlı indirme|Unduhan opsional|Téléchargement facultatif
+Cancel download|إلغاء التنزيل|ڈاؤن لوڈ منسوخ کریں|İndirmeyi iptal et|Batalkan unduhan|Annuler le téléchargement
+Resume|استئناف|دوبارہ جاری کریں|Sürdür|Lanjutkan|Reprendre
+Refresh|تحديث|تازہ کریں|Yenile|Perbarui|Actualiser
+Online|عبر الإنترنت|آن لائن|Çevrimiçi|Daring|En ligne
+All API pages saved|تم حفظ جميع صفحات API|تمام API صفحات محفوظ ہیں|Tüm API sayfaları kaydedildi|Semua halaman API tersimpan|Toutes les pages API enregistrées
+Partial download|تنزيل جزئي|جزوی ڈاؤن لوڈ|Kısmi indirme|Unduhan sebagian|Téléchargement partiel
+Collection coverage is partial|تغطية المجموعة جزئية|مجموعہ جزوی طور پر دستیاب ہے|Kaynak kapsamı kısmi|Cakupan koleksi sebagian|Couverture partielle du recueil
+Collection coverage as reported by the API|التغطية بحسب بيانات API|API کے مطابق مجموعے کی دستیابی|API’nin bildirdiği kapsam|Cakupan menurut API|Couverture indiquée par l’API
+Original wording and grading supplied by Sunnah.com.|النصوص الأصلية والأحكام مقدمة من Sunnah.com.|اصل متن اور درجہ بندی Sunnah.com سے۔|Orijinal metin ve derecelendirme Sunnah.com’dan.|Teks asli dan penilaian dari Sunnah.com.|Texte original et classification fournis par Sunnah.com.
+Download this collection to read and search it offline, or open it online.|نزّل هذه المجموعة لقراءتها والبحث فيها دون إنترنت، أو افتحها عبر الإنترنت.|آف لائن پڑھنے اور تلاش کے لیے مجموعہ ڈاؤن لوڈ کریں، یا آن لائن کھولیں۔|Çevrimdışı okuma ve arama için indirin veya çevrimiçi açın.|Unduh untuk membaca dan mencari luring, atau buka daring.|Téléchargez ce recueil pour le lire et le rechercher hors ligne, ou ouvrez-le en ligne.
+Search hadith|البحث في الحديث|حدیث تلاش کریں|Hadis ara|Cari hadis|Rechercher un hadith
+Search wording or narration number…|ابحث في النص أو رقم الحديث…|متن یا روایت کا نمبر تلاش کریں…|Metin veya rivayet numarası ara…|Cari teks atau nomor riwayat…|Rechercher un texte ou un numéro de récit…
+Hadith book|كتاب الحديث|حدیث کی کتاب|Hadis kitabı|Kitab hadis|Livre de hadiths
+All books|كل الكتب|تمام کتابیں|Tüm kitaplar|Semua kitab|Tous les livres
+Book|كتاب|کتاب|Kitap|Kitab|Livre
+Show more|عرض المزيد|مزید دکھائیں|Daha fazla göster|Tampilkan lagi|Afficher plus
+On this device · works offline|على هذا الجهاز · يعمل دون إنترنت|اس آلے پر · آف لائن کام کرتا ہے|Bu cihazda · çevrimdışı çalışır|Di perangkat ini · bekerja luring|Sur cet appareil · fonctionne hors ligne
+Available offline|متاح دون إنترنت|آف لائن دستیاب|Çevrimdışı kullanılabilir|Tersedia luring|Disponible hors ligne
+Offline access|الوصول دون إنترنت|آف لائن رسائی|Çevrimdışı erişim|Akses luring|Accès hors ligne
+Keep offline data|الاحتفاظ بالبيانات دون إنترنت|آف لائن ڈیٹا محفوظ رکھیں|Çevrimdışı veriyi koru|Simpan data luring|Conserver les données hors ligne
+Stored on this computer · works offline|محفوظ على هذا الجهاز · يعمل دون إنترنت|اس کمپیوٹر پر محفوظ · آف لائن دستیاب|Bu bilgisayarda kayıtlı · çevrimdışı çalışır|Tersimpan di komputer · bekerja luring|Stocké sur cet ordinateur · fonctionne hors ligne
+Minimize window|تصغير النافذة|کھڑکی چھوٹی کریں|Pencereyi küçült|Kecilkan jendela|Réduire la fenêtre
+Maximize window|تكبير النافذة|کھڑکی بڑی کریں|Pencereyi büyüt|Besarkan jendela|Agrandir la fenêtre
+Close window|إغلاق النافذة|کھڑکی بند کریں|Pencereyi kapat|Tutup jendela|Fermer la fenêtre
+Close dialog|إغلاق مربع الحوار|مکالمہ بند کریں|İletişim kutusunu kapat|Tutup dialog|Fermer la boîte de dialogue
+Main navigation|التنقل الرئيسي|مرکزی رہنمائی|Ana gezinme|Navigasi utama|Navigation principale
+Toggle color theme|تبديل المظهر|رنگوں کا انداز بدلیں|Temayı değiştir|Ubah tema warna|Changer le thème
+Try again|حاول مجددًا|دوبارہ کوشش کریں|Tekrar dene|Coba lagi|Réessayer
+Retry|إعادة المحاولة|پھر کوشش کریں|Yeniden dene|Coba lagi|Réessayer
+Dismiss message|إغلاق الرسالة|پیغام ہٹائیں|Mesajı kapat|Tutup pesan|Fermer le message
+Dismiss / stop sound|إغلاق / إيقاف الصوت|ہٹائیں / آواز بند کریں|Kapat / sesi durdur|Tutup / hentikan suara|Fermer / arrêter le son
+Future prayers stay enabled.|تبقى الصلوات القادمة مفعّلة.|آئندہ نمازیں فعال رہیں گی۔|Sonraki namazlar etkin kalır.|Salat berikutnya tetap aktif.|Les prochaines prières restent activées.
+Open reading|فتح القراءة|متن کھولیں|Okumayı aç|Buka bacaan|Ouvrir la lecture
+Dismiss reading|إغلاق القراءة|متن ہٹائیں|Okumayı kapat|Tutup bacaan|Fermer la lecture
+A pause. A prayer. A new beginning.|وقفة. صلاة. بداية جديدة.|ایک وقفہ۔ ایک نماز۔ ایک نئی ابتدا۔|Bir mola. Bir namaz. Yeni bir başlangıç.|Sejenak berhenti. Salat. Awal yang baru.|Une pause. Une prière. Un nouveau départ.
+Find your direction|اعرف اتجاهك|اپنی سمت معلوم کریں|Yönünüzü bulun|Temukan arah Anda|Trouvez votre direction
+In the stillness|في السكينة|سکون میں|Sükûnet içinde|Dalam keheningan|Dans le calme
+Always, toward Makkah.|دائمًا نحو مكة.|ہمیشہ مکہ کی طرف۔|Daima Mekke’ye doğru.|Selalu menuju Makkah.|Toujours vers La Mecque.
+Explore Qibla|استكشاف القبلة|قبلہ دیکھیں|Kıbleyi keşfet|Jelajahi kiblat|Explorer la Qibla
+from true north|من الشمال الحقيقي|حقیقی شمال سے|gerçek kuzeyden|dari utara sejati|depuis le nord géographique
+Clockwise from true north|باتجاه عقارب الساعة من الشمال الحقيقي|حقیقی شمال سے گھڑی کی سمت|Gerçek kuzeyden saat yönünde|Searah jarum jam dari utara sejati|Dans le sens horaire depuis le nord géographique
+A shared direction|وجهة تجمعنا|مشترکہ سمت|Ortak bir yön|Arah bersama|Une direction commune
+Wherever you are,|أينما كنت،|آپ جہاں بھی ہوں،|Nerede olursanız olun,|Di mana pun Anda berada,|Où que vous soyez,
+find your connection.|اعثر على وجهتك.|اپنا تعلق پائیں۔|bağınızı bulun.|temukan ikatan Anda.|retrouvez votre lien.
+Your starting point|نقطة انطلاقك|آپ کا ابتدائی مقام|Başlangıç noktanız|Titik awal Anda|Votre point de départ
+Change location|تغيير الموقع|مقام بدلیں|Konumu değiştir|Ubah lokasi|Changer de position
+Your direction to the Kaaba, calculated from your saved location.|اتجاه الكعبة محسوب من موقعك المحفوظ.|محفوظ مقام سے کعبہ کی سمت کا حساب۔|Kayıtlı konumunuzdan hesaplanan Kâbe yönü.|Arah Kakbah dihitung dari lokasi tersimpan.|La direction de la Kaaba, calculée depuis votre position enregistrée.
+The bearing uses your saved location. Connect the device compass for live orientation when a true-north reading is available, or align an external compass to true north.|يعتمد الاتجاه على موقعك المحفوظ. صِل بوصلة الجهاز للاتجاه المباشر عند توفر الشمال الحقيقي، أو استخدم بوصلة خارجية مضبوطة عليه.|سمت محفوظ مقام سے حساب ہوتی ہے۔ حقیقی شمال دستیاب ہو تو آلے کا قطب نما جوڑیں، ورنہ بیرونی قطب نما حقیقی شمال کے مطابق رکھیں۔|Yön, kayıtlı konumunuzu kullanır. Gerçek kuzey okuması varsa cihaz pusulasını bağlayın veya harici pusulayı gerçek kuzeye ayarlayın.|Arah memakai lokasi tersimpan. Hubungkan kompas perangkat jika utara sejati tersedia, atau selaraskan kompas luar ke utara sejati.|Le cap utilise votre position enregistrée. Connectez la boussole si le nord géographique est disponible, ou alignez une boussole externe sur celui-ci.
+Use device compass|استخدام بوصلة الجهاز|آلے کا قطب نما استعمال کریں|Cihaz pusulasını kullan|Gunakan kompas perangkat|Utiliser la boussole de l’appareil
+Stop device compass|إيقاف بوصلة الجهاز|آلے کا قطب نما بند کریں|Cihaz pusulasını durdur|Hentikan kompas perangkat|Arrêter la boussole
+Looking for a compass sensor…|جارٍ البحث عن مستشعر البوصلة…|قطب نما سینسر تلاش ہو رہا ہے…|Pusula sensörü aranıyor…|Mencari sensor kompas…|Recherche d’un capteur de boussole…
+Connect a supported compass sensor to orient the dial as your device turns.|صِل مستشعر بوصلة مدعومًا لتوجيه المؤشر مع دوران جهازك.|آلے کے گھومنے پر سمت دکھانے کے لیے معاون قطب نما سینسر جوڑیں۔|Cihaz döndükçe kadranın yönelmesi için desteklenen pusula sensörünü bağlayın.|Hubungkan sensor kompas yang didukung agar penunjuk mengikuti putaran perangkat.|Connectez un capteur compatible pour orienter le cadran avec votre appareil.
+Find your location|اعثر على موقعك|اپنا مقام تلاش کریں|Konumunuzu bulun|Temukan lokasi Anda|Trouvez votre position
+Choose a country, then a city. The built-in catalogue works offline.|اختر البلد ثم المدينة. يعمل الدليل المدمج دون إنترنت.|پہلے ملک، پھر شہر چنیں۔ شامل فہرست آف لائن کام کرتی ہے۔|Önce ülke, sonra şehir seçin. Yerleşik katalog çevrimdışı çalışır.|Pilih negara, lalu kota. Katalog bawaan bekerja luring.|Choisissez un pays, puis une ville. Le catalogue intégré fonctionne hors ligne.
+Country or territory|البلد أو الإقليم|ملک یا علاقہ|Ülke veya bölge|Negara atau wilayah|Pays ou territoire
+Choose a country…|اختر بلدًا…|ملک چنیں…|Ülke seçin…|Pilih negara…|Choisissez un pays…
+Choose a country first|اختر البلد أولًا|پہلے ملک چنیں|Önce ülke seçin|Pilih negara dahulu|Choisissez d’abord un pays
+Select a city…|اختر مدينة…|شہر چنیں…|Şehir seçin…|Pilih kota…|Choisissez une ville…
+Filter cities|تصفية المدن|شہر چھانٹیں|Şehirleri filtrele|Saring kota|Filtrer les villes
+Type a city, suburb or region to narrow the list.|اكتب مدينة أو ضاحية أو منطقة لتضييق القائمة.|فہرست مختصر کرنے کے لیے شہر، مضافاتی علاقہ یا خطہ لکھیں۔|Listeyi daraltmak için şehir, semt veya bölge yazın.|Ketik kota, pinggiran, atau wilayah untuk menyaring daftar.|Saisissez une ville, une banlieue ou une région pour filtrer la liste.
+Start typing a city…|ابدأ بكتابة مدينة…|شہر کا نام لکھیں…|Şehir yazmaya başlayın…|Mulai ketik nama kota…|Commencez à saisir une ville…
+Loading cities…|جارٍ تحميل المدن…|شہر لوڈ ہو رہے ہیں…|Şehirler yükleniyor…|Memuat kota…|Chargement des villes…
+Show more cities|عرض المزيد من المدن|مزید شہر دکھائیں|Daha fazla şehir|Tampilkan kota lainnya|Afficher plus de villes
+Back to built-in cities|العودة إلى المدن المدمجة|شامل شہروں کی فہرست پر واپس|Yerleşik şehirlere dön|Kembali ke kota bawaan|Revenir aux villes intégrées
+Online results|نتائج الإنترنت|آن لائن نتائج|Çevrimiçi sonuçlar|Hasil daring|Résultats en ligne
+Searching online…|جارٍ البحث عبر الإنترنت…|آن لائن تلاش جاری ہے…|Çevrimiçi aranıyor…|Mencari daring…|Recherche en ligne…
+Search online|البحث عبر الإنترنت|آن لائن تلاش کریں|Çevrimiçi ara|Cari daring|Rechercher en ligne
+No matching cities — try online search or enter coordinates below|لا توجد مدن مطابقة — ابحث عبر الإنترنت أو أدخل الإحداثيات أدناه|شہر نہیں ملا — آن لائن تلاش کریں یا نیچے نقاط لکھیں|Eşleşen şehir yok — çevrimiçi arayın veya koordinat girin|Kota tidak ditemukan — cari daring atau masukkan koordinat|Aucune ville correspondante — recherchez en ligne ou saisissez les coordonnées ci-dessous
+Can’t find your city? Type its name and search online, or enter coordinates below. Online search sends the typed name and selected country to Open-Meteo.|لم تجد مدينتك؟ اكتب اسمها وابحث عبر الإنترنت أو أدخل الإحداثيات أدناه. يُرسل البحث الاسم والبلد المختار إلى Open-Meteo.|شہر نہیں مل رہا؟ نام لکھ کر آن لائن تلاش کریں یا نیچے نقاط درج کریں۔ نام اور منتخب ملک Open-Meteo کو بھیجے جاتے ہیں۔|Şehrinizi bulamadınız mı? Adını çevrimiçi arayın veya koordinat girin. Arama, adı ve ülkeyi Open-Meteo’ya gönderir.|Kota belum ditemukan? Cari namanya daring atau isi koordinat. Pencarian mengirim nama dan negara terpilih ke Open-Meteo.|Votre ville est introuvable ? Recherchez son nom en ligne ou saisissez ses coordonnées. La recherche envoie le nom et le pays à Open-Meteo.
+Let your device find you|دع جهازك يحدد موقعك|آلے سے مقام معلوم کریں|Cihazınız konumunuzu bulsun|Biarkan perangkat menemukan lokasi|Laissez votre appareil vous localiser
+Use device location|استخدام موقع الجهاز|آلے کا مقام استعمال کریں|Cihaz konumunu kullan|Gunakan lokasi perangkat|Utiliser la position de l’appareil
+Finding your location…|جارٍ تحديد موقعك…|آپ کا مقام تلاش ہو رہا ہے…|Konumunuz bulunuyor…|Mencari lokasi Anda…|Recherche de votre position…
+Use these coordinates|استخدام هذه الإحداثيات|یہ نقاط استعمال کریں|Bu koordinatları kullan|Gunakan koordinat ini|Utiliser ces coordonnées
+Suggested time zone:|المنطقة الزمنية المقترحة:|تجویز کردہ ٹائم زون:|Önerilen saat dilimi:|Zona waktu yang disarankan:|Fuseau horaire suggéré :
+IANA name, e.g. Australia/Melbourne|اسم IANA مثل Australia/Melbourne|IANA نام، مثلاً Australia/Melbourne|IANA adı, ör. Australia/Melbourne|Nama IANA, mis. Australia/Melbourne|Nom IANA, par ex. Australia/Melbourne
+A little before. A little after.|قبلها قليلًا. بعدها قليلًا.|کچھ پہلے۔ کچھ بعد۔|Biraz önce. Biraz sonra.|Sedikit sebelum. Sedikit sesudah.|Un peu avant. Un peu après.
+Optional recordings to complete your routine.|تسجيلات اختيارية لإكمال روتينك.|معمول مکمل کرنے کے لیے اختیاری ریکارڈنگ۔|Rutininizi tamamlayan isteğe bağlı kayıtlar.|Rekaman opsional untuk melengkapi rutinitas.|Des enregistrements facultatifs pour votre routine.
+A different voice for every prayer, or the familiar sound of one.|صوت مختلف لكل صلاة أو صوت واحد مألوف.|ہر نماز کے لیے الگ آواز، یا ایک مانوس صدا۔|Her namaza farklı ses veya tek tanıdık ses.|Suara berbeda setiap salat, atau satu suara akrab.|Une voix différente par prière, ou une seule voix familière.
+Athan volume|مستوى صوت الأذان|اذان کی آواز|Ezan ses düzeyi|Volume azan|Volume de l’adhan
+The first light|أول الضوء|پہلی روشنی|İlk ışık|Cahaya pertama|Les premières lueurs
+As the day settles|عند سكون النهار|دن ڈھلنے پر|Gün sakinleşirken|Saat hari mereda|Quand le jour s’apaise
+A moment to return|لحظة للعودة|رجوع کا لمحہ|Dönüş için bir an|Sejenak untuk kembali|Un instant pour revenir
+Give yourself a moment to prepare.|امنح نفسك لحظة للاستعداد.|تیاری کے لیے خود کو ایک لمحہ دیں۔|Hazırlanmak için kendinize zaman ayırın.|Beri waktu untuk bersiap.|Accordez-vous un instant pour vous préparer.
+A little nudge goes a long way.|تذكير بسيط يصنع فرقًا.|ہلکی یاد دہانی بہت کام آتی ہے۔|Küçük bir hatırlatma çok şey değiştirir.|Pengingat kecil berarti banyak.|Un petit rappel fait beaucoup.
+Set a reminder before a prayer, or a recitation after it.|اضبط تذكيرًا قبل الصلاة أو تلاوة بعدها.|نماز سے پہلے یاد دہانی یا بعد میں تلاوت مقرر کریں۔|Namaz öncesi hatırlatma veya sonrası tilavet ayarlayın.|Atur pengingat sebelum salat atau bacaan sesudahnya.|Programmez un rappel avant la prière ou une récitation après.
+Choose a prayer and when you’d like a nudge.|اختر الصلاة ووقت التذكير.|نماز اور یاد دہانی کا وقت چنیں۔|Namazı ve hatırlatma zamanını seçin.|Pilih salat dan waktu pengingat.|Choisissez une prière et le moment du rappel.
+You can add it again whenever you need it.|يمكنك إضافته مجددًا عند الحاجة.|ضرورت ہو تو دوبارہ شامل کر سکتے ہیں۔|Gerektiğinde yeniden ekleyebilirsiniz.|Anda dapat menambahkannya lagi kapan saja.|Vous pourrez le rajouter quand vous le souhaitez.
+Reminders follow your local prayer times and selected days. Enable automatic Athan to receive them; desktop notifications can be changed in Settings.|تتبع التذكيرات مواقيت الصلاة المحلية والأيام المختارة. فعّل الأذان التلقائي لتلقيها؛ يمكن تعديل الإشعارات في الإعدادات.|یاد دہانیاں مقامی نماز کے اوقات اور منتخب دنوں کے مطابق ہیں۔ انہیں حاصل کرنے کے لیے خودکار اذان فعال کریں؛ اطلاعات ترتیبات میں بدلیں۔|Hatırlatmalar yerel vakitleri ve seçili günleri izler. Almak için otomatik ezanı açın; bildirimleri Ayarlar’dan değiştirin.|Pengingat mengikuti waktu salat dan hari terpilih. Aktifkan azan otomatis; notifikasi dapat diubah di Pengaturan.|Les rappels suivent les horaires locaux et les jours choisis. Activez l’adhan automatique ; les notifications se règlent dans Paramètres.
+An estimated voluntary prayer window. Adjust the margins to match local guidance.|فترة تقديرية لصلاة النافلة. اضبط الهوامش وفق التوجيه المحلي.|نفل نماز کا تخمینی وقت۔ مقامی رہنمائی کے مطابق وقفہ بدلیں۔|Tahmini nafile namaz aralığı. Payları yerel rehbere göre ayarlayın.|Perkiraan rentang salat sunah. Sesuaikan jeda dengan panduan setempat.|Plage estimée de prière surérogatoire. Ajustez les marges selon les recommandations locales.
+Browser autoplay restrictions may prevent startup sound.|قد تمنع قيود المتصفح صوت بدء التشغيل.|براؤزر کی پابندیاں آغاز کی آواز روک سکتی ہیں۔|Tarayıcı kısıtlamaları açılış sesini engelleyebilir.|Batasan browser dapat mencegah suara awal.|Les restrictions du navigateur peuvent empêcher le son au démarrage.
+Athan calculates prayer times on your computer. Your location, recordings, preferences, and activity are stored locally.|يحسب أذان المواقيت على جهازك. يُحفظ موقعك وتسجيلاتك وتفضيلاتك ونشاطك محليًا.|اذان آپ کے کمپیوٹر پر اوقات حساب کرتا ہے۔ مقام، ریکارڈنگ، ترجیحات اور سرگرمی مقامی طور پر محفوظ ہیں۔|Athan vakitleri bilgisayarınızda hesaplar. Konum, kayıt, tercihler ve etkinlik yerel saklanır.|Athan menghitung waktu di komputer Anda. Lokasi, rekaman, preferensi, dan aktivitas disimpan lokal.|Athan calcule les horaires sur votre ordinateur. Position, enregistrements, préférences et activité sont stockés localement.
+Print a beautiful timetable for your fridge, desk or prayer space. Times use your saved location and calculation settings.|اطبع جدولًا جميلًا للثلاجة أو المكتب أو مكان الصلاة. تُستخدم إعدادات موقعك وحساباتك المحفوظة.|فریج، میز یا نماز کی جگہ کے لیے خوبصورت جدول چھاپیں۔ محفوظ مقام اور حساب کی ترتیبات استعمال ہوں گی۔|Buzdolabı, masa veya namaz alanı için güzel bir çizelge yazdırın. Kayıtlı konum ve hesap ayarları kullanılır.|Cetak jadwal indah untuk kulkas, meja, atau ruang salat. Memakai lokasi dan metode tersimpan.|Imprimez un beau calendrier pour votre réfrigérateur, bureau ou espace de prière, selon votre position et vos réglages enregistrés.
+PDFs include both calendars, event notes and your time zone. Ramadan and Islamic event dates remain subject to local moon sightings.|تتضمن ملفات PDF التقويمين والمناسبات والمنطقة الزمنية. تخضع تواريخ رمضان والمناسبات لرؤية الهلال المحلية.|PDF میں دونوں کیلنڈر، مواقع اور ٹائم زون شامل ہیں۔ رمضان اور اسلامی تاریخیں مقامی رؤیت ہلال کے مطابق بدل سکتی ہیں۔|PDF’ler iki takvimi, gün notlarını ve saat dilimini içerir. Ramazan ve İslami günler yerel hilal gözlemine bağlıdır.|PDF memuat kedua kalender, catatan peristiwa, dan zona waktu. Tanggal Ramadan dan peristiwa Islam mengikuti rukyat setempat.|Les PDF comprennent les deux calendriers, les événements et votre fuseau horaire. Les dates restent soumises à l’observation locale du croissant.
+Islamic dates begin at the preceding sunset. Events are estimated using Umm al-Qura and your saved Hijri correction; local moon sightings may differ. Laylat al-Qadr’s exact night is not known.|تبدأ التواريخ الإسلامية من غروب اليوم السابق. تُقدّر المناسبات وفق أم القرى والتصحيح المحفوظ؛ وقد تختلف رؤية الهلال محليًا. لا تُعرف ليلة القدر على وجه التحديد.|اسلامی تاریخ پچھلے غروب سے شروع ہوتی ہے۔ مواقع ام القریٰ اور محفوظ تصحیح سے تخمینی ہیں؛ مقامی رؤیت مختلف ہو سکتی ہے۔ شب قدر کی حتمی رات معلوم نہیں۔|İslami tarihler önceki gün batımında başlar. Ümmü’l-Kura ve hicri düzeltmeye göre tahmindir; yerel hilal gözlemi farklı olabilir. Kadir Gecesi’nin kesin tarihi bilinmez.|Tanggal Islam dimulai saat matahari terbenam sebelumnya. Perkiraan memakai Ummul Qura dan koreksi Hijriah; rukyat setempat dapat berbeda. Malam pasti Lailatulqadar tidak diketahui.|Les dates islamiques commencent au coucher du soleil précédent. Estimations selon Oumm al-Qoura et votre correction ; l’observation locale peut différer. La nuit exacte du Destin est inconnue.
+Meaning · paraphrase of the narration|المعنى · صياغة موجزة للرواية|مفہوم · روایت کا خلاصہ|Anlam · rivayetin özeti|Makna · parafrasa riwayat|Sens · reformulation du récit
+A moment to reflect|لحظة للتأمل|غور کا ایک لمحہ|Tefekkür için bir an|Sejenak merenung|Un instant de réflexion
+Reading collections|مجموعات القراءة|مطالعے کے مجموعے|Okuma koleksiyonları|Koleksi bacaan|Collections de lectures
+Reading list|قائمة القراءة|مطالعے کی فہرست|Okuma listesi|Daftar bacaan|Liste des lectures
+Source edition · AGPL-3.0|الإصدار المصدر · AGPL-3.0|اصل ایڈیشن · AGPL-3.0|Kaynak baskı · AGPL-3.0|Edisi sumber · AGPL-3.0|Édition source · AGPL-3.0
+Try another search or category, or save a dua to your favorites.|جرّب بحثًا أو بابًا آخر، أو احفظ دعاءً في المفضلة.|دوسری تلاش یا باب آزمائیں، یا دعا پسندیدہ میں محفوظ کریں۔|Başka arama veya kategori deneyin, ya da favorilere dua ekleyin.|Coba pencarian atau kategori lain, atau simpan doa ke favorit.|Essayez une autre recherche ou catégorie, ou ajoutez une invocation aux favoris.
+Downloads use the official Sunnah.com API and require your own API key. The API may contain only part of a collection. Coverage and available reading languages are shown for each download.|تستخدم التنزيلات واجهة Sunnah.com الرسمية وتتطلب مفتاح API الخاص بك. قد تضم الواجهة جزءًا من المجموعة فقط. تظهر التغطية ولغات القراءة لكل تنزيل.|ڈاؤن لوڈ Sunnah.com کی سرکاری API سے ہوتا ہے اور ذاتی API کلید درکار ہے۔ کچھ مجموعے جزوی دستیاب ہیں۔ ہر ڈاؤن لوڈ کی دستیابی اور زبانیں دکھائی جاتی ہیں۔|İndirmeler resmi Sunnah.com API’sini ve size ait anahtarı kullanır. Bir kaynağın yalnızca bir bölümü bulunabilir. Kapsam ve okuma dilleri gösterilir.|Unduhan memakai API resmi Sunnah.com dan memerlukan kunci Anda. Koleksi mungkin hanya tersedia sebagian. Cakupan dan bahasa bacaan ditampilkan.|Les téléchargements utilisent l’API officielle de Sunnah.com et votre propre clé. Un recueil peut n’être disponible qu’en partie. La couverture et les langues sont indiquées.
+If your browser blocks the API connection, download collections using the desktop app.|إذا حظر المتصفح اتصال API، نزّل المجموعات بتطبيق سطح المكتب.|براؤزر API روکے تو ڈیسک ٹاپ ایپ سے ڈاؤن لوڈ کریں۔|Tarayıcı API’yi engellerse masaüstü uygulamasını kullanın.|Jika browser memblokir API, gunakan aplikasi desktop.|Si le navigateur bloque l’API, utilisez l’application de bureau.
+Encrypted for your Windows account. Sent only to api.sunnah.com.|مشفّر لحساب Windows. يُرسل فقط إلى api.sunnah.com.|Windows اکاؤنٹ کے لیے خفیہ محفوظ۔ صرف api.sunnah.com کو بھیجا جاتا ہے۔|Windows hesabınız için şifreli. Yalnızca api.sunnah.com’a gönderilir.|Dienkripsi untuk akun Windows. Hanya dikirim ke api.sunnah.com.|Chiffrée pour votre compte Windows. Envoyée uniquement à api.sunnah.com.
+Kept in memory for this session. Sent only to api.sunnah.com.|يُحفظ في الذاكرة لهذه الجلسة. يُرسل فقط إلى api.sunnah.com.|اس نشست کی یادداشت میں محفوظ۔ صرف api.sunnah.com کو بھیجا جاتا ہے۔|Bu oturumda bellekte tutulur. Yalnızca api.sunnah.com’a gönderilir.|Disimpan dalam memori sesi ini. Hanya dikirim ke api.sunnah.com.|Gardée en mémoire pour cette session. Envoyée uniquement à api.sunnah.com.
+Recent prayers|الصلوات الأخيرة|حالیہ نمازیں|Son namazlar|Salat terbaru|Prières récentes
+Prayers and reminders appear here once scheduled.|تظهر الصلوات والتذكيرات هنا بعد جدولتها.|نمازیں اور یاد دہانیاں مقرر ہونے پر یہاں دکھیں گی۔|Namazlar ve hatırlatmalar planlandığında burada görünür.|Salat dan pengingat muncul setelah dijadwalkan.|Les prières et rappels apparaissent ici une fois programmés.
+Setup health|حالة الإعدادات|ترتیبات کی حالت|Kurulum durumu|Status pengaturan|État de la configuration
+Check again|التحقق مجددًا|دوبارہ جانچیں|Tekrar kontrol et|Periksa lagi|Vérifier à nouveau
+A fresh start.|بداية جديدة.|نئی ابتدا۔|Yeni bir başlangıç.|Awal yang baru.|Un nouveau départ.
+Your prayer calls and reminders will be recorded here.|ستُسجّل صلواتك وتذكيراتك هنا.|آپ کی اذانوں اور یاد دہانیوں کا ریکارڈ یہاں ہوگا۔|Namaz çağrıları ve hatırlatmalar burada kaydedilir.|Panggilan salat dan pengingat dicatat di sini.|Vos appels et rappels seront consignés ici.
+View activity|عرض النشاط|سرگرمی دیکھیں|Etkinliği görüntüle|Lihat aktivitas|Voir l’activité
+Let’s reconnect.|لنعِد الاتصال.|دوبارہ رابطہ کریں۔|Yeniden bağlanalım.|Mari hubungkan kembali.|Rétablissons la connexion.
+Finding the rhythm of your day…|جارٍ إعداد إيقاع يومك…|آپ کے دن کا معمول تیار ہو رہا ہے…|Günlük düzeniniz hazırlanıyor…|Menyiapkan ritme hari Anda…|Préparation de votre journée…
+Standard|المعتاد|معیاری|Standart|Standar|Standard
+Muslim World League|رابطة العالم الإسلامي|رابطہ عالم اسلامی|Dünya İslam Birliği|Liga Muslim Dunia|Ligue islamique mondiale
+From {0} minutes after sunrise to {1} minutes before solar noon.|من {0} دقيقة بعد الشروق إلى {1} دقيقة قبل الزوال.|طلوع کے {0} منٹ بعد سے زوال کے {1} منٹ پہلے تک۔|Gün doğumundan {0} dakika sonra ile güneş öğlesinden {1} dakika önce arası.|Dari {0} menit setelah terbit hingga {1} menit sebelum tengah hari matahari.|De {0} minutes après le lever du soleil à {1} minutes avant le midi solaire.
+Saved to {0}|تم الحفظ في {0}|{0} میں محفوظ|{0} konumuna kaydedildi|Disimpan ke {0}|Enregistré dans {0}
+Cities in {0}|مدن {0}|{0} کے شہر|{0} şehirleri|Kota di {0}|Villes de {0}
+Islamic New Year|رأس السنة الهجرية|اسلامی نیا سال|Hicri yılbaşı|Tahun Baru Islam|Nouvel An hégirien
+Ashura|عاشوراء|عاشورہ|Aşure|Asyura|Achoura
+Mawlid|المولد النبوي|میلاد النبی|Mevlid|Maulid Nabi|Mawlid
+Isra and Miraj|الإسراء والمعراج|اسراء و معراج|İsra ve Miraç|Isra Mikraj|Isra et Miraj
+Ramadan begins|بداية رمضان|رمضان کا آغاز|Ramazan başlangıcı|Awal Ramadan|Début du Ramadan
+Last ten nights of Ramadan begin|بداية العشر الأواخر من رمضان|رمضان کی آخری دس راتوں کا آغاز|Ramazan’ın son on gecesi başlar|Awal sepuluh malam terakhir Ramadan|Début des dix dernières nuits du Ramadan
+Laylat al-Qadr|ليلة القدر|شب قدر|Kadir Gecesi|Lailatulqadar|Nuit du Destin
+Eid al-Fitr|عيد الفطر|عید الفطر|Ramazan Bayramı|Idulfitri|Aïd al-Fitr
+Hajj begins|بداية الحج|حج کا آغاز|Hac başlangıcı|Awal haji|Début du Hajj
+Day of Arafah|يوم عرفة|یوم عرفہ|Arefe günü|Hari Arafah|Jour d’Arafat
+Eid al-Adha|عيد الأضحى|عید الاضحی|Kurban Bayramı|Iduladha|Aïd al-Adha
+A familiar call|نداء مألوف|مانوس پکار|Tanıdık bir çağrı|Panggilan yang akrab|Un appel familier
+Wherever you find yourself|أينما كنت|آپ جہاں بھی ہوں|Nerede olursanız olun|Di mana pun Anda berada|Où que vous soyez
+Make a little space|امنح نفسك فسحة|کچھ وقت نکالیں|Biraz yer açın|Luangkan sedikit waktu|Faites une petite place
+Make Athan your own|اجعل أذان يناسبك|اذان اپنی پسند کا بنائیں|Athan’ı kişiselleştirin|Sesuaikan Athan untuk Anda|Personnalisez Athan
+Words for your everyday|كلمات ليومك|ہر دن کے لیے کلمات|Günlük hayatınız için sözler|Kata-kata untuk keseharian|Des paroles pour le quotidien
+Every call, accounted for|كل نداء في سجله|ہر پکار کا حساب|Her çağrı kayıt altında|Setiap panggilan tercatat|Chaque appel consigné
+A clear view of your day.|صورة واضحة ليومك.|آپ کے دن کا واضح جائزہ۔|Gününüze net bir bakış.|Gambaran jelas hari Anda.|Une vue claire de votre journée.
+Recent prayers and the health of your setup.|الصلوات الأخيرة وحالة إعداداتك.|حالیہ نمازیں اور ترتیبات کی حالت۔|Son namazlar ve kurulum durumu.|Salat terbaru dan status pengaturan.|Prières récentes et état de votre configuration.
+Checking your setup…|جارٍ التحقق من الإعدادات…|ترتیبات جانچی جا رہی ہیں…|Kurulum kontrol ediliyor…|Memeriksa pengaturan…|Vérification de la configuration…
+Everything is in place.|كل شيء جاهز.|سب تیار ہے۔|Her şey hazır.|Semuanya siap.|Tout est en place.
+A few things need a look.|هناك أمور تحتاج للمراجعة.|کچھ چیزوں کو دیکھنا ہوگا۔|Birkaç şey kontrol edilmeli.|Ada hal yang perlu diperiksa.|Quelques points sont à vérifier.
+Completed|مكتمل|مکمل|Tamamlandı|Selesai|Terminé
+Dismissed|تم الإغلاق|ہٹا دی گئی|Kapatıldı|Ditutup|Fermé
+Needs attention|يحتاج للمراجعة|توجہ درکار|Kontrol gerekli|Perlu perhatian|À vérifier
+Completion unconfirmed|الإكمال غير مؤكد|تکمیل غیر مصدقہ|Tamamlanma doğrulanmadı|Penyelesaian belum dikonfirmasi|Achèvement non confirmé
+Missed · too late|فائت · تأخر كثيرًا|رہ گئی · بہت تاخیر|Kaçırıldı · çok geç|Terlewat · terlambat|Manqué · trop tard
+Edit your reminder|تعديل التذكير|یاد دہانی بدلیں|Hatırlatmayı düzenle|Edit pengingat|Modifier le rappel
+Reminder saved.|تم حفظ التذكير.|یاد دہانی محفوظ ہو گئی۔|Hatırlatma kaydedildi.|Pengingat disimpan.|Rappel enregistré.
+Reminder removed.|تم حذف التذكير.|یاد دہانی ہٹا دی گئی۔|Hatırlatma kaldırıldı.|Pengingat dihapus.|Rappel supprimé.
+Reminder time saved.|تم حفظ وقت التذكير.|یاد دہانی کا وقت محفوظ۔|Hatırlatma saati kaydedildi.|Waktu pengingat disimpan.|Heure du rappel enregistrée.
+A sourced hadith meaning to reflect on.|معنى حديث موثّق للتأمل.|غور کے لیے حوالہ دار حدیث کا مفہوم۔|Tefekkür için kaynaklı hadis anlamı.|Makna hadis bersumber untuk direnungkan.|Le sens d’un hadith sourcé à méditer.
+A general supplication from your dua collection.|دعاء عام من مجموعتك.|آپ کے مجموعے سے عمومی دعا۔|Dua koleksiyonunuzdan genel bir dua.|Doa umum dari koleksi Anda.|Une invocation générale de votre collection.
+Suhoor ends|نهاية السحور|سحری ختم|Sahur biter|Akhir sahur|Fin du suhur
+Iftar|الإفطار|افطار|İftar|Buka puasa|Iftar
+Day|اليوم|دن|Gün|Hari|Jour
+Ishraq|الإشراق|اشراق|İşrak|Isyraq|Ishraq
+Duha ends|نهاية الضحى|چاشت ختم|Kuşluk biter|Akhir Duha|Fin de Duha
+Local times / daylight saving applied|التوقيت المحلي / مع تطبيق التوقيت الصيفي|مقامی اوقات / موسمی وقت شامل|Yerel saat / yaz saati uygulanır|Waktu lokal / penyesuaian musim panas|Heures locales / heure d’été appliquée
+A month of reflection|شهر من التأمل|غور کا مہینہ|Tefekkür ayı|Bulan perenungan|Un mois de réflexion
+Your daily prayer timetable|جدول صلاتك اليومي|روزانہ نماز کا جدول|Günlük namaz çizelgeniz|Jadwal salat harian Anda|Vos horaires quotidiens de prière
+A year of moments that matter|سنة من اللحظات المهمة|بامقصد لمحوں کا سال|Anlamlı anlarla bir yıl|Setahun momen bermakna|Une année de moments essentiels
+A little space for prayer, every day.|فسحة للصلاة كل يوم.|روزانہ نماز کے لیے کچھ وقت۔|Her gün namaza biraz zaman.|Sedikit waktu untuk salat setiap hari.|Une petite place pour la prière chaque jour.
+Suhoor ends at Fajr. Iftar begins at Maghrib.|ينتهي السحور عند الفجر ويبدأ الإفطار عند المغرب.|سحری فجر پر ختم، افطار مغرب پر شروع۔|Sahur sabah vaktinde biter. İftar akşam vaktinde başlar.|Sahur berakhir saat Subuh. Berbuka saat Magrib.|Le suhur finit au Fajr. L’iftar commence au Maghrib.
+Key Islamic date|تاريخ إسلامي مهم|اہم اسلامی تاریخ|Önemli İslami tarih|Tanggal penting Islam|Date islamique importante
+Large numerals: Hijri / small numerals: Gregorian|الأرقام الكبيرة: هجري / الصغيرة: ميلادي|بڑے ہندسے: ہجری / چھوٹے: عیسوی|Büyük rakamlar: Hicri / küçük: Miladi|Angka besar: Hijriah / kecil: Masehi|Grands chiffres : hégirien / petits : grégorien
+Large numerals: Gregorian / small numerals: Hijri|الأرقام الكبيرة: ميلادي / الصغيرة: هجري|بڑے ہندسے: عیسوی / چھوٹے: ہجری|Büyük rakamlar: Miladi / küçük: Hicri|Angka besar: Masehi / kecil: Hijriah|Grands chiffres : grégorien / petits : hégirien
+ATHAN / CALCULATED FOR YOUR LOCATION|أذان / محسوب لموقعك|اذان / آپ کے مقام کے مطابق|ATHAN / KONUMUNUZA GÖRE HESAPLANDI|ATHAN / DIHITUNG UNTUK LOKASI ANDA|ATHAN / CALCULÉ POUR VOTRE POSITION
+(observed in some traditions)|(تحتفل به بعض التقاليد)|(بعض روایات میں منایا جاتا ہے)|(bazı geleneklerde kutlanır)|(diperingati dalam sebagian tradisi)|(observé dans certaines traditions)
+(traditional date)|(تاريخ متعارف عليه)|(روایتی تاریخ)|(geleneksel tarih)|(tanggal tradisional)|(date traditionnelle)
+(commonly observed 27th; exact night unknown)|(يُتحرّى غالبًا في ليلة 27؛ الليلة غير معلومة)|(عموماً 27ویں رات؛ حتمی رات معلوم نہیں)|(genellikle 27. gece; kesin gece bilinmez)|(umumnya malam ke-27; malam pasti tidak diketahui)|(souvent la 27e nuit ; nuit exacte inconnue)
+Hanafi|حنفي|حنفی|Hanefî|Hanafi|Hanafite
+In the rhythm of your day|في إيقاع يومك|آپ کے دن کی ترتیب|Gününüzün ritminde|Dalam irama hari Anda|Au rythme de votre journée
+Sound preview|معاينة الصوت|آواز کا پیش منظر|Ses önizlemesi|Pratinjau suara|Aperçu sonore
+Umm al-Qura calendar|تقويم أم القرى|ام القریٰ تقویم|Ümmü’l-Kurâ takvimi|Kalender Ummul Qura|Calendrier Umm al-Qura
+Other formats for {0}|صيغ أخرى لـ {0}|{0} کے دیگر فارمیٹ|{0} için diğer biçimler|Format lain untuk {0}|Autres formats pour {0}
+Original Arabic narration|نص الرواية بالعربية|اصل عربی روایت|Özgün Arapça rivayet|Riwayat asli bahasa Arab|Texte original arabe
+Published English translation|الترجمة الإنجليزية المنشورة|شائع شدہ انگریزی ترجمہ|Yayımlanmış İngilizce çeviri|Terjemahan Inggris yang diterbitkan|Traduction anglaise publiée
+Daily hadith collection|مجموعة الأحاديث اليومية|روزانہ احادیث کا مجموعہ|Günlük hadis derlemesi|Kumpulan hadis harian|Collection de hadiths du jour
+A complete narration with its original wording and source.|رواية كاملة بنصها الأصلي ومصدرها.|اصل الفاظ اور ماخذ کے ساتھ مکمل روایت۔|Özgün metni ve kaynağıyla tam bir rivayet.|Riwayat lengkap dengan teks asli dan sumbernya.|Une narration complète avec son texte original et sa source.
+Original Arabic narrations and published English translations from Sunnah.com, with narration context and source references preserved.|نصوص الروايات العربية وترجماتها الإنجليزية المنشورة من Sunnah.com، مع الحفاظ على سياق الرواية ومراجعها.|Sunnah.com سے اصل عربی روایات اور شائع شدہ انگریزی تراجم، سیاق اور حوالوں کے ساتھ۔|Sunnah.com’dan özgün Arapça rivayetler ve yayımlanmış İngilizce çeviriler; bağlam ve kaynaklar korunmuştur.|Riwayat Arab asli dan terjemahan Inggris terbitan Sunnah.com, dengan konteks serta rujukan tetap utuh.|Textes arabes originaux et traductions anglaises publiées sur Sunnah.com, avec leur contexte et leurs références.
+Times follow {0}.|الأوقات حسب {0}.|اوقات {0} کے مطابق ہیں۔|Saatler {0} saat dilimine göredir.|Waktu mengikuti {0}.|Les horaires suivent le fuseau {0}.
+These silent readings run while this tab is open and your device is awake, independently of prayer calls.|تظهر هذه القراءات الصامتة ما دامت علامة التبويب مفتوحة والجهاز مستيقظًا، بشكل مستقل عن الأذان.|یہ خاموش یاد دہانیاں ٹیب کھلا اور آلہ بیدار ہونے پر، اذان سے الگ چلتی ہیں۔|Bu sessiz okumalar, sekme açık ve cihaz uyanıkken ezandan bağımsız çalışır.|Bacaan senyap ini berjalan saat tab terbuka dan perangkat aktif, terpisah dari azan.|Ces lectures silencieuses fonctionnent lorsque cet onglet est ouvert et l’appareil éveillé, indépendamment de l’adhan.
+These silent readings run while Athan is open or in the tray, independently of prayer calls.|تظهر هذه القراءات الصامتة عندما يكون أذان مفتوحًا أو في علبة النظام، بشكل مستقل عن الأذان.|یہ خاموش یاد دہانیاں اذان کی کھلی کھڑکی یا سسٹم ٹرے میں، نماز کی اذان سے الگ چلتی ہیں۔|Bu sessiz okumalar, Athan açıkken veya sistem tepsisindeyken ezandan bağımsız çalışır.|Bacaan senyap ini berjalan saat Athan terbuka atau berada di baki sistem, terpisah dari azan.|Ces lectures silencieuses fonctionnent quand Athan est ouvert ou dans la zone de notification, indépendamment de l’adhan.
+If today's time has passed, the reading appears once when enabled or next opened. Earlier days are not queued.|إذا مضى وقت اليوم، تظهر القراءة مرة واحدة عند التفعيل أو الفتح التالي. لا تتراكم قراءات الأيام الماضية.|آج کا وقت گزر چکا ہو تو فعال کرنے یا اگلی بار کھولنے پر ایک بار ظاہر ہوگی۔ پچھلے دنوں کی قراءتیں جمع نہیں ہوتیں۔|Bugünün saati geçtiyse, okuma etkinleştirildiğinde veya sonraki açılışta bir kez görünür. Önceki günler sıraya alınmaz.|Jika waktu hari ini telah lewat, bacaan muncul sekali saat diaktifkan atau dibuka kembali. Hari sebelumnya tidak diantrekan.|Si l’heure du jour est passée, la lecture apparaît une fois à l’activation ou à la prochaine ouverture. Les jours précédents ne sont pas mis en attente.
+{0} supplications|{0} دعاء|{0} دعائیں|{0} dua|{0} doa|{0} invocations
+{0} narrations|{0} رواية|{0} روایات|{0} rivayet|{0} riwayat|{0} narrations
+Daily {0} time|وقت {0} اليومي|روزانہ {0} کا وقت|Günlük {0} saati|Waktu {0} harian|Heure quotidienne de {0}
+Enable daily {0}|تفعيل {0} اليومي|روزانہ {0} فعال کریں|Günlük {0} etkinleştir|Aktifkan {0} harian|Activer {0} quotidien
+hadith|الحديث|حدیث|hadis|hadis|hadith
+dua|الدعاء|دعا|dua|doa|invocation
+{0} matches|{0} نتيجة|{0} نتائج|{0} eşleşme|{0} hasil|{0} résultats
+{0} cities|{0} مدينة|{0} شہر|{0} şehir|{0} kota|{0} villes
+{0} cities · showing {1}|{0} مدينة · المعروض {1}|{0} شہر · {1} دکھائے گئے|{0} şehir · {1} gösteriliyor|{0} kota · menampilkan {1}|{0} villes · {1} affichées
+Downloading {0} · {1} / {2}|تنزيل {0} · {1} / {2}|{0} ڈاؤن لوڈ · {1} / {2}|{0} indiriliyor · {1} / {2}|Mengunduh {0} · {1} / {2}|Téléchargement de {0} · {1} / {2}
+{0} downloaded · {1} API entries · {2} in collection|تم تنزيل {0} · متاح {1} عبر API · المجموع {2}|{0} ڈاؤن لوڈ · API میں {1} · مجموعے میں {2}|{0} indirildi · API’de {1} · derlemede {2}|{0} diunduh · {1} tersedia di API · {2} dalam koleksi|{0} téléchargés · {1} via l’API · {2} dans la collection
+Book {0}|الكتاب {0}|کتاب {0}|Kitap {0}|Kitab {0}|Livre {0}
+Remove downloaded {0}|إزالة تنزيل {0}|ڈاؤن لوڈ شدہ {0} حذف کریں|İndirilen {0} dosyasını kaldır|Hapus unduhan {0}|Supprimer le téléchargement de {0}
+Sahih al-Bukhari|صحيح البخاري|صحیح بخاری|Sahîh-i Buhârî|Sahih al-Bukhari|Sahih al-Bukhari
+Sahih Muslim|صحيح مسلم|صحیح مسلم|Sahîh-i Müslim|Sahih Muslim|Sahih Muslim
+Sunan Abi Dawud|سنن أبي داود|سنن ابی داؤد|Sünen-i Ebû Dâvûd|Sunan Abu Dawud|Sunan Abi Dawud
+Jami at-Tirmidhi|جامع الترمذي|جامع ترمذی|Câmiu’t-Tirmizî|Jami at-Tirmidzi|Jami at-Tirmidhi
+Sunan an-Nasai|سنن النسائي|سنن نسائی|Sünen-i Nesâî|Sunan an-Nasa’i|Sunan an-Nasai
+Sunan Ibn Majah|سنن ابن ماجه|سنن ابن ماجہ|Sünen-i İbn Mâce|Sunan Ibnu Majah|Sunan Ibn Majah
+Muwatta Malik|موطأ مالك|موطا امام مالک|Muvatta|Muwatta Malik|Muwatta Malik
+Musnad Ahmad|مسند أحمد|مسند احمد|Müsned-i Ahmed|Musnad Ahmad|Musnad Ahmad
+Riyad as-Salihin|رياض الصالحين|ریاض الصالحین|Riyâzü’s-Sâlihîn|Riyadhus Shalihin|Riyad as-Salihin
+Al-Adab al-Mufrad|الأدب المفرد|الادب المفرد|el-Edebü’l-Müfred|Al-Adab al-Mufrad|Al-Adab al-Mufrad
+Forty Hadith of an-Nawawi|الأربعون النووية|اربعین نووی|Nevevî’nin Kırk Hadisi|Arbain an-Nawawi|Les quarante hadiths de Nawawi
+Forty Hadith Qudsi|أربعون حديثًا قدسيًا|چالیس احادیث قدسیہ|Kırk Kudsî Hadis|Empat Puluh Hadis Qudsi|Quarante hadiths qudsi
+Begin with intention|ابدأ بالنية|نیت سے آغاز|Niyetle başlayın|Awali dengan niat|Commencer par l’intention
+Ease another person's burden|فرّج كربة غيرك|دوسرے کی مشکل آسان کریں|Bir başkasının yükünü hafifletin|Ringankan beban sesama|Soulager autrui
+Let your words bring good|قل خيرًا|بھلی بات کہیں|Güzel söz söyleyin|Berkatalah yang baik|Dire du bien
+Remember Allah throughout the day|اذكر الله طوال يومك|دن بھر اللہ کو یاد کریں|Gün boyunca Allah’ı anın|Ingat Allah sepanjang hari|Se rappeler Allah au fil du jour
+Wish good for others|أحب الخير للآخرين|دوسروں کے لیے بھلائی چاہیں|Başkaları için iyilik dileyin|Harapkan kebaikan bagi sesama|Souhaiter le bien aux autres
+Restrain anger|اكظم الغيظ|غصے پر قابو رکھیں|Öfkenizi dizginleyin|Kendalikan amarah|Maîtriser sa colère
+Choose gentleness|اختر الرفق|نرمی اختیار کریں|Yumuşak huylu olun|Pilih kelembutan|Choisir la douceur
+Small deeds, kept steady|داوم على العمل وإن قل|تھوڑا عمل، مسلسل|Az da olsa devamlı amel|Amalan kecil yang rutin|Des actes modestes et réguliers
+No kindness is too small|لا تحقرن من المعروف شيئًا|کوئی نیکی معمولی نہیں|Hiçbir iyilik küçük değildir|Tiada kebaikan yang remeh|Aucun bienfait n’est trop petit
+Good deeds are charity|كل معروف صدقة|ہر نیکی صدقہ ہے|Her iyilik sadakadır|Setiap kebaikan adalah sedekah|Tout bienfait est une aumône
+Learn and share the Quran|تعلم القرآن وعلّمه|قرآن سیکھیں اور سکھائیں|Kur’an’ı öğrenin ve öğretin|Pelajari dan ajarkan Al-Qur’an|Apprendre et enseigner le Coran
+Value health and time|اغتنم الصحة والفراغ|صحت اور وقت کی قدر کریں|Sağlığın ve zamanın kıymetini bilin|Hargai kesehatan dan waktu|Apprécier la santé et le temps
+Times, calendars, Qibla, saved locations and imported recordings stay on this device.|تبقى المواقيت والتقاويم والقبلة والمواقع المحفوظة والتسجيلات المستوردة على هذا الجهاز.|اوقات، تقاویم، قبلہ، محفوظ مقامات اور ریکارڈنگ اسی آلے پر رہتے ہیں۔|Vakitler, takvimler, kıble, kayıtlı konumlar ve sesler bu cihazda kalır.|Waktu, kalender, kiblat, lokasi tersimpan dan rekaman tetap di perangkat ini.|Les horaires, calendriers, la qibla, les lieux et les enregistrements restent sur cet appareil.
+For prayers, enable Athan and keep this app open and your device awake. Browsers can delay prayer calls in background tabs.|للأذان، فعّل أذان وأبقِ التطبيق مفتوحًا والجهاز مستيقظًا. قد تؤخر المتصفحات الأذان في علامات التبويب الخلفية.|اذان فعال کریں اور ایپ کھلی اور آلہ بیدار رکھیں۔ پس منظر کے ٹیب میں براؤزر اذان میں تاخیر کر سکتا ہے۔|Ezan için Athan’ı etkinleştirin, uygulamayı açık ve cihazı uyanık tutun. Tarayıcılar arka plan sekmelerinde ezanı geciktirebilir.|Aktifkan Athan dan biarkan aplikasi terbuka serta perangkat aktif. Peramban dapat menunda azan di tab latar belakang.|Activez Athan et gardez l’application ouverte et l’appareil éveillé. Le navigateur peut retarder les appels dans les onglets en arrière-plan.
+Offline · your prayer information is available|دون اتصال · معلومات الصلاة متاحة|آف لائن · نماز کی معلومات دستیاب ہیں|Çevrimdışı · namaz bilgileriniz kullanılabilir|Luring · informasi salat tersedia|Hors ligne · vos informations de prière sont disponibles
+Storage protection is enabled.|حماية التخزين مفعلة.|ڈیٹا محفوظ رکھنے کی اجازت فعال ہے۔|Depolama koruması etkin.|Perlindungan penyimpanan aktif.|La protection du stockage est activée.
+Offline data protection enabled.|تم تفعيل حماية البيانات دون اتصال.|آف لائن ڈیٹا کا تحفظ فعال ہے۔|Çevrimdışı veri koruması etkin.|Perlindungan data luring aktif.|Protection des données hors ligne activée.
+Data is saved, but your browser has not granted storage protection. Avoid clearing site data.|البيانات محفوظة، لكن المتصفح لم يمنح حماية التخزين. تجنب مسح بيانات الموقع.|ڈیٹا محفوظ ہے مگر براؤزر نے تحفظ کی اجازت نہیں دی۔ سائٹ کا ڈیٹا صاف نہ کریں۔|Veriler kaydedildi ancak tarayıcı depolama korumasına izin vermedi. Site verilerini temizlemeyin.|Data tersimpan, tetapi peramban belum mengizinkan perlindungan. Hindari menghapus data situs.|Les données sont enregistrées, mais leur protection n’a pas été accordée. Évitez d’effacer les données du site.
+Storage protection is unavailable in this browser.|حماية التخزين غير متاحة في هذا المتصفح.|اس براؤزر میں ڈیٹا کا تحفظ دستیاب نہیں۔|Bu tarayıcıda depolama koruması kullanılamıyor.|Perlindungan penyimpanan tidak tersedia di peramban ini.|La protection du stockage est indisponible dans ce navigateur.
+A quiet moment|لحظة سكينة|پُرسکون لمحہ|Sakin bir an|Saat yang tenang|Un instant de calme
+No upcoming time available|لا يوجد وقت قادم متاح|آنے والا وقت دستیاب نہیں|Yaklaşan vakit bulunamadı|Waktu berikutnya tidak tersedia|Aucun prochain horaire disponible
+Mute {0} Athan|كتم أذان {0}|{0} کی اذان خاموش کریں|{0} ezanını sessize al|Bisukan azan {0}|Couper l’adhan de {0}
+Enable {0} Athan|تفعيل أذان {0}|{0} کی اذان فعال کریں|{0} ezanını etkinleştir|Aktifkan azan {0}|Activer l’adhan de {0}
+{0} recording|تسجيل {0}|{0} کی ریکارڈنگ|{0} kaydı|Rekaman {0}|Enregistrement de {0}
+{0} sound|صوت {0}|{0} کی آواز|{0} sesi|Suara {0}|Son de {0}
+Browse {0}|اختيار {0}|{0} منتخب کریں|{0} seç|Pilih {0}|Choisir {0}
+Preview {0}|معاينة {0}|{0} سنیں|{0} önizle|Pratinjau {0}|Écouter {0}
+Stop {0}|إيقاف {0}|{0} روکیں|{0} durdur|Hentikan {0}|Arrêter {0}
+{0} day|{0} يوم|{0} دن|{0} gün|{0} hari|{0} jour
+{0} days|{0} أيام|{0} دن|{0} gün|{0} hari|{0} jours
+{0} hours {1} minutes until {2}|{0} ساعة و{1} دقيقة حتى {2}|{2} تک {0} گھنٹے {1} منٹ|{2} vaktine {0} saat {1} dakika|{0} jam {1} menit menuju {2}|{0} heures et {1} minutes avant {2}
+Fajr angle override (°)|تخصيص زاوية الفجر (°)|فجر کا مخصوص زاویہ (°)|İmsak açısı (°)|Sudut khusus Subuh (°)|Angle personnalisé du Fajr (°)
+Isha angle override (°)|تخصيص زاوية العشاء (°)|عشاء کا مخصوص زاویہ (°)|Yatsı açısı (°)|Sudut khusus Isya (°)|Angle personnalisé de l’Isha (°)
+Isha interval override (minutes)|تخصيص مدة العشاء (دقائق)|عشاء کا مخصوص وقفہ (منٹ)|Yatsı aralığı (dakika)|Jeda khusus Isya (menit)|Intervalle personnalisé de l’Isha (minutes)
+Maghrib angle override (°)|تخصيص زاوية المغرب (°)|مغرب کا مخصوص زاویہ (°)|Akşam açısı (°)|Sudut khusus Magrib (°)|Angle personnalisé du Maghrib (°)
+Automatic Athan is paused. You can enable it from the dashboard.|الأذان التلقائي متوقف مؤقتًا. يمكنك تفعيله من الصفحة الرئيسية.|خودکار اذان موقوف ہے۔ مرکزی صفحے سے فعال کر سکتے ہیں۔|Otomatik ezan duraklatıldı. Ana sayfadan etkinleştirebilirsiniz.|Azan otomatis dijeda. Aktifkan dari halaman utama.|L’adhan automatique est en pause. Vous pouvez l’activer depuis l’accueil.
+Automatic Athan is running and watching for the next prayer.|الأذان التلقائي يعمل وينتظر الصلاة القادمة.|خودکار اذان فعال ہے اور اگلی نماز کا انتظار ہے۔|Otomatik ezan çalışıyor ve sonraki namazı bekliyor.|Azan otomatis aktif dan menunggu salat berikutnya.|L’adhan automatique est actif et attend la prochaine prière.
+University of Islamic Sciences, Karachi|جامعة العلوم الإسلامية بكراتشي|جامعہ علوم اسلامیہ، کراچی|Karaçi İslami İlimler Üniversitesi|Universitas Ilmu Islam, Karachi|Université des sciences islamiques de Karachi
+Islamic Society of North America|الجمعية الإسلامية لأمريكا الشمالية|اسلامک سوسائٹی آف نارتھ امریکہ|Kuzey Amerika İslam Toplumu|Masyarakat Islam Amerika Utara|Société islamique d’Amérique du Nord
+Umm al-Qura, Makkah|أم القرى، مكة|ام القریٰ، مکہ|Ümmü’l-Kurâ, Mekke|Ummul Qura, Makkah|Umm al-Qura, La Mecque
+Egyptian General Authority of Survey|الهيئة المصرية العامة للمساحة|مصری جنرل اتھارٹی آف سروے|Mısır Genel Harita Kurumu|Otoritas Survei Umum Mesir|Autorité générale égyptienne de géodésie
+Moonsighting Committee|لجنة رؤية الهلال|رویت ہلال کمیٹی|Hilal Gözlem Komitesi|Komite Rukyat Hilal|Comité d’observation du croissant
+University of Tehran|جامعة طهران|تہران یونیورسٹی|Tahran Üniversitesi|Universitas Teheran|Université de Téhéran
+Custom angles|زوايا مخصصة|مخصوص زاویے|Özel açılar|Sudut khusus|Angles personnalisés
+Dubai|دبي|دبئی|Dubai|Dubai|Dubaï
+Kuwait|الكويت|کویت|Kuveyt|Kuwait|Koweït
+Qatar|قطر|قطر|Katar|Qatar|Qatar
+Singapore|سنغافورة|سنگاپور|Singapur|Singapura|Singapour
+Turkey|تركيا|ترکیہ|Türkiye|Turki|Turquie
+Live heading · {0}° true north|اتجاه مباشر · {0}° من الشمال الحقيقي|براہ راست سمت · حقیقی شمال سے {0}°|Canlı yön · gerçek kuzeyden {0}°|Arah langsung · {0}° dari utara sejati|Orientation en direct · {0}° du nord géographique
+Use Windows location services when available, then review before saving.|استخدم خدمات موقع Windows إن توفرت، ثم راجع قبل الحفظ.|دستیاب ہونے پر Windows کی مقام کی خدمات استعمال کریں، پھر محفوظ کرنے سے پہلے جائزہ لیں۔|Varsa Windows konum hizmetlerini kullanın, kaydetmeden önce kontrol edin.|Gunakan layanan lokasi Windows bila tersedia, lalu tinjau sebelum menyimpan.|Utilisez la localisation Windows si disponible, puis vérifiez avant d’enregistrer.
+Use your browser’s location services when available, then review before saving.|استخدم خدمات موقع المتصفح إن توفرت، ثم راجع قبل الحفظ.|دستیاب ہونے پر براؤزر کی مقام کی خدمات استعمال کریں، پھر محفوظ کرنے سے پہلے جائزہ لیں۔|Varsa tarayıcınızın konum hizmetlerini kullanın, kaydetmeden önce kontrol edin.|Gunakan layanan lokasi peramban bila tersedia, lalu tinjau sebelum menyimpan.|Utilisez la localisation du navigateur si disponible, puis vérifiez avant d’enregistrer.
+Could not connect to the device compass.|تعذر الاتصال ببوصلة الجهاز.|آلے کے قطب نما سے رابطہ نہ ہو سکا۔|Cihaz pusulasına bağlanılamadı.|Tidak dapat menghubungkan kompas perangkat.|Impossible de connecter la boussole de l’appareil.
+Choose a date between 1901 and 2098|اختر تاريخًا بين 1901 و2098|1901 سے 2098 کے درمیان تاریخ منتخب کریں|1901 ile 2098 arasında bir tarih seçin|Pilih tanggal antara 1901 dan 2098|Choisissez une date entre 1901 et 2098
+Saved in this browser|محفوظ في هذا المتصفح|اس براؤزر میں محفوظ|Bu tarayıcıda kayıtlı|Tersimpan di peramban ini|Enregistré dans ce navigateur
+{0} minutes before {1}|قبل {1} بـ {0} دقيقة|{1} سے {0} منٹ پہلے|{1} vaktinden {0} dakika önce|{0} menit sebelum {1}|{0} minutes avant {1}
+{0} minutes after {1}|بعد {1} بـ {0} دقيقة|{1} کے {0} منٹ بعد|{1} vaktinden {0} dakika sonra|{0} menit setelah {1}|{0} minutes après {1}
+At {0}|عند {0}|{0} کے وقت|{0} vaktinde|Saat {0}|À {0}
+Repeat {0} times|تكرار {0} مرات|{0} بار دہرائیں|{0} kez tekrarla|Ulangi {0} kali|Répéter {0} fois
+Standard Asr|العصر حسب الجمهور|عصر کا عمومی طریقہ|Standart ikindi|Asar standar|Asr standard
+Hanafi Asr|العصر الحنفي|عصر کا حنفی طریقہ|Hanefî ikindi|Asar Hanafi|Asr hanafite
+Beginner|مبتدئ|ابتدائی|Başlangıç|Pemula|Débutant
+Notifications are off; readings will appear in the app.|الإشعارات معطلة؛ ستظهر القراءات في التطبيق.|اطلاعات بند ہیں؛ مطالعہ ایپ میں ظاہر ہوگا۔|Bildirimler kapalı; okumalar uygulamada görünecek.|Notifikasi nonaktif; bacaan akan muncul di aplikasi.|Les notifications sont désactivées ; les lectures apparaîtront dans l’application.
+Local moon sightings may differ.|قد تختلف رؤية الهلال محليًا.|مقامی رؤیت ہلال مختلف ہو سکتی ہے۔|Yerel hilal gözlemleri farklı olabilir.|Rukyat setempat mungkin berbeda.|L’observation locale du croissant peut différer.
+{0} day correction|تصحيح {0} يوم|{0} دن کی تصحیح|{0} gün düzeltme|Koreksi {0} hari|Correction de {0} jour
+AM|ص|ق.د.|ÖÖ|AM|AM
+PM|م|ب.د.|ÖS|PM|PM
+Open Athan|فتح أذان|اذان کھولیں|Athan’ı aç|Buka Athan|Ouvrir Athan
+Quit Athan|إنهاء أذان|اذان بند کریں|Athan’dan çık|Keluar dari Athan|Quitter Athan
+Start prayers|تشغيل الأذان|اذان شروع کریں|Ezanları başlat|Mulai azan|Activer les adhans
+Pause prayers|إيقاف الأذان مؤقتًا|اذان موقوف کریں|Ezanları duraklat|Jeda azan|Suspendre les adhans
+Current:|الحالية:|موجودہ:|Şimdi:|Saat ini:|Actuelle :
+Next:|التالية:|اگلی:|Sonraki:|Berikut:|Suivante :
+Remaining:|المتبقي:|باقی:|Kalan:|Tersisa:|Dans :
+Unavailable|غير متاح|دستیاب نہیں|Kullanılamıyor|Tidak tersedia|Indisponible
+Next prayer unavailable|وقت الصلاة التالية غير متاح|اگلی نماز کا وقت دستیاب نہیں|Sonraki namaz kullanılamıyor|Waktu salat berikut tidak tersedia|Prochaine prière indisponible
+tomorrow|غدًا|کل|yarın|besok|demain
+s|ث|ث|sn|dtk|s
+m|د|م|dk|mnt|min
+h|س|گھ|sa|j|h
+d|ي|دن|g|hr|j
+Location data © GeoNames · CC BY 4.0 · Built-in cities and towns with 500+ residents, plus administrative centres|بيانات المواقع © GeoNames · CC BY 4.0 · مدن وبلدات تضم أكثر من 500 نسمة، ومراكز إدارية|مقامات کا ڈیٹا © GeoNames · CC BY 4.0 · 500 سے زیادہ آبادی والے شہر اور قصبے، اور انتظامی مراکز|Konum verileri © GeoNames · CC BY 4.0 · 500’den fazla nüfuslu yerleşimler ve idari merkezler|Data lokasi © GeoNames · CC BY 4.0 · Kota berpenduduk lebih dari 500 jiwa serta pusat administratif|Données géographiques © GeoNames · CC BY 4.0 · Villes de plus de 500 habitants et centres administratifs
+Location data © GeoNames · CC BY 4.0 · Online results served by Open-Meteo|بيانات المواقع © GeoNames · CC BY 4.0 · نتائج الإنترنت من Open-Meteo|مقامات کا ڈیٹا © GeoNames · CC BY 4.0 · آن لائن نتائج Open-Meteo سے|Konum verileri © GeoNames · CC BY 4.0 · Çevrimiçi sonuçlar Open-Meteo’dan|Data lokasi © GeoNames · CC BY 4.0 · Hasil daring oleh Open-Meteo|Données géographiques © GeoNames · CC BY 4.0 · Résultats en ligne fournis par Open-Meteo
+Quran · 13:28 (excerpt)|القرآن · 13:28 (مقتطف)|قرآن · 13:28 (اقتباس)|Kur’an · 13:28 (alıntı)|Al-Qur’an · 13:28 (kutipan)|Coran · 13:28 (extrait)
+12-hour clock|نظام 12 ساعة|12 گھنٹے کا وقت|12 saat biçimi|Format 12 jam|Format 12 heures
+24-hour clock|نظام 24 ساعة|24 گھنٹے کا وقت|24 saat biçimi|Format 24 jam|Format 24 heures
+Hijri correction: {0} day(s).|تصحيح هجري: {0} يوم.|ہجری تصحیح: {0} دن۔|Hicri düzeltme: {0} gün.|Koreksi Hijriah: {0} hari.|Correction hégirienne : {0} jour(s).
+Year planner|مخطط السنة|سالانہ منصوبہ|Yıllık plan|Perencana tahunan|Calendrier annuel
+Prayer calendar|تقويم الصلاة|نماز کا کیلنڈر|Namaz takvimi|Kalender salat|Calendrier des prières
+Collection packs combine public Sunnah.com datasets. No API key is needed. Downloads stay on this device for offline reading.|تجمع حزم الكتب بيانات عامة من Sunnah.com. لا حاجة لمفتاح API. تُحفظ التنزيلات على هذا الجهاز للقراءة دون إنترنت.|مجموعوں میں Sunnah.com کے عوامی ڈیٹا کو یکجا کیا گیا ہے۔ API کلید درکار نہیں۔ آف لائن مطالعے کے لیے مواد اسی آلے پر محفوظ رہتا ہے۔|Koleksiyon paketleri herkese açık Sunnah.com verilerini birleştirir. API anahtarı gerekmez. İndirilenler çevrimdışı okumak için bu cihazda saklanır.|Paket koleksi menggabungkan data publik Sunnah.com. Kunci API tidak diperlukan. Unduhan tersimpan di perangkat ini untuk dibaca luring.|Les recueils réunissent des données publiques de Sunnah.com. Aucune clé API n’est nécessaire. Les téléchargements restent sur cet appareil pour la lecture hors ligne.
+Arabic and English source wording is preserved. Missing translations, chapter mappings and grades remain marked as unavailable.|تُحفظ صياغة المصدر بالعربية والإنجليزية. يُشار بوضوح إلى الترجمات وروابط الأبواب والأحكام غير المتاحة.|عربی اور انگریزی ماخذ کے اصل الفاظ محفوظ ہیں۔ غیر موجود ترجمے، باب کی نسبت اور درجات کو غیر دستیاب دکھایا جاتا ہے۔|Arapça ve İngilizce kaynak metinleri korunur. Eksik çeviriler, bölüm eşleştirmeleri ve sıhhat hükümleri belirtilir.|Teks sumber Arab dan Inggris dipertahankan. Terjemahan, pemetaan bab, dan derajat yang tidak ada ditandai tidak tersedia.|Le texte arabe et anglais des sources est conservé. Les traductions, correspondances de chapitres et degrés manquants sont signalés.
+Sources and coverage|المصادر والتغطية|ذرائع اور دستیابی|Kaynaklar ve kapsam|Sumber dan cakupan|Sources et couverture
+Records are matched by their text and references, never by row position. Musnad Ahmad is partial in the source catalogue.|تُطابق الروايات بالنص والمراجع، وليس بترتيب الصفوف. مسند أحمد غير مكتمل في فهرس المصدر.|روایات کا ملاپ متن اور حوالوں سے کیا جاتا ہے، قطار کے نمبر سے نہیں۔ ماخذ میں مسند احمد جزوی ہے۔|Kayıtlar satır sırasına göre değil metin ve referanslarıyla eşleştirilir. Kaynakta Müsned Ahmed kısmen bulunur.|Catatan dicocokkan berdasarkan teks dan rujukan, bukan urutan baris. Musnad Ahmad hanya sebagian dalam katalog sumber.|Les récits sont rapprochés par leur texte et leurs références, jamais par leur position. Le Mousnad Ahmad est partiel dans le catalogue source.
+Preparing collection for offline reading…|جارٍ تجهيز الكتاب للقراءة دون إنترنت…|آف لائن مطالعے کے لیے مجموعہ تیار ہو رہا ہے…|Koleksiyon çevrimdışı okumaya hazırlanıyor…|Menyiapkan koleksi untuk dibaca luring…|Préparation du recueil pour la lecture hors ligne…
+{0} narrations · {1} MB|{0} رواية · {1} ميغابايت|{0} روایات · {1} ایم بی|{0} rivayet · {1} MB|{0} riwayat · {1} MB|{0} récits · {1} Mo
+Partial source collection|مجموعة المصدر غير مكتملة|ماخذ کا جزوی مجموعہ|Kısmi kaynak koleksiyonu|Koleksi sumber sebagian|Recueil source partiel
+Source catalogue snapshot|نسخة من فهرس المصدر|ماخذ کے فہرست کی نقل|Kaynak kataloğunun kopyası|Salinan katalog sumber|Copie du catalogue source
+{0} saved on this device|{0} محفوظة على هذا الجهاز|اس آلے پر {0} محفوظ|Bu cihazda {0} kayıtlı|{0} tersimpan di perangkat ini|{0} enregistrés sur cet appareil
+Legacy API download · refresh to use the collection pack|تنزيل API سابق · حدّث لاستخدام حزمة الكتاب|پرانا API ڈاؤن لوڈ · مجموعے کے لیے تازہ کریں|Eski API indirmesi · koleksiyon paketini kullanmak için yenileyin|Unduhan API lama · segarkan untuk memakai paket koleksi|Ancien téléchargement API · actualisez pour utiliser le recueil
+Browse by book and chapter, or search wording, grades and references.|تصفح الكتب والأبواب أو ابحث في النصوص والأحكام والمراجع.|کتاب اور باب کے لحاظ سے دیکھیں یا متن، درجے اور حوالہ تلاش کریں۔|Kitap ve bölüme göre gezinin veya metin, sıhhat hükmü ve referans arayın.|Jelajahi kitab dan bab, atau cari teks, derajat dan rujukan.|Parcourez les livres et chapitres, ou recherchez dans le texte, les degrés et les références.
+Search wording, grade or reference…|ابحث في النص أو الحكم أو المرجع…|متن، درجہ یا حوالہ تلاش کریں…|Metin, sıhhat hükmü veya referans ara…|Cari teks, derajat atau rujukan…|Rechercher un texte, un degré ou une référence…
+Hadith chapter|باب الحديث|حدیث کا باب|Hadis bölümü|Bab hadis|Chapitre du hadith
+All chapters|جميع الأبواب|تمام ابواب|Tüm bölümler|Semua bab|Tous les chapitres
+Chapter not supplied|لم يحدد المصدر الباب|ماخذ میں باب مذکور نہیں|Bölüm bilgisi sağlanmamış|Bab tidak disertakan|Chapitre non fourni
+No grade supplied by the source|لم يذكر المصدر حكمًا على الحديث|ماخذ میں حدیث کا درجہ مذکور نہیں|Kaynakta sıhhat hükmü belirtilmemiş|Sumber tidak menyertakan derajat|Aucun degré fourni par la source
+English translation unavailable in this source|الترجمة الإنجليزية غير متاحة في هذا المصدر|اس ماخذ میں انگریزی ترجمہ دستیاب نہیں|Bu kaynakta İngilizce çeviri yok|Terjemahan Inggris tidak tersedia dalam sumber ini|Traduction anglaise indisponible dans cette source
+References|المراجع|حوالے|Referanslar|Rujukan|Références
+Reference|المرجع|حوالہ|Referans|Rujukan|Référence
+In-book reference|المرجع داخل الكتاب|کتاب کے اندر حوالہ|Kitap içi referans|Rujukan dalam kitab|Référence dans le livre
+USC-MSA reference|مرجع USC-MSA|USC-MSA حوالہ|USC-MSA referansı|Rujukan USC-MSA|Référence USC-MSA
+USC-MSA web (English) reference|مرجع USC-MSA بالإنجليزية|USC-MSA انگریزی ویب حوالہ|USC-MSA İngilizce web referansı|Rujukan web Inggris USC-MSA|Référence web anglaise USC-MSA
+Arabic reference|المرجع العربي|عربی حوالہ|Arapça referans|Rujukan Arab|Référence arabe
+Arabic/English book reference|المرجع العربي والإنجليزي|عربی اور انگریزی کتاب کا حوالہ|Arapça/İngilizce kitap referansı|Rujukan kitab Arab/Inggris|Référence du livre arabe/anglais
+English translation|الترجمة الإنجليزية|انگریزی ترجمہ|İngilizce çeviri|Terjemahan Inggris|Traduction anglaise
+Sunnah.com reference|مرجع Sunnah.com|Sunnah.com حوالہ|Sunnah.com referansı|Rujukan Sunnah.com|Référence Sunnah.com
+Narration details|تفاصيل الرواية|روایت کی تفصیلات|Rivayet ayrıntıları|Rincian riwayat|Détails du récit
+Arabic chain of narration|السند العربي|عربی سند|Arapça rivayet zinciri|Sanad Arab|Chaîne de transmission arabe
+Narrator introduction|مقدمة الراوي|راوی کا تعارف|Ravi girişi|Pengantar perawi|Introduction du narrateur
+Arabic hadith text|المتن العربي|عربی متن حدیث|Arapça hadis metni|Matan hadis Arab|Texte arabe du hadith
+English hadith text|المتن بالإنجليزية|انگریزی متن حدیث|İngilizce hadis metni|Matan hadis Inggris|Texte anglais du hadith
+Closing narration|تتمة الرواية|روایت کا اختتام|Rivayetin devamı|Penutup riwayat|Fin du récit
+Source reference|مرجع المصدر|ماخذ کا حوالہ|Kaynak referansı|Rujukan sumber|Référence source
+Source grade|حكم المصدر|ماخذ کا درجہ|Kaynaktaki sıhhat hükmü|Derajat dari sumber|Degré fourni par la source
+Record provenance|مصدر السجل|روایت کے ڈیٹا کا ماخذ|Kayıt kökeni|Asal catatan|Provenance du récit
+Sunan ad-Darimi|سنن الدارمي|سنن دارمی|Sünen-i Dârimî|Sunan ad-Darimi|Sunan ad-Darimi
+Bulugh al-Maram|بلوغ المرام|بلوغ المرام|Bulûğu’l-Merâm|Bulugh al-Maram|Boulough al-Maram
+Mishkat al-Masabih|مشكاة المصابيح|مشکوٰۃ المصابیح|Mişkâtü’l-Mesâbîh|Mishkat al-Masabih|Michkat al-Masabih
+Ash-Shama'il|الشمائل المحمدية|شمائل محمدیہ|Şemâil-i Şerîf|Asy-Syama’il|Ach-Chama’il
+Shah Waliullah's 40|أربعون شاه ولي الله|شاہ ولی اللہ کی چالیس احادیث|Şah Veliyyullah’ın 40 Hadisi|40 Hadis Shah Waliullah|Les 40 hadiths de Shah Waliullah
+Al-Adab Al-Mufrad|الأدب المفرد|الادب المفرد|el-Edebü’l-Müfred|Al-Adab al-Mufrad|Al-Adab al-Mufrad
+Sunan an-Nasa'i|سنن النسائي|سنن نسائی|Sünen-i Nesâî|Sunan an-Nasa’i|Sunan an-Nasai
+40 Hadith an-Nawawi|الأربعون النووية|اربعین نووی|Nevevî’nin Kırk Hadisi|Arbain an-Nawawi|Les quarante hadiths de Nawawi
+40 Hadith Qudsi|أربعون حديثًا قدسيًا|چالیس احادیث قدسیہ|Kırk Kudsî Hadis|Empat Puluh Hadis Qudsi|Quarante hadiths qudsi
+Shah Waliullah's 40 Hadith|أربعون شاه ولي الله|شاہ ولی اللہ کی چالیس احادیث|Şah Veliyyullah’ın 40 Hadisi|40 Hadis Shah Waliullah|Les 40 hadiths de Shah Waliullah
+Ash-Shama'il Al-Muhammadiyya|الشمائل المحمدية|شمائل محمدیہ|Şemâil-i Şerîf|Asy-Syama’il|Ach-Chama’il
+Jami` at-Tirmidhi|جامع الترمذي|جامع ترمذی|Câmiu’t-Tirmizî|Jami at-Tirmidzi|Jami at-Tirmidhi
+Some times are unavailable or estimated at high latitudes. Check your local timetable before relying on them.|بعض الأوقات غير متاحة أو تقديرية في خطوط العرض العليا. راجع جدول الصلاة المحلي قبل الاعتماد عليها.|بلند عرض بلد پر کچھ اوقات دستیاب نہیں یا تخمینی ہیں۔ اعتماد کرنے سے پہلے مقامی نماز کا جدول دیکھیں۔|Yüksek enlemlerde bazı vakitler yoktur veya tahminidir. Kullanmadan önce yerel takvimi kontrol edin.|Sebagian waktu tidak tersedia atau berupa perkiraan di lintang tinggi. Periksa jadwal setempat sebelum mengandalkannya.|Certaines heures sont indisponibles ou estimées aux hautes latitudes. Vérifiez votre calendrier local avant de vous y fier.

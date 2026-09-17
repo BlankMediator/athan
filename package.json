@@ -1,0 +1,71 @@
+{
+  "name": "athan-core",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A calm desktop companion for prayer times, calendars and Athan.",
+  "main": "dist/desktop/main.js",
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "bin": {
+    "athan": "dist/cli.js"
+  },
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "npm run build:core && npm run build:ui && npm run build:browser",
+    "build:core": "tsc",
+    "build:ui": "tsc --project ui/tsconfig.json && vite build ui --config ui/vite.config.ts",
+    "typecheck": "tsc --noEmit && tsc --project ui/tsconfig.json",
+    "test": "npm run build:core && node --test test/*.test.mjs",
+    "test:desktop": "playwright test --config playwright.config.ts",
+    "athan": "node dist/cli.js",
+    "gui": "electron .",
+    "start": "electron .",
+    "build:browser": "tsc --project ui/tsconfig.json && vite build ui --config ui/vite.config.ts --mode browser",
+    "browser": "node scripts/serve-browser.mjs",
+    "browser:lan": "node scripts/serve-browser.mjs --lan",
+    "test:browser": "playwright test --config playwright.browser.config.ts",
+    "build:mobile": "tsc --project ui/tsconfig.json && vite build ui --config ui/vite.config.ts --mode mobile",
+    "mobile:sync": "npm run build:mobile && cap sync",
+    "mobile:android": "npm run mobile:sync && cap open android",
+    "mobile:ios": "npm run mobile:sync && cap open ios",
+    "mobile:doctor": "cap doctor",
+    "test:mobile": "playwright test --config playwright.mobile.config.ts"
+  },
+  "dependencies": {
+    "@capacitor/android": "8.5.2",
+    "@capacitor/app": "8.1.1",
+    "@capacitor/browser": "8.0.4",
+    "@capacitor/clipboard": "8.0.1",
+    "@capacitor/core": "8.5.2",
+    "@capacitor/filesystem": "8.1.3",
+    "@capacitor/geolocation": "8.2.2",
+    "@capacitor/ios": "8.5.2",
+    "@capacitor/local-notifications": "8.3.1",
+    "@capacitor/preferences": "8.0.1",
+    "@capacitor/share": "8.0.2",
+    "@fontsource-variable/manrope": "5.3.0",
+    "@fontsource-variable/noto-sans-arabic": "5.3.0",
+    "@fontsource/cormorant-garamond": "5.3.0",
+    "adhan": "4.4.6",
+    "commander": "15.0.0",
+    "lucide-react": "1.45.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "zod": "4.6.4"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "8.5.2",
+    "@playwright/test": "1.63.0",
+    "@types/node": "26.5.1",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.1.1",
+    "electron": "44.3.0",
+    "typescript": "7.0.2",
+    "vite": "8.3.0"
+  }
+}

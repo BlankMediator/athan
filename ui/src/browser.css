@@ -1,0 +1,73 @@
+.offline-status{padding:13px 16px;margin-bottom:22px;border:1px solid var(--border);border-radius:9px;background:var(--accent-soft);color:var(--accent)}
+.offline-status>div{display:flex;align-items:center;gap:10px}
+.offline-status span{flex:1;min-width:0}
+.offline-status strong{display:block;font-size:11px;font-weight:650}
+.offline-status small,.offline-status p{display:block;font-size:10px;color:var(--muted);line-height:1.7}
+.offline-status small{margin-top:3px}.offline-status p{margin-top:7px}
+.browser-app .desktop-shell{grid-template-rows:minmax(0,1fr)}
+.browser-app .main-scroll{padding-top:32px}
+@media(max-width:1050px){
+  .browser-app{min-width:0;height:auto;min-height:100%;overflow-y:auto}
+  .browser-app body,.browser-app #root{min-width:0;height:auto;min-height:100%;overflow:visible}
+  .browser-app .desktop-shell{grid-template-columns:160px minmax(0,1fr);min-height:100dvh;height:auto}
+  .browser-app .main-scroll{overflow:visible;padding:26px 22px;scrollbar-gutter:auto}
+  .browser-app .sidebar{padding:24px 10px;position:sticky;top:0;height:100dvh;overflow-y:auto}
+  .browser-app .nav-caption{font-size:6px;letter-spacing:.5px}
+  .browser-app .brand{margin:0 5px 25px;gap:7px}.browser-app .brand strong{font-size:30px}
+  .browser-app .page-header{align-items:flex-start;flex-direction:column;gap:15px}
+  .browser-app .prayer-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .browser-app .today-lower,.browser-app .qibla-layout,.browser-app .two-columns,.browser-app .calendar-layout{grid-template-columns:minmax(0,1fr)}
+  .browser-app .hero-text{width:70%}.browser-app .hero-caption{display:none}
+  .browser-app .day-note p{white-space:normal}
+  .browser-app .form-grid{gap:15px}.browser-app .sound-row{flex-wrap:wrap}
+  .browser-app .sound-name{min-width:100px}.browser-app .recording-picker{flex-basis:50%}
+  .browser-app .offline-status>div{flex-wrap:wrap}
+  .browser-app .offline-status>div>span{flex-basis:80%}
+  .browser-app .offset-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .browser-app .calendar-toolbar{flex-wrap:wrap;gap:15px}
+  .browser-app .calendar-toolbar>div{gap:6px}
+  .browser-app .main-footer{gap:12px;flex-wrap:wrap}
+}
+@media(max-width:650px){
+  .browser-app .desktop-shell{display:flex;flex-direction:column}
+  .browser-app .sidebar{position:static;height:auto;overflow:visible;display:block;padding:16px 16px 8px;border-right:0;border-bottom:1px solid var(--border)}
+  .browser-app .brand{margin:0 0 12px}.browser-app .brand>svg{width:35px;height:35px}
+  .browser-app .brand strong{font-size:32px}.browser-app .nav-caption{display:none}
+  .browser-app .sidebar nav{display:flex;flex-direction:row;overflow-x:auto;gap:4px;padding-bottom:6px}
+  .browser-app .sidebar nav>button{flex-shrink:0;padding:10px;gap:6px;font-size:11px;width:auto;min-height:42px;margin:0}
+  .browser-app .sidebar .nav-dot{display:none}
+  .browser-app .sidebar-bottom{margin:0;display:flex;align-items:center;justify-content:space-between}
+  .browser-app .sidebar-location,.browser-app .sidebar-footer>span{display:none}
+  .browser-app .sidebar-footer{border:0;padding:0;margin:0}.browser-app .activity-link{margin:0;padding:6px 0}
+  .browser-app .main-scroll{padding:24px 16px}.browser-app h1{font-size:34px;line-height:1.1}
+  .browser-app .page-header p{font-size:12px}.browser-app .page-header{margin-bottom:20px}
+  .browser-app .offline-status{padding:12px}.browser-app .offline-status strong{font-size:11px}
+  .browser-app .hero-card{height:300px}.browser-app .hero-text{padding:24px;width:90%}
+  .browser-app .hero-alert{top:auto;bottom:20px;right:20px}
+  .browser-app .hero-prayer h2{font-size:55px}.browser-app .countdown{margin-top:20px}
+  .browser-app .section-header{align-items:flex-start;gap:10px}.browser-app .section-header>div:first-child{display:block}
+  .browser-app .prayer-card{padding:13px 10px}.browser-app .prayer-card time{font-size:23px}
+  .browser-app .prayer-card-bottom{font-size:7px}.browser-app .prayer-arabic{font-size:12px}
+  .browser-app .calculation-note{flex-wrap:wrap;line-height:1.8}
+  .browser-app .panel{padding:20px 16px}.browser-app .form-grid{grid-template-columns:minmax(0,1fr)}
+  .browser-app .sound-overview{padding:18px 14px;gap:12px}.browser-app .sound-emblem{width:42px;height:42px}
+  .browser-app .sound-overview h2{font-size:26px}.browser-app .sound-row{gap:10px}.browser-app .recording-picker{order:2;flex-basis:100%}
+  .browser-app .sound-row>.switch{margin-left:auto}
+  .browser-app .tab-bar{gap:14px}.browser-app .tab-bar button{font-size:10px;gap:5px}
+  .browser-app .location-summary{padding:18px;flex-wrap:wrap}.browser-app .location-summary>.pill{margin:0}
+  .browser-app .location-summary h2{font-size:27px}.browser-app .city-list-actions{flex-wrap:wrap}
+  .browser-app .calendar-toolbar>div{flex-wrap:wrap;gap:3px}.browser-app .calendar-toolbar h2{font-size:25px;min-width:150px}
+  .browser-app .month-grid{gap:2px}.browser-app .calendar-day{height:54px}.browser-app .weekdays{font-size:8px;letter-spacing:0}
+  .browser-app .calendar-jump>span{display:none}.browser-app .calendar-panel{padding:15px 8px}
+  .browser-app .calendar-events-heading{flex-wrap:wrap;gap:12px}
+  .browser-app .event-year{flex-wrap:wrap}
+  .browser-app .theme-grid{gap:8px}.browser-app .theme-option{padding:7px}.browser-app .theme-option>span{font-size:9px;flex-wrap:wrap}
+  .browser-app .theme-sample{height:60px}.browser-app .day-selector{gap:4px}
+  .browser-app .modal{padding:22px 18px;max-height:90dvh;overflow-y:auto;max-width:calc(100vw - 24px)}
+  .browser-app .export-layouts{grid-template-columns:minmax(0,1fr)}
+  .browser-app .save-bar{flex-wrap:wrap;bottom:10px}.browser-app .save-bar>div{margin-left:auto}
+  .browser-app .toast{left:16px;right:16px;bottom:18px;transform:none;min-width:0;max-width:none}
+  .browser-app .active-alert,.browser-app .reading-alert{left:12px;right:12px;bottom:16px;max-width:none;flex-wrap:wrap}
+  .browser-app .observance-grid{grid-template-columns:1fr}.browser-app .observance-grid>div+div{border:0;padding-left:0}
+  .browser-app .devotion-layout{grid-template-columns:minmax(0,1fr)}
+}

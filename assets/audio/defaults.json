@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "recordings": [
+    {
+      "id": "default/fajr-mishary",
+      "name": "Mishary Rashid — Fajr",
+      "path": "audio/fajr-mishary-e0fc262b5716.mp3",
+      "bytes": 2247621,
+      "sha256": "e0fc262b571688eb469462642118ec5ff63b7574bf463b9073d2bc3b19a5989b",
+      "source": "fajr/RashidMishary_Fajr.wma"
+    },
+    {
+      "id": "default/al-aqsa",
+      "name": "Al-Aqsa",
+      "path": "audio/al-aqsa-87f0bfb5cca6.mp3",
+      "bytes": 2697449,
+      "sha256": "87f0bfb5cca615c26c90b3f927117521dd7c6e1064c4eb4e24def53fbefae36c",
+      "source": "otherprayers/Alaqsa.wma"
+    },
+    {
+      "id": "default/egypt",
+      "name": "Egypt",
+      "path": "audio/egypt-d57ce89affb6.mp3",
+      "bytes": 2192450,
+      "sha256": "d57ce89affb67e96d0052eb07704d6c04d66145723428212642b9b338428cd1e",
+      "source": "otherprayers/Egypt.wma"
+    },
+    {
+      "id": "default/madina",
+      "name": "Madina",
+      "path": "audio/madina-d839e152c9ac.mp3",
+      "bytes": 1136685,
+      "sha256": "d839e152c9ace7523277ed3062a52dea5b697b6c7d84188f98ff97d0789f7d6d",
+      "source": "otherprayers/Madina.wma"
+    },
+    {
+      "id": "default/makkah",
+      "name": "Makkah",
+      "path": "audio/makkah-a3149a6ea30a.mp3",
+      "bytes": 2427238,
+      "sha256": "a3149a6ea30a7395962b505612e4e09bcc8e3bd570b1166d2746874628ca4403",
+      "source": "otherprayers/Makkah.wma"
+    },
+    {
+      "id": "default/dua",
+      "name": "Dua after Athan",
+      "path": "audio/dua-e05e47c56683.mp3",
+      "bytes": 173707,
+      "sha256": "e05e47c566833d1c99dca43775566de2e60b602533826d4bfe0f802e8afc0dcf",
+      "source": "dua/dua.wma"
+    },
+    {
+      "id": "default/bismillah",
+      "name": "Bismillah",
+      "path": "audio/bismillah-59cbb6b2b345.mp3",
+      "bytes": 85622,
+      "sha256": "59cbb6b2b3454e588c5d6aadf768a5273eb5d08263ffbc23a8ded4d4cad86743",
+      "source": "bismillah/Bismillah.wma"
+    }
+  ],
+  "defaults": {
+    "fajr": "default/fajr-mishary",
+    "dhuhr": "default/al-aqsa",
+    "asr": "default/egypt",
+    "maghrib": "default/egypt",
+    "isha": "default/egypt",
+    "dua": "default/dua",
+    "startup": "default/bismillah"
+  },
+  "provenance": "Converted to MP3 from the recordings supplied in the existing Athan installation at the user’s request. The recording credits and original filenames are preserved; no new licence is asserted."
+}
