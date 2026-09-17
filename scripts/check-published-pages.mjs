@@ -19,11 +19,13 @@ try {
   assert.equal(collection.entries.length, 7278);
   assert.equal((await page.evaluate(() => window.athan.hadithStatus())).collections.length, 0);
   await page.locator('.app-toolbar').getByRole('button', { name: 'Save everything offline', exact: true }).click();
-  await page.waitForFunction(async () => (await window.athan.hadithStatus()).collections.length === 17, null, { timeout: 120000 });
+  await page.locator('.app-toolbar').getByRole('button', { name: 'Everything saved offline', exact: true }).waitFor({ state: 'visible', timeout: 120000 });
+  assert.equal((await page.evaluate(() => window.athan.hadithStatus())).collections.length, 17);
   await context.setOffline(true);
   await page.reload();
   await page.waitForSelector('.prayer-card');
   assert.equal(await page.locator('.prayer-card').count(), 6);
+  assert.equal((await page.evaluate(() => window.athan.hadithStatus())).collections.length, 17);
   const recordings = await page.evaluate(() => window.athan.recordings());
   assert.deepEqual(recordings.map(item => item.path).sort(), manifest.recordings.map(item => item.id).sort());
   const cities = await page.evaluate(() => window.athan.cities('AU', 'Coburg'));
